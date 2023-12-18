@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7181150567073433492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8706385592364590215}
+  - component: {fileID: 8783398740672291665}
+  m_Layer: 0
+  m_Name: NewBrush 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8706385592364590215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181150567073433492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8783398740672291665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181150567073433492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc0986cbf5ad2341b48dce18f948455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: 
+  icon: {fileID: 0}
+  data:
+    CurrentTool: {fileID: 114147587706108040, guid: bcfa8b08279f59d49b1ae1412110cac8,
+      type: 3}
+    CurrentMaterial: {fileID: 114594645391738606, guid: 9aa561463fe47844eae24ddd0f52c3fc,
+      type: 3}
+    CurrentShape: {fileID: 114021807027361564, guid: 0ae0162bc8b7ca64bb595c0ccaef9a44,
+      type: 3}
+    OverrideRadius: 1
+    Radius: 1
+    OverrideColor: 1
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    OverrideAngle: 0
+    Angle: 0
+    OverrideTiling: 0
+    Tiling: 1
+    OverrideNormal: 0
+    NormalFront: 1
+    NormalBack: 0
+    NormalFade: 0.01
+    OverrideModifiers: 0
+    Modifiers:
+      modifiers: []
+  references:
+    version: 1

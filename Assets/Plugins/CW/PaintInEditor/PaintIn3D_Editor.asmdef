@@ -1,0 +1,19 @@
+{
+    "name": "PaintIn3D_Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InputSystem",
+        "CW.Common",
+        "PaintIn3D",
+        "PaintIn3D_Game"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

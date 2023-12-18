@@ -1,0 +1,17 @@
+{
+    "name": "PaintIn3D",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InputSystem",
+        "CW.Common"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
