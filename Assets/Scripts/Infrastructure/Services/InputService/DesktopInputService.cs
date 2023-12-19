@@ -1,3 +1,4 @@
+using PaintIn3D;
 using UnityEngine;
 
 namespace Infrastructure.Services.InputService
@@ -10,11 +11,16 @@ namespace Infrastructure.Services.InputService
 
     public override bool IsActionButtonPressed() => Input.GetMouseButton(0);
 
-    private Vector2 ButtonsAxis() => 
+    private Vector2 ButtonsAxis() =>
       new Vector2(Input.GetAxis(Horizontal), Input.GetAxis(Vertical));
-    
-    private Vector2 MouseAxis() => 
-      new Vector2(Input.GetAxis(MouseHorizontal), Input.GetAxis(MouseVertical));
 
+    private Vector2 MouseAxis()
+    {
+      Vector2 axis = new Vector2(0f,0f);
+      if(Input.GetMouseButton(2))
+        axis = new Vector2(Input.GetAxis(MouseHorizontal), Input.GetAxis(MouseVertical));
+
+      return axis;
+    }
   }
 }
