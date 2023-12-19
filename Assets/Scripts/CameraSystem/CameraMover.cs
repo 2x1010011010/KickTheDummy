@@ -29,10 +29,12 @@ namespace CameraSystem
 
     private void Move()
     {
+      
     }
 
     private void Rotate()
     {
+      
     }
   }
 }
