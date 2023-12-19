@@ -849,8 +849,8 @@ Canvas:
   m_GameObject: {fileID: 1759944923}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -907,6 +907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb1148d3177426469170da89317ed70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _settings: {fileID: 11400000, guid: b08fbabeba9e7654b92e741df0e49708, type: 2}
 --- !u!1 &2044229109
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,8 +949,8 @@ SceneRoots:
   - {fileID: 1046009965}
   - {fileID: 723590598}
   - {fileID: 512416549}
+  - {fileID: 196946836}
   - {fileID: 1303905687}
   - {fileID: 1439399053}
   - {fileID: 1690425660}
   - {fileID: 387107531}
-  - {fileID: 196946836}
