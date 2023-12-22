@@ -1,10 +1,10 @@
 using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using Infrastructure.GameStateMachine.States;
+using Infrastructure.Services.SaveService;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine
+namespace Infrastructure.GameStateMachine.States
 {
   public class GameState : IState
   {
@@ -28,8 +28,6 @@ namespace Infrastructure.GameStateMachine
             _gameStateMachine = gameStateMachine;
             //_eventsFacade = container.Resolve<EventsFacade>();
             _savedData = container.Resolve<SavedData>();
-            _timeBetweenWaves = container.Resolve<GameConfig>().DelayBetweenEnemyWaves;
-            _winRewardMultiplayer = container.Resolve<GameConfig>().WinRewardMultiplayer;
         }
 
         public void Enter()

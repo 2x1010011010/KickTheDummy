@@ -2,7 +2,7 @@ using System;
 using Data.AdditionalData.Values;
 using UnityEngine;
 
-namespace Infrastructure.Services
+namespace Infrastructure.Services.SaveService
 {
   public class SavedService
   {
@@ -30,16 +30,14 @@ namespace Infrastructure.Services
 
       //Logg.ColorLog($"LOAD PROGRESS level {_data.GameLevel}.{_data.MapLevel}", ColorType.Olive);
     }
-
-    [Button]
+    
     public void SaveProgress()
     {
       var stringData = JsonUtility.ToJson(_data);
       PlayerPrefs.SetString(Constance.SAVE_PROGRESS_KEY, stringData);
       //Logg.ColorLog("SAVE PROGRESS", ColorType.Olive);
     }
-
-    [Button]
+    
     public void DeleteProgress()
     {
       PlayerPrefs.DeleteAll();

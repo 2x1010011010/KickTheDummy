@@ -1,17 +1,17 @@
-using System;
 using Data.AdditionalData.Values;
-using Infrastructure.GameStateMachine.States;
-using Infrastructure.Services;
+using Infrastructure.Events;
+using Infrastructure.Services.LoadingService;
+using Infrastructure.Services.SaveService;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine
+namespace Infrastructure.GameStateMachine.States
 {
   public class LoadLevelState : IState
   {
     
     private readonly GameStateMachine _gameStateMachine;
     private readonly DiContainer _container;
-    private readonly LoadingCurtain _loadingCurtain;
+    //private readonly LoadingCurtain _loadingCurtain;
     private readonly EventsFacade _eventsFacade;
     private readonly SavedData _savedData;
 
@@ -19,7 +19,7 @@ namespace Infrastructure.GameStateMachine
     {
       _gameStateMachine = gameStateMachine;
       _container = container;
-      _loadingCurtain = container.Resolve<LoadingCurtain>();
+      //_loadingCurtain = container.Resolve<LoadingCurtain>();
       _eventsFacade = container.Resolve<EventsFacade>();
       container.Resolve<SavedService>();
       _savedData = container.Resolve<SavedData>();
@@ -42,14 +42,14 @@ namespace Infrastructure.GameStateMachine
       var sceneLoader = _container.Resolve<SceneLoader>();
       var gameSceneName = Constance.Scenes.GameScene.ToString();
 
-      _loadingCurtain.Show();
+      //_loadingCurtain.Show();
       sceneLoader.LoadSceneAsync(gameSceneName, OnLoaded).Forget();
     }
 
     private void OnLoaded()
     {
-      _gameStateMachine.Enter<UpgradesState>();
-      _loadingCurtain.Hide();
+      _gameStateMachine.Enter<GameState>();
+      //_loadingCurtain.Hide();
     }
   }
 }

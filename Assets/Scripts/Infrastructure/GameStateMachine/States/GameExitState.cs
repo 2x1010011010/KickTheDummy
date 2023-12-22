@@ -1,9 +1,8 @@
-using System;
-using Infrastructure.GameStateMachine.States;
-using Infrastructure.Services;
+using Infrastructure.Events;
+using Infrastructure.Services.SaveService;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine
+namespace Infrastructure.GameStateMachine.States
 {
   public class GameExitState : IState
   {
@@ -30,7 +29,7 @@ namespace Infrastructure.GameStateMachine
     public void Enter()
     {
       _eventsFacade.GameEvents.ClearLevel();
-      _savedData.Timing.GameExitTime = DateTimeOffset.UtcNow;
+      //_savedData.Timing.GameExitTime = DateTimeOffset.UtcNow;
       _savedService.SaveProgress();
     }
 

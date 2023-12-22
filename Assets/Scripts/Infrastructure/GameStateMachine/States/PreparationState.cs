@@ -1,9 +1,8 @@
-using System;
-using Infrastructure.GameStateMachine.States;
-using Infrastructure.Services;
+using Infrastructure.Events;
+using Infrastructure.Services.SaveService;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine
+namespace Infrastructure.GameStateMachine.States
 {
   public class PreparationState : IState
   {
@@ -20,13 +19,13 @@ namespace Infrastructure.GameStateMachine
 
     public void Enter()
     {
-      _eventsFacade.HudEvents.OnPressFightButton += StartFightState;
+      _eventsFacade.HudEvents.OnPressPlayButton += StartFightState;
       _eventsFacade.GameEvents.BlockCameraEvent(false);
     }
 
     public void Exit()
     {
-      _eventsFacade.HudEvents.OnPressFightButton -= StartFightState;
+      _eventsFacade.HudEvents.OnPressPlayButton -= StartFightState;
     }
 
     private void StartFightState()

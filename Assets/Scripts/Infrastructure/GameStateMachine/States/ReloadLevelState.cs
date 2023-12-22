@@ -1,9 +1,8 @@
-using System;
-using Infrastructure.GameStateMachine.States;
-using Infrastructure.Services;
+using Infrastructure.Events;
+using Infrastructure.Services.SaveService;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine
+namespace Infrastructure.GameStateMachine.States
 {
   public class ReloadLevelState : IState
   {
@@ -22,9 +21,8 @@ namespace Infrastructure.GameStateMachine
 
     public void Enter()
     {
-      _savedData.IsPlayerChoiceUnit = false;
       _eventsFacade.GameEvents.ClearLevel();
-      _gameStateMachine.Enter<UpgradesState>();
+      _gameStateMachine.Enter<GameState>();
       _eventsFacade.GameEvents.BlockCameraEvent(true);
     }
 

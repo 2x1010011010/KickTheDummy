@@ -4,7 +4,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Infrastructure.Services
+namespace Infrastructure.Services.LoadingService
 {
   public class SceneLoader
   {
