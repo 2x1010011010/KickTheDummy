@@ -19,16 +19,16 @@ namespace Infrastructure.Services
       {
         var savedString = PlayerPrefs.GetString(Constance.SAVE_PROGRESS_KEY);
         var loadData = JsonUtility.FromJson<SavedData>(savedString);
-        Logg.ColorLog($"LOAD PROGRESS: Data -> {savedString}", ColorType.Olive);
+        //Logg.ColorLog($"LOAD PROGRESS: Data -> {savedString}", ColorType.Olive);
         if (loadData == null) return;
         _data.LoadData(loadData);
       }
       catch (Exception e)
       {
-        Logg.ColorLog("SavedData: LoadProgress " + e, LogStyle.Error);
+        //Logg.ColorLog("SavedData: LoadProgress " + e, LogStyle.Error);
       }
 
-      Logg.ColorLog($"LOAD PROGRESS level {_data.GameLevel}.{_data.MapLevel}", ColorType.Olive);
+      //Logg.ColorLog($"LOAD PROGRESS level {_data.GameLevel}.{_data.MapLevel}", ColorType.Olive);
     }
 
     [Button]
@@ -36,7 +36,7 @@ namespace Infrastructure.Services
     {
       var stringData = JsonUtility.ToJson(_data);
       PlayerPrefs.SetString(Constance.SAVE_PROGRESS_KEY, stringData);
-      Logg.ColorLog("SAVE PROGRESS", ColorType.Olive);
+      //Logg.ColorLog("SAVE PROGRESS", ColorType.Olive);
     }
 
     [Button]

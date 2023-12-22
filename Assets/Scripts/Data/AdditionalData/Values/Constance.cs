@@ -22,5 +22,4 @@ namespace Data.AdditionalData.Values
     
     public const string SAVE_PROGRESS_KEY = "SaveData";
   }
-  }
 }
