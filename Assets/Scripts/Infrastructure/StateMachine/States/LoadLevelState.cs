@@ -4,18 +4,18 @@ using Infrastructure.Services.LoadingService;
 using Infrastructure.Services.SaveService;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine.States
+namespace Infrastructure.StateMachine.States
 {
   public class LoadLevelState : IState
   {
     
-    private readonly GameStateMachine _gameStateMachine;
+    private readonly StateMachine.GameStateMachine _gameStateMachine;
     private readonly DiContainer _container;
     //private readonly LoadingCurtain _loadingCurtain;
     private readonly EventsFacade _eventsFacade;
     private readonly SavedData _savedData;
 
-    public LoadLevelState(GameStateMachine gameStateMachine, DiContainer container)
+    public LoadLevelState(StateMachine.GameStateMachine gameStateMachine, DiContainer container)
     {
       _gameStateMachine = gameStateMachine;
       _container = container;

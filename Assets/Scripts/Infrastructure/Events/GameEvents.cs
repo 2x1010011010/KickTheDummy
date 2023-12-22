@@ -1,5 +1,5 @@
 using System;
-using Infrastructure.GameStateMachine.States;
+using Infrastructure.StateMachine.States;
 using Infrastructure.Services.SaveService;
 
 namespace Infrastructure.Events

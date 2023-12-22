@@ -2,16 +2,16 @@ using Infrastructure.Events;
 using Infrastructure.Services.SaveService;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine.States
+namespace Infrastructure.StateMachine.States
 {
   public class GameExitState : IState
   {
-    private readonly GameStateMachine _gameStateMachine;
+    private readonly StateMachine.GameStateMachine _gameStateMachine;
     private readonly EventsFacade _eventsFacade;
     private readonly SavedData _savedData;
     private readonly SavedService _savedService;
 
-    public GameExitState(GameStateMachine gameStateMachine, DiContainer container)
+    public GameExitState(StateMachine.GameStateMachine gameStateMachine, DiContainer container)
     {
       _gameStateMachine = gameStateMachine;
 

@@ -1,11 +1,10 @@
 using Data.AdditionalData.Values;
-using Infrastructure.Services;
 using Infrastructure.Services.LoadingService;
 using Infrastructure.Services.SaveService;
 using UnityEngine;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine.States
+namespace Infrastructure.StateMachine.States
 {
   public class BootstrapState : IState
   {
@@ -13,7 +12,7 @@ namespace Infrastructure.GameStateMachine.States
     private readonly SceneLoader _sceneLoader;
     private readonly SavedService _savedService;
 
-    public BootstrapState(GameStateMachine gameStateMachine, DiContainer container)
+    public BootstrapState(StateMachine.GameStateMachine gameStateMachine, DiContainer container)
     {
     }
 

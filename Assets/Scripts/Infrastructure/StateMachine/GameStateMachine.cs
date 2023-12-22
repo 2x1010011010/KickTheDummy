@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Infrastructure.GameStateMachine.States;
-using UnityEngine;
+using Infrastructure.StateMachine.States;
 using Zenject;
 
-namespace Infrastructure.GameStateMachine
+namespace Infrastructure.StateMachine
 {
   public class GameStateMachine
   {

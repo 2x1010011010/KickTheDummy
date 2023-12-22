@@ -1,4 +1,4 @@
-namespace Infrastructure.GameStateMachine.States
+namespace Infrastructure.StateMachine.States
 {
   public interface IState
   {
