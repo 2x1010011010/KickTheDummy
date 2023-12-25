@@ -10,11 +10,16 @@ namespace Tools.ToolsSystem
     [SerializeField] private Color _inactive;
     [SerializeField] private List<Tool> _tools;
     private Tool _currentTool;
-    public Tool CurrentTool => _currentTool;
+    public string CurrentTool => _currentTool.gameObject.name;
 
-    public void SetToolActive()
+    private void Start()
     {
-      SetCurrentTool();
+      SetCurrentTool(_tools[0]);
+    }
+
+    public void SetToolActive(Tool tool)
+    {
+      SetCurrentTool(tool);
     }
 
     private void SetCurrentTool(Tool chosenTool)
