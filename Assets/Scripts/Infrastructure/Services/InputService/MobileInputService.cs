@@ -2,14 +2,19 @@ using UnityEngine;
 
 namespace Infrastructure.Services.InputService
 {
-  public class MobileInputService : InputService
+  public sealed class MobileInputService : InputService
   {
-    public override Vector2 MoveAxis { get; }
-    public override Vector2 SpinAxis { get; }
+    public override Vector2 MoveAxis => Move();
+    public override Vector2 SpinAxis => Rotation();
 
-    public override bool IsActionButtonPressed()
+    private Vector2 Move()
     {
-      throw new System.NotImplementedException();
+      return new Vector2(0,0);
+    }
+
+    private Vector2 Rotation()
+    {
+      return new Vector2(0, 0);
     }
   }
 }

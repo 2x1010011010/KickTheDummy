@@ -6,6 +6,5 @@ namespace Infrastructure.Services.InputService
   {
     Vector2 MoveAxis { get; }
     Vector2 SpinAxis { get; }
-    bool IsActionButtonPressed();
   }
 }
