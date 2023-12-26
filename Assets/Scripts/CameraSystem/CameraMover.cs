@@ -13,6 +13,8 @@ namespace CameraSystem
     private Vector3 _newPosition;
     private float _rotationOffset;
 
+    private Vector3 _centerPoint = new Vector3(0, 0, 0);
+
     [Inject]
     private void Construct(IInputService inputService)
     {
@@ -31,8 +33,14 @@ namespace CameraSystem
 
     private void Move()
     {
-      
+      Vector3 direction = GetMoveDirection();
+      _newPosition += direction * (_speed * Time.deltaTime);
+      transform.position = _newPosition;
     }
+    
+    private Vector3 GetMoveDirection() => 
+      new Vector3(_inputService.MoveAxis.x, 0, _inputService.MoveAxis.y);
+    
 
     private void Rotate()
     {

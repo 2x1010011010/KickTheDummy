@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d37d23f13ee0e439a8761a1defae1f, type: 3}
   m_Name: CameraSettings
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 10
-  <RotationSpeed>k__BackingField: 10
+  <MovementSpeed>k__BackingField: 25
+  <RotationSpeed>k__BackingField: 100
+  <RotationOffset>k__BackingField: 0
