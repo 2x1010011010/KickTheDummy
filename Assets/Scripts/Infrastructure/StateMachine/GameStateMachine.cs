@@ -6,29 +6,34 @@ using Zenject;
 namespace Infrastructure.StateMachine
 {
   public class GameStateMachine
-  {
+{
     private readonly Dictionary<Type, IState> _states;
     private IState _currentState;
 
     public GameStateMachine(DiContainer container)
     {
-      _states = new Dictionary<Type, IState>()
-      {
-        [typeof(BootstrapState)] = new BootstrapState(this, container),
-        [typeof(LoadLevelState)] = new LoadLevelState(this, container),
-        [typeof(PreparationState)] = new PreparationState(this, container),
-        [typeof(GameState)] = new GameState(this, container),
-        [typeof(ReloadLevelState)] = new ReloadLevelState(this, container),
-        [typeof(GameExitState)] = new GameExitState(this, container),
-      };
+        _states = new Dictionary<Type, IState>()
+        {
+            [typeof(BootstrapState)] = InstantiateState<BootstrapState>(container),
+            [typeof(LoadLevelState)] = InstantiateState<LoadLevelState>(container),
+            [typeof(PreparationState)] = InstantiateState<PreparationState>(container),
+            [typeof(GameState)] = InstantiateState<GameState>(container),
+            [typeof(ReloadLevelState)] = InstantiateState<ReloadLevelState>(container),
+            [typeof(GameExitState)] = InstantiateState<GameExitState>(container)
+        };
+    }
+
+    private IState InstantiateState<TState>(DiContainer container) where TState : IState
+    {
+        return (IState)Activator.CreateInstance(typeof(TState), this, container);
     }
 
     public void Enter<TState>() where TState : IState
     {
-      _currentState?.Exit();
-      var state = _states[typeof(TState)];
-      _currentState = state;
-      state.Enter(); 
+        _currentState?.Exit();
+        var state = _states[typeof(TState)];
+        _currentState = state;
+        state.Enter();
     }
-  }
+}
 }
