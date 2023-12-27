@@ -24,9 +24,9 @@ namespace Tools.Weapon
       
       if (collider.TryGetComponent(out BodyPart bodyPart))
       {
+        _rigidbody.velocity = new Vector3(0,0,0);
         _bloodEffects[Random.Range(0, _bloodEffects.Count)].SetActive(true);
         bodyPart.TakeDamage();
-        _rigidbody.velocity = Vector3.zero;
       }
     }
   }

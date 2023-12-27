@@ -1,4 +1,3 @@
-using System;
 using Tools.ToolsSystem;
 using Tools.Weapon;
 using UnityEngine;
@@ -13,6 +12,14 @@ namespace Infrastructure
     private void Start()
     {
       _weaponSwitcher.Initialize(_toolsPanel);
+    }
+
+    private void Update()
+    {
+      if (Input.GetMouseButtonDown(0))
+      {
+        _weaponSwitcher.CurrentWeapon.Action();
+      }
     }
 
     private void OnEnable()

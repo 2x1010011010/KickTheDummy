@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: CameraSettings
   m_EditorClassIdentifier: 
   <MovementSpeed>k__BackingField: 10
-  <RotationSpeed>k__BackingField: 50
+  <RotationSpeed>k__BackingField: 100
   <RotationOffset>k__BackingField: 0

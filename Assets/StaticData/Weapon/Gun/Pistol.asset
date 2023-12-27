@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb8c2e3bca44bdd9f1a70e81a2c5f3e, type: 3}
   m_Name: Pistol
   m_EditorClassIdentifier: 
-  <ProjectilePrefab>k__BackingField: {fileID: 0}
-  <ReloadDelay>k__BackingField: 0
-  <ProjectileAmount>k__BackingField: 0
+  <ProjectilePrefab>k__BackingField: {fileID: 3937293724967781374, guid: eef91962457e0b74ab7c5f1448f935ba, type: 3}
+  <ReloadDelay>k__BackingField: 0.2
+  <ProjectileAmount>k__BackingField: 1
+  <Force>k__BackingField: 150

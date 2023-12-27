@@ -3,10 +3,11 @@ using UnityEngine.Events;
 
 namespace Character
 {
-  public abstract class BodyPart : MonoBehaviour
+  public class BodyPart : MonoBehaviour
   {
-    public event UnityAction OnBodyPartClick;  
-    
-    public abstract void  TakeDamage();
+    public virtual void TakeDamage()
+    {
+      
+    }
   }
 }

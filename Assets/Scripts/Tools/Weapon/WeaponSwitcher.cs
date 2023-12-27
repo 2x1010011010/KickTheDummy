@@ -10,6 +10,8 @@ namespace Tools.Weapon
     [SerializeField] private List<GameObject> _tools;
     private ToolsPanel _toolsPanel;
     private GameObject _currentTool = null;
+
+    public IWeapon CurrentWeapon => _currentTool.GetComponent<IWeapon>();
   
     public void Initialize(ToolsPanel panel)
     {
