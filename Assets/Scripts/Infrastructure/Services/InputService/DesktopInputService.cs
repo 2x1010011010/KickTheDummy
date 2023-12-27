@@ -12,13 +12,7 @@ namespace Infrastructure.Services.InputService
     private Vector2 ButtonsAxis() =>
       new Vector2(Input.GetAxis(Horizontal), Input.GetAxis(Vertical));
 
-    private Vector2 MouseAxis()
-    {
-      Vector2 axis = new Vector2(0f,0f);
-      if(Input.GetMouseButton(2))
-        axis = new Vector2(Input.GetAxis(MouseHorizontal), Input.GetAxis(MouseVertical));
-
-      return axis;
-    }
+    private Vector2 MouseAxis() =>
+      new Vector2(Input.GetAxis(MouseHorizontal), Input.GetAxis(MouseVertical));
   }
 }

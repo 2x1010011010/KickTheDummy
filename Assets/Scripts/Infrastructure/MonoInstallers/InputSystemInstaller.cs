@@ -17,14 +17,7 @@ namespace Infrastructure.MonoInstallers
       else
       {
         BindMobileInput();
-        BindControllers();
       }
-    }
-
-    private void BindControllers()
-    {
-      Container.Bind<MobileCameraController>().FromInstance(_movementController).AsSingle();
-      Container.Bind<MobileCameraController>().FromInstance(_rotationConroller).AsSingle();
     }
 
     private void BindDesktopInput()
