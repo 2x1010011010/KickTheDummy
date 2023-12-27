@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Tools.ToolsSystem
 {
@@ -10,10 +11,16 @@ namespace Tools.ToolsSystem
     [SerializeField] private List<Tool> _tools;
     private Tool _currentTool;
     public string CurrentTool => _currentTool.gameObject.name;
+    public event UnityAction OnToolChanged;
 
-    private void Start()
+    private void Awake()
     {
-      SetCurrentTool(_tools[0]);
+      _currentTool = _tools[0];
+      
+      foreach(var tool in _tools)
+        tool.SetColor(_inactive);
+      
+      _currentTool.SetColor(_active);
     }
 
     public void SetToolActive(Tool tool)
@@ -29,6 +36,7 @@ namespace Tools.ToolsSystem
         tool.SetColor(_inactive);
       
       _currentTool.SetColor(_active);
+      OnToolChanged?.Invoke();
     }
   }
 }

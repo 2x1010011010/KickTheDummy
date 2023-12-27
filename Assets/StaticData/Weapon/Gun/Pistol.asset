@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d37d23f13ee0e439a8761a1defae1f, type: 3}
-  m_Name: CameraSettings
+  m_Script: {fileID: 11500000, guid: beb8c2e3bca44bdd9f1a70e81a2c5f3e, type: 3}
+  m_Name: Pistol
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 10
-  <RotationSpeed>k__BackingField: 50
-  <RotationOffset>k__BackingField: 0
+  <ProjectilePrefab>k__BackingField: {fileID: 0}
+  <ReloadDelay>k__BackingField: 0
+  <ProjectileAmount>k__BackingField: 0

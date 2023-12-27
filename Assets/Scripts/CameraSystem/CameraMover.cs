@@ -30,6 +30,7 @@ namespace CameraSystem
 
     private void Update()
     {
+      
       Move();
       Rotate();
     }

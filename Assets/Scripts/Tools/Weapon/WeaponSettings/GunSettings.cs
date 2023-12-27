@@ -8,5 +8,6 @@ namespace Tools.Weapon.WeaponSettings
     [field: SerializeField] public GameObject ProjectilePrefab { get; private set; }
     [field: SerializeField] public float ReloadDelay { get; private set; }
     [field: SerializeField] public int ProjectileAmount { get; private set; }
+    [field: SerializeField] public float Force { get; private set; }
   }
 }

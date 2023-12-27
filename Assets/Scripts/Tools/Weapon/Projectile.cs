@@ -22,7 +22,7 @@ namespace Tools.Weapon
       if (collider == null)
         return;
       
-      if (collider.TryGetComponent(out IBodyPart bodyPart))
+      if (collider.TryGetComponent(out BodyPart bodyPart))
       {
         _bloodEffects[Random.Range(0, _bloodEffects.Count)].SetActive(true);
         bodyPart.TakeDamage();
