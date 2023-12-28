@@ -14,12 +14,16 @@ namespace Infrastructure
       _weaponSwitcher.Initialize(_toolsPanel);
     }
 
-    private void Update()
+    private void LateUpdate()
     {
       if (Input.GetMouseButtonDown(0))
-      {
         _weaponSwitcher.CurrentWeapon.Action();
-      }
+
+      if (!_toolsPanel.CurrentTool.Equals("Rifle"))
+        return;
+      
+      if (Input.GetMouseButton(0))
+        _weaponSwitcher.CurrentWeapon.Action();
     }
 
     private void OnEnable()
