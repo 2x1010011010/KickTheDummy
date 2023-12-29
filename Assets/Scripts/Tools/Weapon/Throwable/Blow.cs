@@ -8,7 +8,6 @@ namespace Tools.Weapon.Throwable
     [SerializeField] private float _destroyDelay = 1.5f;
     [SerializeField] private float _force = 1500f;
     [SerializeField] private float _explosionRadius = 5f;
-    [SerializeField] private Rigidbody _rigidbody;
     
     
     private void Start()
@@ -26,7 +25,7 @@ namespace Tools.Weapon.Throwable
           rb.AddExplosionForce(_force, transform.position, _explosionRadius);
         }
       }
-      Invoke(nameof(DestroyObject), _destroyDelay);
+      DestroyObject();
     }
     
     private void DestroyObject()

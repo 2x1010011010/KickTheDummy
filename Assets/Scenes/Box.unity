@@ -1297,6 +1297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneHUD
       objectReference: {fileID: 0}
+    - target: {fileID: 2846581571816118312, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3192913004991799128, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
       propertyPath: m_Delegates.Array.size
       value: 1
@@ -3769,15 +3773,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603949838}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.35, y: 2.98, z: -4.829}
+  m_LocalRotation: {x: 0, y: 0.17880219, z: 0, w: 0.9838851}
+  m_LocalPosition: {x: 5.12, y: 2.98, z: -6.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1721103944}
   - {fileID: 1059445016}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 20.6, z: 0}
 --- !u!114 &1603949840
 MonoBehaviour:
   m_ObjectHideFlags: 0

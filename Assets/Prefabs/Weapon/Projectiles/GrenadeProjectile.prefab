@@ -52,7 +52,6 @@ MonoBehaviour:
   _destroyDelay: 1.5
   _force: 800
   _explosionRadius: 10
-  _rigidbody: {fileID: 2701620574316043673}
 --- !u!135 &3949779058352513133
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -199,6 +198,18 @@ PrefabInstance:
     - target: {fileID: 1406897546543494133, guid: 88f07ea25d25d8b4daa84d1130ad9078, type: 3}
       propertyPath: m_Layer
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984356610158880666, guid: 88f07ea25d25d8b4daa84d1130ad9078, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984356610158880666, guid: 88f07ea25d25d8b4daa84d1130ad9078, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984356610158880666, guid: 88f07ea25d25d8b4daa84d1130ad9078, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1984356610158880666, guid: 88f07ea25d25d8b4daa84d1130ad9078, type: 3}
       propertyPath: m_LocalPosition.x

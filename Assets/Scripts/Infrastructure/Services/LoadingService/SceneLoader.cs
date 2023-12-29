@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace Infrastructure.Services.LoadingService
 {
-  public class SceneLoader
+  public class SceneLoader : MonoBehaviour
   {
     private CancellationTokenSource _cts;
     public async UniTaskVoid LoadSceneAsync(string nextScene, Action onLoaded = null)
