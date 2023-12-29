@@ -1,8 +1,7 @@
+using CharacterScripts;
 using Tools.Weapon.WeaponSettings;
-using Unity.VisualScripting;
 using UnityEngine;
-using DG.Tweening;
-using Sequence = DG.Tweening.Sequence;
+using RootMotion.Dynamics;
 
 namespace Tools.Weapon.Gun
 {
@@ -16,11 +15,13 @@ namespace Tools.Weapon.Gun
       _elapsedTime += Time.deltaTime;
       if (!(_elapsedTime >= _settings.ReloadDelay)) return;
       base.Action();
-      GameObject blood;
-      if (!_isHit) return;
+      GameObject blood = null;
+      
 
-      if (_hit.collider.TryGetComponent(out Character.BodyPart bodyPart)) ;
+      if (_hit.collider.TryGetComponent(out BodyPart bodyPart))
       {
+        var broadcaster = _hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
+        broadcaster?.Hit(_unpin, Ray.direction * _settings.Force, _hit.point);
         var index = Random.Range(0, _settings.BloodPrefab.Count);
         var bloodRotation = Quaternion.LookRotation(Ray.direction) * Quaternion.Euler(0, 90, 0);
          blood = Instantiate(_settings.BloodPrefab[index], _hit.point, bloodRotation);

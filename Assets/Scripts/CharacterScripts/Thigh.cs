@@ -1,8 +1,6 @@
-using UnityEngine;
-
-namespace Character
+namespace CharacterScripts
 {
-  public class Pelvis : BodyPart
+  public class Thigh : BodyPart
   {
     public override void TakeDamage()
     {

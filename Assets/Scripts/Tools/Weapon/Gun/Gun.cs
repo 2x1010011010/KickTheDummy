@@ -1,5 +1,4 @@
 using DG.Tweening;
-using RootMotion.Dynamics;
 using UnityEngine;
 
 namespace Tools.Weapon.Gun
@@ -8,10 +7,9 @@ namespace Tools.Weapon.Gun
   {
     protected Ray Ray;
     protected LayerMask layers;
-    protected float unpin = 10f;
-    protected float force = 10f;
+    protected float _unpin = 10f;
     protected RaycastHit _hit;
-    protected bool _isHit;
+    protected bool _isHit = false;
     
     public virtual void Action()
     {
@@ -23,7 +21,7 @@ namespace Tools.Weapon.Gun
     public void DestroyBlood(GameObject blood)
     {
       var s = DOTween.Sequence();
-      s.AppendInterval(1);
+      s.AppendInterval(0.5f);
       s.AppendCallback(() => Destroy(blood));
     }
   }

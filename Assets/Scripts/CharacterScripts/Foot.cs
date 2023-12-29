@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace Character
+namespace CharacterScripts
 {
   public class Foot : BodyPart
   {

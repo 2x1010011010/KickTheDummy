@@ -1,8 +1,6 @@
-using UnityEngine;
-
-namespace Character
+namespace CharacterScripts
 {
-  public class Spine : BodyPart
+  public class ForeArm : BodyPart
   {
     public override void TakeDamage()
     {

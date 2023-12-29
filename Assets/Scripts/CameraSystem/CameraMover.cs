@@ -8,9 +8,10 @@ namespace CameraSystem
   public sealed class CameraMover : MonoBehaviour
   {
     [SerializeField] private CameraSettings _settings;
+    [SerializeField] private GameObject _inputPanel;
     [SerializeField] private MobileCameraController _leftSide;
     [SerializeField] private MobileCameraController _rightSide;
-    [SerializeField] private float _maxAngle = 80f;
+    [SerializeField] private float _maxAngle = 40f;
     //private IInputService _inputService;
     private float _speed;
     private float _sensitivity;
@@ -30,6 +31,8 @@ namespace CameraSystem
 
     private void Update()
     {
+      if (!_inputPanel.activeSelf)
+        return;
       
       Move();
       Rotate();

@@ -1,3 +1,4 @@
+using CharacterScripts;
 using UnityEngine;
 
 namespace Character

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: beb8c2e3bca44bdd9f1a70e81a2c5f3e, type: 3}
-  m_Name: Rifle
+  m_Name: Shotgun
   m_EditorClassIdentifier: 
   <BloodPrefab>k__BackingField:
   - {fileID: 100000, guid: bd1b09ecbf112814399e16be0e5243a9, type: 3}
@@ -50,5 +50,5 @@ MonoBehaviour:
   - {fileID: 100014, guid: 534da88928bef4945988cd2d2ef69ce4, type: 3}
   - {fileID: 100014, guid: 0a1280bb98fb47b4fa12559887efddc5, type: 3}
   <ReloadDelay>k__BackingField: 0.2
-  <ProjectileAmount>k__BackingField: 1
-  <Force>k__BackingField: 5000
+  <ProjectileAmount>k__BackingField: 5
+  <Force>k__BackingField: 8000
