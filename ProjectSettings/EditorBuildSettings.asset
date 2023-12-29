@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Initial.unity
+    guid: 9064b19eae7b12a418d3350f05dbaefc
+  - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 65825eacf68030c4ab0a2b567801d45d
   - enabled: 1
@@ -17,8 +20,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stairs.unity
     guid: cf0b6c9059659b14aac7e1eb1285abc8
-  - enabled: 1
-    path: Assets/Scenes/Initial.unity
-    guid: 9064b19eae7b12a418d3350f05dbaefc
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ddb392b4b2c75a742995e2c3f3756cdc, type: 2}
