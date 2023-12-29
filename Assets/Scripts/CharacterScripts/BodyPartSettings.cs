@@ -7,6 +7,5 @@ namespace CharacterScripts
   {
     [field: SerializeField] public float MinDamage { get; private set; }
     [field: SerializeField] public float MaxDamage { get; private set; }
-    
   }
 }

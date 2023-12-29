@@ -7,5 +7,6 @@ namespace Tools.Weapon.WeaponSettings
   {
     [field: SerializeField] public GameObject Prefab { get; private set; }
     [field: SerializeField] public float Force { get; private set; }
+    [field: SerializeField] public float Mass { get; private set; }
   }
 }

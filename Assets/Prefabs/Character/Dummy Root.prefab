@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8f575294c24fc59fcf72e0a3a29926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &132228873959528351
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -435,6 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b2fdff32cd45daa5fce05fe973004d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!114 &8363983526781264847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,6 +664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b2fdff32cd45daa5fce05fe973004d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!114 &9035887606503382493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315b53a3b3614f7c953eee25651d90d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &5036923666924052968
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1146,6 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a54a6c08374ec9822b69d7f5609842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!65 &6201322872293596068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1379,6 +1384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99c89944e584f09a7d18bd165dd869d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &6177153636615002095
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1616,6 +1622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315b53a3b3614f7c953eee25651d90d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &1348412760302177649
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1853,6 +1860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b132a245c2466db0b970dc29a750bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &617924328031609962
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2090,6 +2098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498d388dff1b46e6aceb6fb220108013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &3410707691053928228
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2947,6 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c7df425d2dcc14b93f1e136d143b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!114 &5398652238799871727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,9 +3046,9 @@ MonoBehaviour:
   regainPinSpeed: 1.5
   boostFalloff: 1
   defaults:
-    unpinParents: 0.75
-    unpinChildren: 0.75
-    unpinGroup: 0
+    unpinParents: 0.4
+    unpinChildren: 0.4
+    unpinGroup: 0.4
     minMappingWeight: 0
     maxMappingWeight: 1
     minPinWeight: 0
@@ -3052,18 +3062,18 @@ MonoBehaviour:
   - name: Head
     groups: 02000000
     props:
-      unpinParents: 0.9
+      unpinParents: 0.4
       unpinChildren: 0
       unpinGroup: 0
       minMappingWeight: 0
-      maxMappingWeight: 1
+      maxMappingWeight: 0.5
       minPinWeight: 0
       disableColliders: 0
       regainPinSpeed: 0.6
       collisionResistance: 10
       knockOutDistance: 0.4
-      puppetMaterial: {fileID: 0}
-      unpinnedMaterial: {fileID: 0}
+      puppetMaterial: {fileID: 13400000, guid: 6d32fedfdb4984e6abc6a0e91980d57a, type: 2}
+      unpinnedMaterial: {fileID: 13400000, guid: d4563de398e2c4412a95f4317ddf4b1a, type: 2}
   - name: Arm, Hand, Prop
     groups: 030000000400000008000000
     props:
@@ -3110,8 +3120,8 @@ MonoBehaviour:
       puppetMaterial: {fileID: 0}
       unpinnedMaterial: {fileID: 0}
   knockOutDistance: 0.7
-  unpinnedMuscleWeightMlp: 0.5
-  maxRigidbodyVelocity: 10
+  unpinnedMuscleWeightMlp: 0.4
+  maxRigidbodyVelocity: 20
   pinWeightThreshold: 1
   unpinnedMuscleKnockout: 1
   dropProps: 0
@@ -3376,6 +3386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b132a245c2466db0b970dc29a750bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &4931939997216002229
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3668,6 +3679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8f575294c24fc59fcf72e0a3a29926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &7433397689418022782
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3905,6 +3917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498d388dff1b46e6aceb6fb220108013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Settings: {fileID: 0}
 --- !u!136 &1618303686822301242
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4439,7 +4452,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
-  m_Height: 1.8
+  m_Radius: 0.05
+  m_Height: 0.05
   m_Direction: 1
-  m_Center: {x: 0, y: 0.91, z: 0}
+  m_Center: {x: 0, y: 0.05, z: 0}
