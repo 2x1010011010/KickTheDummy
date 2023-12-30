@@ -2146,7 +2146,6 @@ GameObject:
   - component: {fileID: 6395938706819954724}
   - component: {fileID: 6933117953982253550}
   - component: {fileID: 1148850786337877494}
-  - component: {fileID: 5829049574838498303}
   m_Layer: 10
   m_Name: Dummy PuppetMaster
   m_TagString: Untagged
@@ -2677,63 +2676,6 @@ MonoBehaviour:
   ignoreCollisionWithRagdoll:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &5829049574838498303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7096666782519047869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92471cc1733c49042be56cd39b4b6e5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: 'Layer Setup sets up layers and the collision matrix for the puppet rig without
-    having to import/export Project Settings for the demo to work.
-
-
-    Ideally
-    you should set up the layers in the project and this component wouldn''t be needed
-    at all.
-
-
-    The layers should be set up as follows:
-
-
-    1. Set the entire
-    character to a "Characters" layer.
-
-    2. Set the entire Ragdoll to a "Ragdoll"
-    layer.
-
-    3. Set the walkable surfaces to a "Ground" layer.
-
-    4. Set all
-    the objects to collide with to a "Collision" layer.
-
-
-    5. Set the PuppetMaster''s
-    "Walkable Layers" to the "Ground" layer.
-
-    6. Set the PuppetMaster''s "Collision
-    Layers" to the "Collision" layer.
-
-
-    7. In the Physics Settings, set the "Characters"
-    and "Ragdoll" layers to ignore each other, otherwise you''d have the ragdoll
-    bones collide with the character controller.
-
-
-    8. Also ignore collisions
-    between "Characters" and any layer you wish the puppet to collide with (small
-    obstacles, projectiles and maybe walls).
-
-
-    If you wish to have two factions
-    of characters fighting each other, you should use "Characters1", "Characters2",
-    "Ragdoll1" and "Ragdoll2" layers accordingly and have the PuppetMaster''s "Collision
-    Layers" also include the opposing ragdoll layer.'
 --- !u!1 &7339858791114460350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,12 +2685,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6843748944073985356}
-  - component: {fileID: 2410422060022378683}
   - component: {fileID: 2847697500093309464}
   - component: {fileID: 6722307610758770653}
-  - component: {fileID: 8621889615764330733}
+  - component: {fileID: 9090660997094199553}
   - component: {fileID: 6607352326471883289}
-  - component: {fileID: 5398652238799871727}
   m_Layer: 10
   m_Name: Bip002 Pelvis
   m_TagString: Untagged
@@ -2771,27 +2711,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6395938706819954724}
   m_LocalEulerAnglesHint: {x: 0, y: -90.0002, z: -90}
---- !u!65 &2410422060022378683
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339858791114460350}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.25485054, z: 0.3}
-  m_Center: {x: -0.09921679, y: -0.004639834, z: 0.00000067055225}
 --- !u!54 &2847697500093309464
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2921,7 +2840,7 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!136 &8621889615764330733
+--- !u!136 &9090660997094199553
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2936,14 +2855,14 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.10098767
-  m_Height: 0.22309774
-  m_Direction: 0
-  m_Center: {x: -0.031656414, y: 3.754627e-10, z: -0.0062993187}
+  m_Radius: 0.12742527
+  m_Height: 0.3
+  m_Direction: 2
+  m_Center: {x: -0.09921679, y: -0.004639834, z: 0.00000067055225}
 --- !u!114 &6607352326471883289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2957,19 +2876,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Settings: {fileID: 0}
---- !u!114 &5398652238799871727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7339858791114460350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &8217399659161876582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,7 +2929,7 @@ MonoBehaviour:
     activateOnImpulse: 0
   groundLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 0
   collisionLayers:
     serializedVersion: 2
     m_Bits: 1
@@ -3046,15 +2952,15 @@ MonoBehaviour:
   regainPinSpeed: 1.5
   boostFalloff: 1
   defaults:
-    unpinParents: 0.4
-    unpinChildren: 0.4
-    unpinGroup: 0.4
+    unpinParents: 1
+    unpinChildren: 1
+    unpinGroup: 0
     minMappingWeight: 0
     maxMappingWeight: 1
     minPinWeight: 0
     disableColliders: 0
-    regainPinSpeed: 0.6
-    collisionResistance: 5
+    regainPinSpeed: 0.1
+    collisionResistance: 1
     knockOutDistance: 0.7
     puppetMaterial: {fileID: 13400000, guid: a3fd0ffcf0d0a384ba3568687a96ab8e, type: 2}
     unpinnedMaterial: {fileID: 13400000, guid: d4563de398e2c4412a95f4317ddf4b1a, type: 2}
@@ -3062,66 +2968,66 @@ MonoBehaviour:
   - name: Head
     groups: 02000000
     props:
-      unpinParents: 0.4
-      unpinChildren: 0
-      unpinGroup: 0
-      minMappingWeight: 0
-      maxMappingWeight: 0.5
-      minPinWeight: 0
-      disableColliders: 0
-      regainPinSpeed: 0.6
-      collisionResistance: 10
-      knockOutDistance: 0.4
-      puppetMaterial: {fileID: 13400000, guid: 6d32fedfdb4984e6abc6a0e91980d57a, type: 2}
-      unpinnedMaterial: {fileID: 13400000, guid: d4563de398e2c4412a95f4317ddf4b1a, type: 2}
-  - name: Arm, Hand, Prop
-    groups: 030000000400000008000000
-    props:
-      unpinParents: 0.5
+      unpinParents: 1
       unpinChildren: 1
       unpinGroup: 0
       minMappingWeight: 0
       maxMappingWeight: 1
       minPinWeight: 0
       disableColliders: 0
-      regainPinSpeed: 0.5
-      collisionResistance: 10
+      regainPinSpeed: 0.3
+      collisionResistance: 1
+      knockOutDistance: 0.4
+      puppetMaterial: {fileID: 0}
+      unpinnedMaterial: {fileID: 0}
+  - name: Arm, Hand, Prop
+    groups: 030000000400000008000000
+    props:
+      unpinParents: 1
+      unpinChildren: 1
+      unpinGroup: 0
+      minMappingWeight: 0
+      maxMappingWeight: 1
+      minPinWeight: 0
+      disableColliders: 0
+      regainPinSpeed: 0.3
+      collisionResistance: 1
       knockOutDistance: 100
       puppetMaterial: {fileID: 0}
       unpinnedMaterial: {fileID: 0}
   - name: Hips, Leg
     groups: 0000000005000000
     props:
-      unpinParents: 0.2
-      unpinChildren: 0.2
+      unpinParents: 0.9
+      unpinChildren: 0.9
       unpinGroup: 0
       minMappingWeight: 0
       maxMappingWeight: 1
       minPinWeight: 0
       disableColliders: 0
       regainPinSpeed: 0.6
-      collisionResistance: 10
+      collisionResistance: 1
       knockOutDistance: 0.4
       puppetMaterial: {fileID: 0}
       unpinnedMaterial: {fileID: 0}
   - name: Foot
     groups: 06000000
     props:
-      unpinParents: 0.2
+      unpinParents: 0.7
       unpinChildren: 0
       unpinGroup: 0
       minMappingWeight: 0
       maxMappingWeight: 1
       minPinWeight: 0
-      disableColliders: 1
-      regainPinSpeed: 1.5
-      collisionResistance: 10
+      disableColliders: 0
+      regainPinSpeed: 1
+      collisionResistance: 1
       knockOutDistance: 0.5
       puppetMaterial: {fileID: 0}
       unpinnedMaterial: {fileID: 0}
-  knockOutDistance: 0.7
-  unpinnedMuscleWeightMlp: 0.4
-  maxRigidbodyVelocity: 20
+  knockOutDistance: 1.2
+  unpinnedMuscleWeightMlp: 0.5
+  maxRigidbodyVelocity: 10
   pinWeightThreshold: 1
   unpinnedMuscleKnockout: 1
   dropProps: 0
