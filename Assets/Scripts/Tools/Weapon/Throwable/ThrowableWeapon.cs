@@ -9,14 +9,14 @@ namespace Tools.Weapon.Throwable
     [SerializeField] private Vector3 _spawnOffset;
     public virtual void Action()
     {
+      Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
       var spawned = Instantiate(_settings.Prefab, transform.position + transform.rotation * _spawnOffset, transform.rotation);
       var rb = spawned.GetComponent<Rigidbody>();
 
       if (rb == null) return;
       
       rb.mass = _settings.Mass;
-      Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-      rb.AddForce(Quaternion.LookRotation(ray.direction) * new Vector3(0f,0f,_settings.Force), ForceMode.Impulse);
+      rb.AddForce(Quaternion.LookRotation(ray.direction) * (Vector3.forward * _settings.Force), ForceMode.Impulse);
     }
   }
 }

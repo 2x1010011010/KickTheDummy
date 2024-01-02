@@ -21,6 +21,7 @@ namespace Tools.Weapon.Gun
         broadcaster?.Hit(_unpin, Ray.direction * _settings.Force, _hit.point);
         var bloodRotation = Quaternion.LookRotation(Ray.direction);
         blood = Instantiate(_settings.BloodPrefab[0], _hit.point, bloodRotation);
+        bodyPart.TakeDamage();
       }
 
       DestroyBlood(blood);

@@ -1,13 +1,6 @@
-using CharacterScripts;
-using UnityEngine;
-
-namespace Character
+namespace CharacterScripts
 {
   public class UpperArm : BodyPart
   {
-    public override void TakeDamage()
-    {
-      throw new System.NotImplementedException();
-    }
   }
 }

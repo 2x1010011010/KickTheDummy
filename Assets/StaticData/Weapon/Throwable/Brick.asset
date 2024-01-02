@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Brick
   m_EditorClassIdentifier: 
   <Prefab>k__BackingField: {fileID: 1031091744929644221, guid: 4e7bb33fa62c0b740bc5872347c9aa83, type: 3}
-  <Force>k__BackingField: 500
-  <Mass>k__BackingField: 0
+  <Force>k__BackingField: 800
+  <Mass>k__BackingField: 1

@@ -4,7 +4,6 @@ namespace Tools.Weapon.Throwable
   {
     public override void Action()
     {
-      // implementation for Brick
     }
   }
 }

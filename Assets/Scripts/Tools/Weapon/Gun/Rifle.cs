@@ -25,9 +25,11 @@ namespace Tools.Weapon.Gun
         var index = Random.Range(0, _settings.BloodPrefab.Count);
         var bloodRotation = Quaternion.LookRotation(Ray.direction) * Quaternion.Euler(0, 90, 0);
          blood = Instantiate(_settings.BloodPrefab[index], _hit.point, bloodRotation);
+         bodyPart.TakeDamage();
       }
       _elapsedTime = 0f;
-      DestroyBlood(blood);
+      if(blood != null)
+        DestroyBlood(blood);
     }
   }
 }

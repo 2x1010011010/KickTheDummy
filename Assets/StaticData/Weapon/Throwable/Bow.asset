@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eef82945e7647aeba32bde2f1755da7, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  <Prefab>k__BackingField: {fileID: 0}
-  <Force>k__BackingField: 0
+  <Prefab>k__BackingField: {fileID: 1857383789509032946, guid: 4ef8727a2ee3fe14c8bca9c3b9e36006, type: 3}
+  <Force>k__BackingField: 1000
+  <Mass>k__BackingField: 1

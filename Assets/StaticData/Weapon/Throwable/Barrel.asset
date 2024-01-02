@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Barrel
   m_EditorClassIdentifier: 
   <Prefab>k__BackingField: {fileID: 3759842663033183943, guid: 68c25932e2496e24eb0baad005ffc122, type: 3}
-  <Force>k__BackingField: 700
-  <Mass>k__BackingField: 0
+  <Force>k__BackingField: 5000
+  <Mass>k__BackingField: 1
