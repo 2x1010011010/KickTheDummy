@@ -1109,6 +1109,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 308636734349897326, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 483825746844673766, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
       propertyPath: m_Delegates.Array.size
       value: 1
@@ -3831,6 +3835,7 @@ MonoBehaviour:
   _leftSide: {fileID: 750319885}
   _rightSide: {fileID: 750319882}
   _maxAngle: 40
+  _handTool: {fileID: 1721103948}
 --- !u!81 &1603949843
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3992,6 +3997,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawner: {fileID: 1059445015}
+--- !u!114 &1721103948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2428448257152745158, guid: 644e523922aadad4e97e123b17907e33, type: 3}
+  m_PrefabInstance: {fileID: 1721103943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857de872c4194dda8d56a9ae23793b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1808262722
 GameObject:
   m_ObjectHideFlags: 0

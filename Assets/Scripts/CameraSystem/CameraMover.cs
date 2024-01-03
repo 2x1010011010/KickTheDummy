@@ -1,4 +1,5 @@
 using Infrastructure.Services.InputService;
+using Tools.Weapon.Melee;
 using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
@@ -12,6 +13,7 @@ namespace CameraSystem
     [SerializeField] private MobileCameraController _leftSide;
     [SerializeField] private MobileCameraController _rightSide;
     [SerializeField] private float _maxAngle = 40f;
+    [SerializeField] private Hand _handTool;
     //private IInputService _inputService;
     private float _speed;
     private float _sensitivity;
@@ -31,9 +33,7 @@ namespace CameraSystem
 
     private void Update()
     {
-      if (!_inputPanel.activeSelf)
-        return;
-      
+      if (_handTool.Dragged) return;
       Move();
       Rotate();
     }

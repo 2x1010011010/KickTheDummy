@@ -26,7 +26,8 @@ namespace Tools.Weapon.Gun
         blood = Instantiate(_settings.BloodPrefab[index], _hit.point, bloodRotation);
         bodyPart.TakeDamage();
       }
-      DestroyBlood(blood);
+      if(blood != null)
+        DestroyBlood(blood);
     }
   }
 }

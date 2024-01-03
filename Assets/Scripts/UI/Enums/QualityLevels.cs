@@ -1,4 +1,4 @@
-namespace UI
+namespace UI.Enums
 {
   public enum QualityLevels
   {

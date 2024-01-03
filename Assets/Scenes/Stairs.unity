@@ -484,6 +484,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawner: {fileID: 2123815829}
+--- !u!114 &31783524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2428448257152745158, guid: 644e523922aadad4e97e123b17907e33, type: 3}
+  m_PrefabInstance: {fileID: 31783519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857de872c4194dda8d56a9ae23793b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &67362793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +1849,7 @@ MonoBehaviour:
   _leftSide: {fileID: 551024215}
   _rightSide: {fileID: 551024214}
   _maxAngle: 40
+  _handTool: {fileID: 31783524}
 --- !u!81 &498552613
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2046,6 +2058,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 180871712230202399, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 308636734349897326, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 483825746844673766, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
