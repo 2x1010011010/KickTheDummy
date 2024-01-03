@@ -77,7 +77,7 @@ namespace UI
     {
       Application.targetFrameRate = (int)Enum.GetValues(typeof(FrameRates)).GetValue(index); 
       _fpsName.text = Enum.GetValues(typeof(FrameRates)).GetValue(index).ToString();
-      PlayerPrefs.SetInt(QualityIndex, Application.targetFrameRate);
+      PlayerPrefs.SetInt(QualityIndex, index);
     }
   }
 }

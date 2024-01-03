@@ -50,28 +50,20 @@ namespace Infrastructure
       _spawner.OnCharacterSpawned -= DisableCameraMovement;
     }
 
-    private void DisableCameraMovement()
-    {
+    private void DisableCameraMovement() => 
       _swipeDetectionPanel.SetActive(false);
-    }
 
-    private void EnableCameraMovement()
-    {
+
+    private void EnableCameraMovement() =>
       _swipeDetectionPanel.SetActive(true);
-    }
 
-    private void UnBlockGameInput()
-    {
+    private void UnBlockGameInput() =>
       CanInterract = true;
-    }
     
-    private void BlockGameInput()
-    {
+    private void BlockGameInput() =>
       CanInterract = false;
-    }
-    private void ChangeTool()
-    {
+
+    private void ChangeTool() =>
       _weaponSwitcher.SwitchToNextTool();
-    }
   }
 }

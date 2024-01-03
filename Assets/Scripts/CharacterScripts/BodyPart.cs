@@ -13,7 +13,7 @@ namespace CharacterScripts
 
     public virtual void TakeDamage()
     {
-      OnDamageTaken?.Invoke(50);
+      OnDamageTaken?.Invoke(Random.Range(Settings.MinDamage, Settings.MaxDamage));
     }
   }
 }

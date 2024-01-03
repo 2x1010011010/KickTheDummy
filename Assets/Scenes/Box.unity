@@ -761,18 +761,18 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 15.92
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 0
+    m_NormalBias: 1.12
+    m_NearPlane: 2.7
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -1020,18 +1020,18 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 15.92
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 0
+    m_NormalBias: 1.12
+    m_NearPlane: 2.7
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -2610,18 +2610,18 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 15.92
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 0
+    m_NormalBias: 1.12
+    m_NearPlane: 2.7
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -3447,6 +3447,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1005667160769867501, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338394794611236980, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435138018228691361, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1797165700033873130, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.096502304
@@ -3458,6 +3470,10 @@ PrefabInstance:
     - target: {fileID: 1797165700033873130, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.0034222603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1944880435251265174, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2278538788704898739, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3479,6 +3495,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.0034220219
       objectReference: {fileID: 0}
+    - target: {fileID: 2847697500093309464, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2853586540968329694, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00000047683716
@@ -3486,6 +3506,10 @@ PrefabInstance:
     - target: {fileID: 2853586540968329694, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.0064282417
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960202272537577333, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508660322734417324, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_Height
@@ -3519,6 +3543,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.06512189
       objectReference: {fileID: 0}
+    - target: {fileID: 5253274080949332746, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5528122555729055336, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.35379028
@@ -3530,6 +3558,10 @@ PrefabInstance:
     - target: {fileID: 5528122555729055336, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.08113718
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304436132833307411, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6696388694288346422, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3559,6 +3591,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.0034222603
       objectReference: {fileID: 0}
+    - target: {fileID: 6943034386018895763, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7006771028576428891, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.11044502
@@ -3582,6 +3618,10 @@ PrefabInstance:
     - target: {fileID: 7495723514354014625, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.018551111
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635165814522068551, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7795617436726523881, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3623,6 +3663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8078264367686633356, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8238285696757746489, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3537898
@@ -3634,6 +3678,14 @@ PrefabInstance:
     - target: {fileID: 8238285696757746489, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.08113551
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337887382513664508, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366676305127164512, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8645182534906393894, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5030,18 +5082,18 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 15.92
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 0
+    m_NormalBias: 1.12
+    m_NearPlane: 2.7
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
