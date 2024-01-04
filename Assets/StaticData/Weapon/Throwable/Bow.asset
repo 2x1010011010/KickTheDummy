@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: 
   <Prefab>k__BackingField: {fileID: 1857383789509032946, guid: 4ef8727a2ee3fe14c8bca9c3b9e36006, type: 3}
-  <Force>k__BackingField: 1000
+  <Force>k__BackingField: 20
   <Mass>k__BackingField: 1

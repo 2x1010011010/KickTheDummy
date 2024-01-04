@@ -4,6 +4,7 @@ namespace Tools.Weapon.Throwable
   {
     public override void Action()
     {
+      base.Action();
     }
   }
 }

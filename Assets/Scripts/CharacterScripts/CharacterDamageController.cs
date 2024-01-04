@@ -15,8 +15,10 @@ namespace CharacterScripts
     private float _currentHealth;
     private bool _isBleeding = false;
     private int _bleedingCount;
-    private const float BleedingDamage = 0.1f;
+    private const float BleedingDamage = 1f;
     private HashSet<BodyPart> _bleedingParts = new HashSet<BodyPart>();
+    private float _elapsedTime;
+    private bool _isDead = false;
 
     private void Start()
     {
@@ -38,8 +40,13 @@ namespace CharacterScripts
 
     private void Update()
     {
-      if(_isBleeding)
+      if (_isDead) return;
+      _elapsedTime += Time.deltaTime;
+      if (_isBleeding && _elapsedTime >= 2f)
+      {
         TakeDamage(BleedingDamage * _bleedingCount);
+        _elapsedTime = 0;
+      }
     }
 
     private void TakeDamage(float damage)
@@ -57,6 +64,7 @@ namespace CharacterScripts
       if (_currentHealth <= 0)
       {
         _puppetMaster.Kill();
+        _isDead = true;
       }
 
       for (var i = 0; i < _body.Count; i++)

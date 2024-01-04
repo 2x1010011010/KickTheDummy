@@ -37,7 +37,8 @@ namespace CharacterScripts
 
     public void Spawn()
     {
-      _spawned = Instantiate(_settings.Prefab, transform.position, Quaternion.LookRotation(-Vector3.forward));
+      var mousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
+      _spawned = Instantiate(_settings.Prefab, new Vector3(mousePosition.x, transform.position.y, mousePosition.y), Quaternion.LookRotation(-Vector3.forward));
       _isSpawned = true;
       OnCharacterSpawned?.Invoke();
     }

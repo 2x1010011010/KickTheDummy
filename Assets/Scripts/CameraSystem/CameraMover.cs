@@ -3,6 +3,7 @@ using Tools.Weapon.Melee;
 using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
+using static UnityEngine.Screen;
 
 namespace CameraSystem
 {
@@ -21,7 +22,10 @@ namespace CameraSystem
     private float _rotationOffset;
     private float _rotationX = 0f;
     private float _rotationY = 0f;
-    
+    private bool _isCharacterDragged;
+    private float _previousMouseX;
+    public bool MouseDown { get; set; }
+
     private void Start()
     {
       //_inputService = inputService;
@@ -33,15 +37,25 @@ namespace CameraSystem
 
     private void Update()
     {
-      if (_handTool.Dragged) return;
       Move();
       Rotate();
     }
 
+    private void HandleFirstClick()
+    {
+      if (Input.GetKeyDown(KeyCode.Mouse0))
+      {
+        MouseDown = true;
+      }
+
+      if (Input.GetKeyUp(KeyCode.Mouse0))
+      {
+        MouseDown = false;
+      }
+    }
+
     private void Move()
     {
-      if (!_leftSide.OnPressed) return;
-      
       var direction = GetMoveDirection();
       var forwardMovement = transform.forward * direction.z;
       var sideMovement = transform.right * direction.x;
@@ -50,10 +64,7 @@ namespace CameraSystem
     
     private void Rotate()
     {
-      if (!_rightSide.OnPressed) return;
-      
       var direction = GetRotationDirection();
-      
       _rotationX -= direction.z * _sensitivity * Time.deltaTime;
       _rotationX = Mathf.Clamp(_rotationX, -_maxAngle, _maxAngle);
       _rotationY += direction.x * _sensitivity * Time.deltaTime;
@@ -64,7 +75,7 @@ namespace CameraSystem
     {
       foreach (var touch in Input.touches)
       {
-        if (touch.fingerId != _leftSide.FingerID)
+        if (touch.rawPosition.x > width/2)
           continue;
 
         switch (touch.phase)
@@ -83,7 +94,7 @@ namespace CameraSystem
     {
       foreach (var touch in Input.touches)
       {
-        if (touch.fingerId != _rightSide.FingerID)
+        if (touch.rawPosition.x < width/2)
           continue;
 
         switch (touch.phase)
