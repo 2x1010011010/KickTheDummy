@@ -21,10 +21,12 @@ namespace Tools.Weapon.Gun
         broadcaster?.Hit(_unpin, Ray.direction * _settings.Force, _hit.point);
         var bloodRotation = Quaternion.LookRotation(Ray.direction);
         blood = Instantiate(_settings.BloodPrefab[0], _hit.point, bloodRotation);
+        var bleeding = Instantiate(_settings.Bleeding, _hit.point, bloodRotation);
+        bleeding.transform.SetParent(bodyPart.transform);
         bodyPart.TakeDamage();
       }
-
-      DestroyBlood(blood);
+      if(blood!= null)
+        DestroyBlood(blood);
     }
   }
 }

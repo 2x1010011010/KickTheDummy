@@ -7,6 +7,7 @@ namespace Tools.Weapon.WeaponSettings
   public class GunSettings : ScriptableObject
   {
     [field: SerializeField] public List<GameObject> BloodPrefab { get; private set; }
+    [field: SerializeField] public GameObject Bleeding { get; private set; }
     [field: SerializeField] public float ReloadDelay { get; private set; }
     [field: SerializeField] public int ProjectileAmount { get; private set; }
     [field: SerializeField] public float Force { get; private set; }

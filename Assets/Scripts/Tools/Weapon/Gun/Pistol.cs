@@ -24,6 +24,8 @@ namespace Tools.Weapon.Gun
         var index = Random.Range(0, _settings.BloodPrefab.Count);
         var bloodRotation = Quaternion.LookRotation(Ray.direction) * Quaternion.Euler(0,90,0);
         blood = Instantiate(_settings.BloodPrefab[index], _hit.point, bloodRotation);
+        var bleeding = Instantiate(_settings.Bleeding, _hit.point, bloodRotation);
+        bleeding.transform.SetParent(bodyPart.transform);
         bodyPart.TakeDamage();
       }
       if(blood != null)

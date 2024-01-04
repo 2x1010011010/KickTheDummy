@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using RootMotion.Dynamics;
 using UnityEngine;
 
@@ -12,10 +13,15 @@ namespace CharacterScripts
     [SerializeField] private Vector3 _disconnectVelocity;
     
     private float _currentHealth;
+    private bool _isBleeding = false;
+    private int _bleedingCount;
+    private const float BleedingDamage = 0.1f;
+    private HashSet<BodyPart> _bleedingParts = new HashSet<BodyPart>();
 
     private void Start()
     {
       _currentHealth = _maxHealth;
+      _bleedingCount = 0;
     }
 
     private void OnEnable()
@@ -30,11 +36,24 @@ namespace CharacterScripts
         item.OnDamageTaken -= TakeDamage;
     }
 
+    private void Update()
+    {
+      if(_isBleeding)
+        TakeDamage(BleedingDamage * _bleedingCount);
+    }
+
     private void TakeDamage(float damage)
     {
       _currentHealth -= damage;
       _puppetMaster.pinWeight -= damage / _maxHealth;
-      
+
+      foreach (var part in _body.Where(part => part.GetComponentInChildren<Bleeding>()).Where(part => !_bleedingParts.Contains(part)))
+      {
+        _bleedingParts.Add(part);
+        _isBleeding = true;
+        _bleedingCount++;
+      }
+
       if (_currentHealth <= 0)
       {
         _puppetMaster.Kill();

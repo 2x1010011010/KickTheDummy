@@ -4844,6 +4844,7 @@ GameObject:
   - component: {fileID: 5415079647526788505}
   - component: {fileID: 2780705548584046960}
   - component: {fileID: 4073168531838980751}
+  - component: {fileID: 4526012694682852195}
   m_Layer: 0
   m_Name: Bleeding
   m_TagString: Untagged
@@ -9755,3 +9756,15 @@ MonoBehaviour:
   offset: 1
   offsetAngle: 0
   offsetSpeed: 1
+--- !u!114 &4526012694682852195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7707360265655367283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df5d32e3bf244f5b8d5a0851162a59a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
