@@ -9,8 +9,6 @@ namespace Tools.Weapon.Gun
   {
     public override void Action()
     {
-      ElapsedTime += Time.deltaTime;
-      if (!(ElapsedTime >= Settings.ReloadDelay)) return;
       GameObject blood = null;
       base.Action();
 
@@ -26,8 +24,6 @@ namespace Tools.Weapon.Gun
         bleeding.transform.SetParent(bodyPart.transform);
         bodyPart.TakeDamage();
       }
-
-      ElapsedTime = 0;
       if(blood!= null)
         DestroyBlood(blood);
     }

@@ -23,8 +23,8 @@ namespace Infrastructure
       if (!CanInterract) return;
       if (Input.touchCount <= 0) return;
       
-      
-      _weaponSwitcher.CurrentWeapon.Action();
+      if(Input.GetMouseButtonDown(0))
+        _weaponSwitcher.CurrentWeapon.Action();
     }
 
     private void OnEnable()

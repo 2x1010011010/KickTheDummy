@@ -8,12 +8,8 @@ namespace Tools.Weapon.Gun
   {
     public override void Action()
     {
-      if (!CanShoot) return;
       base.Action();
       GameObject blood = null;
-      CanShoot = false;
-      ElapsedTime = 0;
-      
 
       if (!IsHit) return;
      

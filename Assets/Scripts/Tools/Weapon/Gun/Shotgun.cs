@@ -9,9 +9,6 @@ namespace Tools.Weapon.Gun
   {
     public override void Action()
     {
-      if (!CanShoot) return;
-      CanShoot = false;
-      ElapsedTime = 0;
       List<GameObject> bloods = new List<GameObject>();
       var camera = Camera.main;
 
@@ -34,14 +31,11 @@ namespace Tools.Weapon.Gun
           bloods.Add(blood);
         }
       }
-
-      ElapsedTime = 0;
+      
       
       if (bloods != null)
-      {
         foreach(var blood in bloods)
           DestroyBlood(blood);
-      }
     }
   }
 }

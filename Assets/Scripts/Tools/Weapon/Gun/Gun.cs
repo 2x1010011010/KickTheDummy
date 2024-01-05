@@ -14,15 +14,7 @@ namespace Tools.Weapon.Gun
     protected RaycastHit Hit;
     protected bool IsHit = false;
     protected bool CanShoot = true;
-
-    private void Update()
-    {
-      if (CanShoot) return;
-      ElapsedTime += Time.deltaTime;
-      if (ElapsedTime >= Settings.ReloadDelay)
-        CanShoot = true;
-    }
-
+    
     public virtual void Action()
     {
       Ray = Camera.main.ScreenPointToRay(Input.mousePosition);
