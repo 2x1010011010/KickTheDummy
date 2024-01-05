@@ -7,24 +7,27 @@ namespace Tools.Weapon.Gun
 {
   public class Bazooka : Gun
   {
-    [SerializeField] private GunSettings _settings;
     public override void Action()
     {
+      ElapsedTime += Time.deltaTime;
+      if (!(ElapsedTime >= Settings.ReloadDelay)) return;
       GameObject blood = null;
       base.Action();
 
-      if (!_isHit) return;
+      if (!IsHit) return;
 
-      if (_hit.collider.TryGetComponent(out BodyPart bodyPart))
+      if (Hit.collider.TryGetComponent(out BodyPart bodyPart))
       {
-        var broadcaster = _hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
-        broadcaster?.Hit(_unpin, Ray.direction * _settings.Force, _hit.point);
+        var broadcaster = Hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
+        broadcaster?.Hit(Unpin, Ray.direction * Settings.Force, Hit.point);
         var bloodRotation = Quaternion.LookRotation(Ray.direction);
-        blood = Instantiate(_settings.BloodPrefab[0], _hit.point, bloodRotation);
-        var bleeding = Instantiate(_settings.Bleeding, _hit.point, bloodRotation);
+        blood = Instantiate(Settings.BloodPrefab[0], Hit.point, bloodRotation);
+        var bleeding = Instantiate(Settings.Bleeding, Hit.point, bloodRotation);
         bleeding.transform.SetParent(bodyPart.transform);
         bodyPart.TakeDamage();
       }
+
+      ElapsedTime = 0;
       if(blood!= null)
         DestroyBlood(blood);
     }

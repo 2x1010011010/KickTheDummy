@@ -1,6 +1,7 @@
 using CharacterScripts;
 using Tools.ToolsSystem;
 using Tools.Weapon;
+using Tools.Weapon.Throwable;
 using UnityEngine;
 
 namespace Infrastructure
@@ -9,7 +10,6 @@ namespace Infrastructure
   {
     [SerializeField] private ToolsPanel _toolsPanel;
     [SerializeField] private WeaponSwitcher _weaponSwitcher;
-    [SerializeField] private GameObject _swipeDetectionPanel;
     [SerializeField] private CharacterSpawner _spawner;
     private bool CanInterract = true;
     
@@ -21,15 +21,10 @@ namespace Infrastructure
     private void LateUpdate()
     {
       if (!CanInterract) return;
+      if (Input.touchCount <= 0) return;
       
-      if (Input.GetMouseButtonDown(0))
-        _weaponSwitcher.CurrentWeapon.Action();
-
-      if (!_toolsPanel.CurrentTool.Equals("Rifle"))
-        return;
       
-      if (Input.GetMouseButton(0))
-        _weaponSwitcher.CurrentWeapon.Action();
+      _weaponSwitcher.CurrentWeapon.Action();
     }
 
     private void OnEnable()
@@ -37,8 +32,6 @@ namespace Infrastructure
       _toolsPanel.OnToolChanged += ChangeTool;
       _toolsPanel.OnToolPanelEnter += BlockGameInput;
       _toolsPanel.OnToolPanelExit += UnBlockGameInput;
-      _spawner.OnCharacterSpawned += DisableCameraMovement;
-      _spawner.OnCharacterDroped += EnableCameraMovement;
     }
 
     private void OnDisable()
@@ -46,16 +39,8 @@ namespace Infrastructure
       _toolsPanel.OnToolChanged -= ChangeTool;
       _toolsPanel.OnToolPanelExit -= UnBlockGameInput;
       _toolsPanel.OnToolPanelEnter -= BlockGameInput;
-      _spawner.OnCharacterDroped -= EnableCameraMovement;
-      _spawner.OnCharacterSpawned -= DisableCameraMovement;
     }
-
-    private void DisableCameraMovement() => 
-      _swipeDetectionPanel.SetActive(false);
-
-
-    private void EnableCameraMovement() =>
-      _swipeDetectionPanel.SetActive(true);
+    
 
     private void UnBlockGameInput() =>
       CanInterract = true;

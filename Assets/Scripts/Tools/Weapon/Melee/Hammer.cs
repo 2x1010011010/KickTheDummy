@@ -15,7 +15,7 @@ namespace Tools.Weapon.Melee
       if (_hit.collider.TryGetComponent(out BodyPart bodyPart))
       {
         var broadcaster = _hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
-        broadcaster?.Hit(_unpin, Ray.direction * 200, _hit.point);
+        broadcaster?.Hit(_unpin, Ray.direction * 150, _hit.point);
 
         bodyPart.TakeDamage();
       }

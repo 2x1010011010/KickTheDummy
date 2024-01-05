@@ -15,7 +15,7 @@ namespace Tools.Weapon.Throwable
       {
         var broadcaster = hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
         broadcaster?.Hit(20f, ray.direction * 800f, hit.point);
-        var spawned = Instantiate(_settings.Prefab, hit.point, Quaternion.LookRotation(-ray.direction));
+        var spawned = Instantiate(Settings.Prefab, hit.point, Quaternion.LookRotation(-ray.direction));
         spawned.transform.SetParent(bodyPart.transform);
         bodyPart.TakeDamage();
       }

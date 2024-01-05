@@ -19,7 +19,7 @@ namespace Tools.Weapon.Melee
       if (_hit.collider.TryGetComponent(out BodyPart bodyPart))
       {
         Dragged = true;
-        bodyPart.transform.position = Input.mousePosition;
+        bodyPart.transform.position = Input.GetTouch(0).position;
       }
     }
 

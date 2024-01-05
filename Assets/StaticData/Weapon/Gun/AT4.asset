@@ -15,6 +15,6 @@ MonoBehaviour:
   <BloodPrefab>k__BackingField:
   - {fileID: 5108109077456957000, guid: b9f341b23635b3e478025c18d66a1eed, type: 3}
   <Bleeding>k__BackingField: {fileID: 7707360265655367283, guid: 96fb99648b1834f4db1fabaa0f090053, type: 3}
-  <ReloadDelay>k__BackingField: 0
-  <ProjectileAmount>k__BackingField: 0
+  <ReloadDelay>k__BackingField: 3
+  <ProjectileAmount>k__BackingField: 1
   <Force>k__BackingField: 5000

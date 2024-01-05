@@ -1,5 +1,4 @@
 using CharacterScripts;
-using Tools.Weapon.WeaponSettings;
 using UnityEngine;
 using RootMotion.Dynamics;
 
@@ -7,29 +6,27 @@ namespace Tools.Weapon.Gun
 {
   public class Rifle : Gun
   {
-    [SerializeField] private GunSettings _settings;
-    private float _elapsedTime = 0;
-
     public override void Action()
     {
-      _elapsedTime += Time.deltaTime;
-      if (!(_elapsedTime >= _settings.ReloadDelay)) return;
+      if (!CanShoot) return;
       base.Action();
       GameObject blood = null;
+      CanShoot = false;
+      ElapsedTime = 0;
       
 
-      if (_hit.collider.TryGetComponent(out BodyPart bodyPart))
+      if (Hit.collider.TryGetComponent(out BodyPart bodyPart))
       {
-        var broadcaster = _hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
-        broadcaster?.Hit(_unpin, Ray.direction * _settings.Force, _hit.point);
-        var index = Random.Range(0, _settings.BloodPrefab.Count);
+        var broadcaster = Hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
+        broadcaster?.Hit(Unpin, Ray.direction * Settings.Force, Hit.point);
+        var index = Random.Range(0, Settings.BloodPrefab.Count);
         var bloodRotation = Quaternion.LookRotation(Ray.direction) * Quaternion.Euler(0, 90, 0);
-         blood = Instantiate(_settings.BloodPrefab[index], _hit.point, bloodRotation);
-         var bleeding = Instantiate(_settings.Bleeding, _hit.point, bloodRotation);
+         blood = Instantiate(Settings.BloodPrefab[index], Hit.point, bloodRotation);
+         var bleeding = Instantiate(Settings.Bleeding, Hit.point, bloodRotation);
          bleeding.transform.SetParent(bodyPart.transform);
          bodyPart.TakeDamage();
       }
-      _elapsedTime = 0f;
+      
       if(blood != null)
         DestroyBlood(blood);
     }

@@ -1,21 +1,33 @@
 using DG.Tweening;
+using Tools.Weapon.WeaponSettings;
 using UnityEngine;
 
 namespace Tools.Weapon.Gun
 {
   public class Gun : MonoBehaviour, IWeapon
   {
+    [SerializeField] protected GunSettings Settings;
+    protected float ElapsedTime = 0;
     protected Ray Ray;
     protected LayerMask layers;
-    protected float _unpin = 10f;
-    protected RaycastHit _hit;
-    protected bool _isHit = false;
-    
+    protected float Unpin = 10f;
+    protected RaycastHit Hit;
+    protected bool IsHit = false;
+    protected bool CanShoot = true;
+
+    private void Update()
+    {
+      if (CanShoot) return;
+      ElapsedTime += Time.deltaTime;
+      if (ElapsedTime >= Settings.ReloadDelay)
+        CanShoot = true;
+    }
+
     public virtual void Action()
     {
       Ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-      _hit = new RaycastHit();
-      _isHit = Physics.Raycast(Ray, out _hit, 100f);
+      Hit = new RaycastHit();
+      IsHit = Physics.Raycast(Ray, out Hit, 100f);
     }
 
     public void DestroyBlood(GameObject blood)

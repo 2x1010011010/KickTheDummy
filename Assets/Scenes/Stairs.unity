@@ -166,9 +166,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -442,22 +442,18 @@ PrefabInstance:
       propertyPath: _settings
       value: 
       objectReference: {fileID: 11400000, guid: fbf4553cd8e8b4348846695b1ea9a2f4, type: 2}
+    - target: {fileID: 8383716006611874383, guid: 644e523922aadad4e97e123b17907e33, type: 3}
+      propertyPath: _spawner
+      value: 
+      objectReference: {fileID: 2123815829}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2465432575566892092, guid: 644e523922aadad4e97e123b17907e33, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 31783523}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 644e523922aadad4e97e123b17907e33, type: 3}
 --- !u!4 &31783520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3336376311483619103, guid: 644e523922aadad4e97e123b17907e33, type: 3}
-  m_PrefabInstance: {fileID: 31783519}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &31783521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2465432575566892092, guid: 644e523922aadad4e97e123b17907e33, type: 3}
   m_PrefabInstance: {fileID: 31783519}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &31783522 stripped
@@ -471,19 +467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b5feaa054b7b746b874acc80392bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &31783523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31783521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fbbeaede6ac4b91a4992bb83c8c967b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spawner: {fileID: 2123815829}
 --- !u!114 &31783524 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2428448257152745158, guid: 644e523922aadad4e97e123b17907e33, type: 3}
@@ -1086,9 +1069,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1180,9 +1163,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1969,9 +1952,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2039,6 +2022,10 @@ PrefabInstance:
     - target: {fileID: 89969563950861108, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnToolsPanelExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 157177136521193174, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 180871712230202399, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2570,7 +2557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8962840429776016978, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2708,7 +2695,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _toolsPanel: {fileID: 551024213}
   _weaponSwitcher: {fileID: 31783522}
-  _swipeDetectionPanel: {fileID: 551024216}
   _spawner: {fileID: 2123815829}
 --- !u!4 &847047147
 Transform:
@@ -3405,9 +3391,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4016,9 +4002,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4141,9 +4127,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4791,9 +4777,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4716981, g: 0.46806303, b: 0.44410822, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 15.92
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

@@ -128,7 +128,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2526667424212004053, guid: 7f010ddda07e92a4ca5fed0db8b37610, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8383716006611874383}
   m_SourcePrefab: {fileID: 100100000, guid: 7f010ddda07e92a4ca5fed0db8b37610, type: 3}
 --- !u!4 &1517797594074910766 stripped
 Transform:
@@ -140,6 +143,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2526667424212004053, guid: 7f010ddda07e92a4ca5fed0db8b37610, type: 3}
   m_PrefabInstance: {fileID: 82893830245998825}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8383716006611874383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465432575566892092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fbbeaede6ac4b91a4992bb83c8c967b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawner: {fileID: 0}
 --- !u!1001 &1144258630642603345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283,6 +299,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4346688366105088111, guid: 79663c601f1f1ec4b8d28adf85c4a08d, type: 3}
+      propertyPath: _settings
+      value: 
+      objectReference: {fileID: 11400000, guid: 738215de7af32754baa23115083361eb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -379,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eddecbf92c44d39d08c48a43a55e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 11400000, guid: 3d21aaaef3a8ca941855221e27841e3f, type: 2}
+  Settings: {fileID: 11400000, guid: 3d21aaaef3a8ca941855221e27841e3f, type: 2}
 --- !u!4 &2503823794009449838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 527968525324781997, guid: 963f978b0f04d4147b72a0b468f49767, type: 3}
@@ -471,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f2612fd18a4cedb392a13c902340b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  Settings: {fileID: 11400000, guid: fbf4553cd8e8b4348846695b1ea9a2f4, type: 2}
 --- !u!1001 &3612612632203479103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -553,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3956561af38549b0b90778b34869bc1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 11400000, guid: d1cbfb08687cbc849a2e2fc32fafe220, type: 2}
+  Settings: {fileID: 11400000, guid: d1cbfb08687cbc849a2e2fc32fafe220, type: 2}
   _spawnOffset: {x: 0, y: 0.5, z: 0}
 --- !u!4 &6369255357299528486 stripped
 Transform:
@@ -646,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e078597ef44273b833d85cda32368c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 11400000, guid: 16daf04dd30155340b59e3227e4c2803, type: 2}
+  Settings: {fileID: 11400000, guid: 16daf04dd30155340b59e3227e4c2803, type: 2}
   _spawnOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &5313701719089870663
 PrefabInstance:
@@ -729,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8f852e7df748e880b95dffe3d55e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 11400000, guid: c58edaa98a5242e48bd8564bd64c33e2, type: 2}
+  Settings: {fileID: 11400000, guid: c58edaa98a5242e48bd8564bd64c33e2, type: 2}
   _spawnOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &9192082989033542539 stripped
 Transform:
@@ -817,7 +837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429d3f9d2f1b4a7ab696d2729e818e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 11400000, guid: aad9b1cda980608438bb51de5525f2a3, type: 2}
+  Settings: {fileID: 11400000, guid: aad9b1cda980608438bb51de5525f2a3, type: 2}
   _spawnOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &8104902809775314262 stripped
 Transform:
@@ -910,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5cd6eb045249f3947d1a00691f6e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 11400000, guid: ca80124272c8adf4e823889595e01ff9, type: 2}
+  Settings: {fileID: 11400000, guid: ca80124272c8adf4e823889595e01ff9, type: 2}
   _spawnOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &6902930320551063096
 PrefabInstance:
@@ -1079,7 +1099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673b4e3443ae4c9993438eaff08d861e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 11400000, guid: ace80f07c057e204fa0998feb647c8fb, type: 2}
+  Settings: {fileID: 11400000, guid: ace80f07c057e204fa0998feb647c8fb, type: 2}
 --- !u!4 &8983420906559341062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1996681244783320967, guid: 76cdb3ae4e70f1c4eac16e58e4872ee5, type: 3}

@@ -524,9 +524,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 19800268, guid: 604216e5c40717e409b297aa71a218db, type: 3}
-      propertyPath: startDelay.scalar
-      value: 10
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[0].time
+      value: 9.641849
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[1].time
+      value: 9.729363
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[2].time
+      value: 9.807966
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[3].time
+      value: 10.07103
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[4].time
+      value: 10.316999
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[0].value
+      value: 0.036558658
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[1].value
+      value: 0.16336203
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[2].value
+      value: 0.7914222
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[3].value
+      value: 1.0055285
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[4].value
+      value: 0.038450748
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[0].inSlope
+      value: 0.020793416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[0].outSlope
+      value: 0.020793416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440760, guid: 604216e5c40717e409b297aa71a218db, type: 3}
+      propertyPath: LightCurve.m_Curve.Array.data[0].outWeight
+      value: 0.5218351
       objectReference: {fileID: 0}
     - target: {fileID: 19800268, guid: 604216e5c40717e409b297aa71a218db, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
@@ -537,8 +585,8 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 19800270, guid: 604216e5c40717e409b297aa71a218db, type: 3}
-      propertyPath: startDelay.scalar
-      value: 10
+      propertyPath: playOnAwake
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800270, guid: 604216e5c40717e409b297aa71a218db, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
@@ -557,10 +605,6 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 19800274, guid: 604216e5c40717e409b297aa71a218db, type: 3}
-      propertyPath: startDelay.scalar
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800274, guid: 604216e5c40717e409b297aa71a218db, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
       value: 3
       objectReference: {fileID: 0}
@@ -575,18 +619,6 @@ PrefabInstance:
     - target: {fileID: 19800274, guid: 604216e5c40717e409b297aa71a218db, type: 3}
       propertyPath: InitialModule.startRotationY.minMaxState
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19812512, guid: 604216e5c40717e409b297aa71a218db, type: 3}
-      propertyPath: startDelay.scalar
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 19843936, guid: 604216e5c40717e409b297aa71a218db, type: 3}
-      propertyPath: startDelay.scalar
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 19864938, guid: 604216e5c40717e409b297aa71a218db, type: 3}
-      propertyPath: startDelay.scalar
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

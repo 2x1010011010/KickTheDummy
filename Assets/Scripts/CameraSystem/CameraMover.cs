@@ -1,9 +1,7 @@
-using Infrastructure.Services.InputService;
 using Tools.Weapon.Melee;
-using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
-using static UnityEngine.Screen;
+
 
 namespace CameraSystem
 {
@@ -24,7 +22,10 @@ namespace CameraSystem
     private float _rotationY = 0f;
     private bool _isCharacterDragged;
     private float _previousMouseX;
+    private float _halfWidth;
+    
     public bool MouseDown { get; set; }
+    
 
     private void Start()
     {
@@ -33,35 +34,28 @@ namespace CameraSystem
       _sensitivity = _settings.RotationSpeed;
       _rotationOffset = _settings.RotationOffset;
       _newPosition = transform.position;
+      _halfWidth = Screen.width / 2.0f;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
+      if (_isCharacterDragged) return;
+
+      if (Input.touchCount == 0) return;
+      if (Input.GetTouch(0).phase != TouchPhase.Moved) return;
       Move();
       Rotate();
     }
-
-    private void HandleFirstClick()
-    {
-      if (Input.GetKeyDown(KeyCode.Mouse0))
-      {
-        MouseDown = true;
-      }
-
-      if (Input.GetKeyUp(KeyCode.Mouse0))
-      {
-        MouseDown = false;
-      }
-    }
+    
 
     private void Move()
     {
       var direction = GetMoveDirection();
-      var forwardMovement = transform.forward * direction.z;
+      var forwardMovement = transform.forward * -direction.z;
       var sideMovement = transform.right * direction.x;
       transform.position += (forwardMovement + sideMovement) * (_speed * Time.deltaTime);
     }
-    
+
     private void Rotate()
     {
       var direction = GetRotationDirection();
@@ -70,40 +64,39 @@ namespace CameraSystem
       _rotationY += direction.x * _sensitivity * Time.deltaTime;
       transform.eulerAngles = new Vector3(_rotationX, _rotationY, 0);
     }
-    
+
     private Vector3 GetMoveDirection()
     {
-      foreach (var touch in Input.touches)
-      {
-        if (touch.rawPosition.x > width/2)
-          continue;
-
+        var touch = Input.GetTouch(0);
+        
+        if (touch.position.x > _halfWidth)
+          return Vector3.zero;
+        
         switch (touch.phase)
         {
           case TouchPhase.Moved:
             return new Vector3(-touch.deltaPosition.x,0, touch.deltaPosition.y).normalized;
           case TouchPhase.Stationary:
             return Vector3.zero;
+        
         }
-      }
       
       return Vector3.zero;
     }
 
     private Vector3 GetRotationDirection()
     {
-      foreach (var touch in Input.touches)
-      {
-        if (touch.rawPosition.x < width/2)
-          continue;
+      var touch = Input.GetTouch(0);
+      
+      if (touch.position.x < _halfWidth)
+        return Vector3.zero;
 
-        switch (touch.phase)
-        {
-          case TouchPhase.Moved:
-            return new Vector3(touch.deltaPosition.x,0, touch.deltaPosition.y).normalized;
-          case TouchPhase.Stationary:
-            return Vector3.zero;
-        }
+      switch (touch.phase)
+      {
+        case TouchPhase.Moved:
+          return new Vector3(touch.deltaPosition.x,0, touch.deltaPosition.y).normalized;
+        case TouchPhase.Stationary:
+          return Vector3.zero;
       }
       return Vector3.zero;
     }

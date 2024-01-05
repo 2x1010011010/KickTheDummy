@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Box
   m_EditorClassIdentifier: 
   <Prefab>k__BackingField: {fileID: 3430428666174499340, guid: 0721c7cd43d2e3240bb59bf4ffac8d6c, type: 3}
-  <Force>k__BackingField: 50
+  <Force>k__BackingField: 150
   <Mass>k__BackingField: 20
