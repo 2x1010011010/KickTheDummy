@@ -50,8 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _blowDelay: 4
   _destroyDelay: 0
-  _force: 2000
-  _explosionRadius: 10
+  _force: 3000
+  _explosionRadius: 15
 --- !u!135 &3949779058352513133
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -17,15 +17,16 @@ namespace CameraSystem
     private float _speed;
     private float _sensitivity;
     private Vector3 _newPosition;
-    private float _rotationOffset;
+    private Vector3 _rotationOffset;
     private float _rotationX = 0f;
     private float _rotationY = 0f;
     private bool _isCharacterDragged;
     private float _previousMouseX;
     private float _halfWidth;
-    
+
     public bool MouseDown { get; set; }
-    
+    public bool IsCameraMoved { get; set; }
+
 
     private void Start()
     {
@@ -37,12 +38,17 @@ namespace CameraSystem
       _halfWidth = Screen.width / 2.0f;
     }
 
-    private void LateUpdate()
+    private void Update()
     {
       if (_isCharacterDragged) return;
-
+      
+      IsCameraMoved = false;
+      
       if (Input.touchCount == 0) return;
+      
       if (Input.GetTouch(0).phase != TouchPhase.Moved) return;
+      
+      IsCameraMoved = true;
       Move();
       Rotate();
     }
@@ -71,11 +77,14 @@ namespace CameraSystem
         
         if (touch.position.x > _halfWidth)
           return Vector3.zero;
+
+        if (touch.deltaPosition.magnitude < _settings.DeltaPosition.magnitude) 
+          return Vector3.zero;
         
         switch (touch.phase)
         {
           case TouchPhase.Moved:
-            return new Vector3(-touch.deltaPosition.x,0, touch.deltaPosition.y).normalized;
+            return new Vector3(touch.deltaPosition.x,0, -touch.deltaPosition.y).normalized;
           case TouchPhase.Stationary:
             return Vector3.zero;
         
@@ -90,11 +99,14 @@ namespace CameraSystem
       
       if (touch.position.x < _halfWidth)
         return Vector3.zero;
+      
+      if ((touch.deltaPosition).magnitude < _settings.DeltaPosition.magnitude) 
+        return Vector3.zero;
 
       switch (touch.phase)
       {
         case TouchPhase.Moved:
-          return new Vector3(touch.deltaPosition.x,0, touch.deltaPosition.y).normalized;
+          return new Vector3(-touch.deltaPosition.x,0, touch.deltaPosition.y).normalized;
         case TouchPhase.Stationary:
           return Vector3.zero;
       }

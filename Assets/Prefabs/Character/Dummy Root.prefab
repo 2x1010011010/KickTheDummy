@@ -2821,7 +2821,7 @@ MonoBehaviour:
   - {fileID: 1666851149247439345}
   _maxHealth: 100
   _puppetMaster: {fileID: 6933117953982253550}
-  _disconnectVelocity: {x: 10000, y: 10000, z: 10000}
+  _disconnectVelocity: {x: 20, y: 20, z: 20}
 --- !u!1 &8252468292512438970
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using CameraSystem;
 using CharacterScripts;
 using Tools.ToolsSystem;
 using Tools.Weapon;
@@ -11,8 +12,9 @@ namespace Infrastructure
     [SerializeField] private ToolsPanel _toolsPanel;
     [SerializeField] private WeaponSwitcher _weaponSwitcher;
     [SerializeField] private CharacterSpawner _spawner;
+    [SerializeField] private CameraMover _mover;
     private bool CanInterract = true;
-    
+
     private void Start()
     {
       _weaponSwitcher.Initialize(_toolsPanel);
@@ -23,7 +25,7 @@ namespace Infrastructure
       if (!CanInterract) return;
       if (Input.touchCount <= 0) return;
       
-      if(Input.GetMouseButtonDown(0))
+      if(Input.GetMouseButtonDown(0) && !_mover.IsCameraMoved)
         _weaponSwitcher.CurrentWeapon.Action();
     }
 
