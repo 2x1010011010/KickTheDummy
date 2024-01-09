@@ -42,13 +42,12 @@ namespace CameraSystem
     {
       if (_isCharacterDragged) return;
       
-      IsCameraMoved = false;
-      
       if (Input.touchCount == 0) return;
       
       if (Input.GetTouch(0).phase != TouchPhase.Moved) return;
       
-      IsCameraMoved = true;
+      if (Input.GetTouch(0).deltaPosition.magnitude < _settings.DeltaPosition.magnitude) return;
+      
       Move();
       Rotate();
     }

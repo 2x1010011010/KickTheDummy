@@ -30,6 +30,8 @@ namespace Tools.Weapon.Gun
           bleeding.transform.SetParent(bodyPart.transform);
           bloods.Add(blood);
         }
+        
+        
       }
       
       

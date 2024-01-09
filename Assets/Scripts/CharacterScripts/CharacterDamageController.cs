@@ -64,6 +64,8 @@ namespace CharacterScripts
       if (_currentHealth <= 0)
       {
         _puppetMaster.Kill();
+        foreach (var part in _bleedingParts)
+          part.GetComponentInChildren<ParticleSystem>()?.Stop();
         _isDead = true;
       }
 
