@@ -1,3 +1,4 @@
+using System;
 using CameraSystem;
 using CharacterScripts;
 using Tools.ToolsSystem;
@@ -5,6 +6,7 @@ using Tools.Weapon;
 using Tools.Weapon.Gun;
 using Tools.Weapon.Melee;
 using Tools.Weapon.Throwable;
+using UI;
 using UnityEngine;
 
 namespace Infrastructure
@@ -15,6 +17,8 @@ namespace Infrastructure
     [SerializeField] private WeaponSwitcher _weaponSwitcher;
     [SerializeField] private CharacterSpawner _spawner;
     [SerializeField] private CameraMover _mover;
+    [SerializeField] private SceneHUD _settingsWindow; 
+    
     private bool CanInterract = true;
 
     private void Start()
@@ -28,10 +32,13 @@ namespace Infrastructure
       if (Input.touchCount <= 0) return;
       if (Input.GetTouch(0).phase == TouchPhase.Moved) return;
       
-      if(Input.GetMouseButtonDown(0))
+      if (Input.GetMouseButtonDown(0))
         _weaponSwitcher.CurrentWeapon.Action();
       
-      if(Input.GetMouseButton(0) && (_weaponSwitcher.CurrentWeapon.GetType() == typeof(Rifle) || _weaponSwitcher.CurrentWeapon.GetType() == typeof(Hand)))
+      if (Input.GetMouseButton(0) && (_weaponSwitcher.CurrentWeapon.GetType() == typeof(Rifle) || _weaponSwitcher.CurrentWeapon.GetType() == typeof(Hand)))
+        _weaponSwitcher.CurrentWeapon.Action();
+      
+      if (Input.GetMouseButtonDown(0) && _weaponSwitcher.CurrentWeapon.GetType() == typeof(ThrowableWeapon))
         _weaponSwitcher.CurrentWeapon.Action();
     }
 
@@ -42,6 +49,8 @@ namespace Infrastructure
       _toolsPanel.OnToolPanelExit += UnBlockGameInput;
       _spawner.OnCharacterSpawned += BlockGameInput;
       _spawner.OnCharacterDroped += UnBlockGameInput;
+      _settingsWindow.OnSettingsOpen += BlockGameInput;
+      _settingsWindow.OnSettingsClosed += UnBlockGameInput;
     }
 
     private void OnDisable()
@@ -51,6 +60,8 @@ namespace Infrastructure
       _toolsPanel.OnToolPanelEnter -= BlockGameInput;
       _spawner.OnCharacterSpawned -= BlockGameInput;
       _spawner.OnCharacterDroped -= UnBlockGameInput;
+      _settingsWindow.OnSettingsOpen -= BlockGameInput;
+      _settingsWindow.OnSettingsClosed -= UnBlockGameInput;
     }
     
 

@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using UI.Enums;
 using Unity.VisualScripting;
+using UnityEngine.Events;
 
 namespace UI
 {

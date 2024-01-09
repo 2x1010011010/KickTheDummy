@@ -739,6 +739,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &651998372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3489983222990945359, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
+  m_PrefabInstance: {fileID: 750319881}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767d0bd35d96460c806283fcb952880f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &750319881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5877,6 +5888,7 @@ MonoBehaviour:
   _weaponSwitcher: {fileID: 1721103946}
   _spawner: {fileID: 1060267904}
   _mover: {fileID: 982323576}
+  _settingsWindow: {fileID: 651998372}
 --- !u!4 &2147128731
 Transform:
   m_ObjectHideFlags: 0

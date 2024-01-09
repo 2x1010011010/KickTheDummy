@@ -1309,6 +1309,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b8e0d57c994b318e873b30c7895af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &551024214 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3489983222990945359, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
+  m_PrefabInstance: {fileID: 551024212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767d0bd35d96460c806283fcb952880f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &680347349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1415,7 @@ MonoBehaviour:
   _weaponSwitcher: {fileID: 1351960456}
   _spawner: {fileID: 425178600}
   _mover: {fileID: 1351960454}
+  _settingsWindow: {fileID: 551024214}
 --- !u!4 &847047147
 Transform:
   m_ObjectHideFlags: 0
