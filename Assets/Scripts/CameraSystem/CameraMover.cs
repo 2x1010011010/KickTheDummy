@@ -40,7 +40,7 @@ namespace CameraSystem
 
     private void Update()
     {
-      if (_isCharacterDragged) return;
+      if (_handTool.Dragged) return;
       
       if (Input.touchCount == 0) return;
       

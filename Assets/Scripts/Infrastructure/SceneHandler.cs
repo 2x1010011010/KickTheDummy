@@ -2,6 +2,8 @@ using CameraSystem;
 using CharacterScripts;
 using Tools.ToolsSystem;
 using Tools.Weapon;
+using Tools.Weapon.Gun;
+using Tools.Weapon.Melee;
 using Tools.Weapon.Throwable;
 using UnityEngine;
 
@@ -26,6 +28,9 @@ namespace Infrastructure
       if (Input.touchCount <= 0) return;
       
       if(Input.GetMouseButtonDown(0))
+        _weaponSwitcher.CurrentWeapon.Action();
+      
+      if(Input.GetMouseButton(0) && (_weaponSwitcher.CurrentWeapon.GetType() == typeof(Rifle) || _weaponSwitcher.CurrentWeapon.GetType() == typeof(Hand)))
         _weaponSwitcher.CurrentWeapon.Action();
     }
 

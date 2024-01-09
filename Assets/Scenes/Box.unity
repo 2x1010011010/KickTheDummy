@@ -1318,11 +1318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b8e0d57c994b318e873b30c7895af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &750319884 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8962840429776016978, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
-  m_PrefabInstance: {fileID: 750319881}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &750319885 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7852351099360336363, guid: d11307b08eceed14eb03f210c0305a8c, type: 3}
@@ -1711,9 +1706,9 @@ MonoBehaviour:
   stateLimit: 10
   saveLoad: 0
   saveName: 
-  width: 512
-  height: 512
-  texture: {fileID: 0}
+  width: 1024
+  height: 1024
+  texture: {fileID: 2800000, guid: f72c4b4da5388eb4e96b9bf942c00d3e, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   format: 0
   mipMaps: 0
@@ -1729,7 +1724,7 @@ MonoBehaviour:
   hash:
     v: 0
   isDummy: 0
-  output: e9b4d9f64a8b1834cb4d5da747e1bfca
+  output: f72c4b4da5388eb4e96b9bf942c00d3e
   activated: 0
   current: {fileID: 0}
   preview: {fileID: 0}
@@ -2159,9 +2154,9 @@ MonoBehaviour:
   stateLimit: 10
   saveLoad: 0
   saveName: 
-  width: 512
-  height: 512
-  texture: {fileID: 0}
+  width: 1024
+  height: 1024
+  texture: {fileID: 2800000, guid: f72c4b4da5388eb4e96b9bf942c00d3e, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   format: 0
   mipMaps: 0
@@ -2177,7 +2172,7 @@ MonoBehaviour:
   hash:
     v: 0
   isDummy: 0
-  output: e9b4d9f64a8b1834cb4d5da747e1bfca
+  output: f72c4b4da5388eb4e96b9bf942c00d3e
   activated: 0
   current: {fileID: 0}
   preview: {fileID: 0}
@@ -3023,9 +3018,9 @@ MonoBehaviour:
   stateLimit: 10
   saveLoad: 0
   saveName: 
-  width: 512
-  height: 512
-  texture: {fileID: 0}
+  width: 1024
+  height: 1024
+  texture: {fileID: 2800000, guid: f72c4b4da5388eb4e96b9bf942c00d3e, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   format: 0
   mipMaps: 0
@@ -3041,7 +3036,7 @@ MonoBehaviour:
   hash:
     v: 0
   isDummy: 0
-  output: e9b4d9f64a8b1834cb4d5da747e1bfca
+  output: f72c4b4da5388eb4e96b9bf942c00d3e
   activated: 0
   current: {fileID: 0}
   preview: {fileID: 0}
@@ -3471,9 +3466,9 @@ MonoBehaviour:
   stateLimit: 10
   saveLoad: 0
   saveName: 
-  width: 512
-  height: 512
-  texture: {fileID: 0}
+  width: 1024
+  height: 1024
+  texture: {fileID: 2800000, guid: f72c4b4da5388eb4e96b9bf942c00d3e, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   format: 0
   mipMaps: 0
@@ -3489,7 +3484,7 @@ MonoBehaviour:
   hash:
     v: 0
   isDummy: 0
-  output: e9b4d9f64a8b1834cb4d5da747e1bfca
+  output: f72c4b4da5388eb4e96b9bf942c00d3e
   activated: 0
   current: {fileID: 0}
   preview: {fileID: 0}
@@ -4220,15 +4215,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603949838}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.17880219, z: 0, w: 0.9838851}
-  m_LocalPosition: {x: 5.12, y: 2.98, z: -6.08}
+  m_LocalRotation: {x: -0, y: 0.12464059, z: -0, w: 0.99220204}
+  m_LocalPosition: {x: 5.88, y: 2.87, z: -5.023191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1721103944}
   - {fileID: 1059445016}
+  - {fileID: 1645932603}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 20.6, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 14.32, z: 0}
 --- !u!114 &1603949840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4274,9 +4270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settings: {fileID: 11400000, guid: b08fbabeba9e7654b92e741df0e49708, type: 2}
-  _inputPanel: {fileID: 750319884}
-  _leftSide: {fileID: 750319885}
-  _rightSide: {fileID: 750319882}
+  _inputPanel: {fileID: 0}
+  _leftSide: {fileID: 0}
+  _rightSide: {fileID: 0}
   _maxAngle: 40
   _handTool: {fileID: 1721103948}
 --- !u!81 &1603949843
@@ -4338,6 +4334,37 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1645932602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645932603}
+  m_Layer: 0
+  m_Name: RotationOffset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645932603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645932602}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1603949839}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1701408681
 Mesh:
   m_ObjectHideFlags: 0
@@ -5019,9 +5046,9 @@ MonoBehaviour:
   stateLimit: 10
   saveLoad: 0
   saveName: 
-  width: 512
-  height: 512
-  texture: {fileID: 0}
+  width: 1024
+  height: 1024
+  texture: {fileID: 2800000, guid: f72c4b4da5388eb4e96b9bf942c00d3e, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   format: 0
   mipMaps: 0
@@ -5037,7 +5064,7 @@ MonoBehaviour:
   hash:
     v: 0
   isDummy: 0
-  output: a3e7f6166520c544b9c8051711abd1eb
+  output: f72c4b4da5388eb4e96b9bf942c00d3e
   activated: 0
   current: {fileID: 0}
   preview: {fileID: 0}
@@ -5875,8 +5902,8 @@ MonoBehaviour:
   stateLimit: 10
   saveLoad: 0
   saveName: 
-  width: 512
-  height: 512
+  width: 1024
+  height: 1024
   texture: {fileID: 0}
   color: {r: 1, g: 1, b: 1, a: 1}
   format: 0
@@ -5893,7 +5920,7 @@ MonoBehaviour:
   hash:
     v: 0
   isDummy: 0
-  output: e9b4d9f64a8b1834cb4d5da747e1bfca
+  output: f72c4b4da5388eb4e96b9bf942c00d3e
   activated: 0
   current: {fileID: 0}
   preview: {fileID: 0}
