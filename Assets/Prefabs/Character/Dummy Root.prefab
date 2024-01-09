@@ -2654,9 +2654,9 @@ MonoBehaviour:
   regainPinSpeed: 1.5
   boostFalloff: 1
   defaults:
-    unpinParents: 0.8
-    unpinChildren: 0.8
-    unpinGroup: 0.8
+    unpinParents: 0.927
+    unpinChildren: 0.935
+    unpinGroup: 0.947
     minMappingWeight: 0
     maxMappingWeight: 1
     minPinWeight: 0
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   - {fileID: 1666851149247439345}
   _maxHealth: 100
   _puppetMaster: {fileID: 6933117953982253550}
-  _disconnectVelocity: {x: 40, y: 40, z: 40}
+  _disconnectVelocity: {x: 12, y: 12, z: 12}
 --- !u!1 &8252468292512438970
 GameObject:
   m_ObjectHideFlags: 0

@@ -2575,10 +2575,10 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1059445015 stripped
+--- !u!114 &1060267904 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3663744571428032379, guid: 8b90cf2226159d5469fc065756f3cc8f, type: 3}
-  m_PrefabInstance: {fileID: 1977076446459154203}
+  m_CorrespondingSourceObject: {fileID: 5360118778626652539, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+  m_PrefabInstance: {fileID: 1243402732}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -4094,6 +4094,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d82be08e901bb544c8c72deb78cf4fc1, type: 3}
+--- !u!1001 &1243402732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 815805427658411857, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_Name
+      value: CharacterSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360118778626652539, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: _mover
+      value: 
+      objectReference: {fileID: 982323576}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206314408131483794, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c8935a17ac59764da584d1de79bf69a, type: 3}
 --- !u!1 &1279657466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,7 +5875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _toolsPanel: {fileID: 750319883}
   _weaponSwitcher: {fileID: 1721103946}
-  _spawner: {fileID: 1059445015}
+  _spawner: {fileID: 1060267904}
   _mover: {fileID: 982323576}
 --- !u!4 &2147128731
 Transform:
@@ -5843,6 +5904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraMover
       objectReference: {fileID: 0}
+    - target: {fileID: 4623160467383784508, guid: 8b90cf2226159d5469fc065756f3cc8f, type: 3}
+      propertyPath: _spawner
+      value: 
+      objectReference: {fileID: 1060267904}
     - target: {fileID: 6106528379824351022, guid: 8b90cf2226159d5469fc065756f3cc8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.04
@@ -5904,3 +5969,4 @@ SceneRoots:
   - {fileID: 1954086654}
   - {fileID: 750319881}
   - {fileID: 14432227}
+  - {fileID: 1243402732}

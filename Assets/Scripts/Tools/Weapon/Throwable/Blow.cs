@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using CharacterScripts;
+using RootMotion.Dynamics;
 using UnityEngine;
 
 namespace Tools.Weapon.Throwable
@@ -23,9 +26,16 @@ namespace Tools.Weapon.Throwable
         if (rb != null)
         {
           rb.AddExplosionForce(_force, transform.position, _explosionRadius);
+          var bodyPart = rb.GetComponent<BodyPart>();
+          if (bodyPart == null) continue;
+          bodyPart.TakeDamage();
+          var broadcaster = rb.GetComponent<MuscleCollisionBroadcaster>();
+          broadcaster?.Hit(100, rb.position.normalized * _force, rb.position);
         }
+        
       }
-      DestroyObject();
+
+      Invoke(nameof(DestroyObject), 1.0f);
     }
     
     private void DestroyObject()

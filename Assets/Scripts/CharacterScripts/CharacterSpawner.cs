@@ -25,13 +25,6 @@ namespace CharacterScripts
     private void Update()
     {
       if (!_spawned) return;
-
-      if (Input.GetMouseButton(0))
-      {
-        var mousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
-        _spawned.transform.position = new Vector3(mousePosition.x, 0f, mousePosition.y);
-      }
-
       if (Input.GetMouseButtonUp(0))
       {
         _isSpawned = false;

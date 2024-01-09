@@ -26,7 +26,7 @@ namespace Infrastructure
     {
       if (!CanInterract) return;
       if (Input.touchCount <= 0) return;
-      if (_mover.IsCameraMoved) return;
+      if (Input.GetTouch(0).phase == TouchPhase.Moved) return;
       
       if(Input.GetMouseButtonDown(0))
         _weaponSwitcher.CurrentWeapon.Action();
@@ -40,6 +40,8 @@ namespace Infrastructure
       _toolsPanel.OnToolChanged += ChangeTool;
       _toolsPanel.OnToolPanelEnter += BlockGameInput;
       _toolsPanel.OnToolPanelExit += UnBlockGameInput;
+      _spawner.OnCharacterSpawned += BlockGameInput;
+      _spawner.OnCharacterDroped += UnBlockGameInput;
     }
 
     private void OnDisable()
@@ -47,6 +49,8 @@ namespace Infrastructure
       _toolsPanel.OnToolChanged -= ChangeTool;
       _toolsPanel.OnToolPanelExit -= UnBlockGameInput;
       _toolsPanel.OnToolPanelEnter -= BlockGameInput;
+      _spawner.OnCharacterSpawned -= BlockGameInput;
+      _spawner.OnCharacterDroped -= UnBlockGameInput;
     }
     
 
