@@ -26,6 +26,7 @@ namespace Infrastructure
     {
       if (!CanInterract) return;
       if (Input.touchCount <= 0) return;
+      if (_mover.IsCameraMoved) return;
       
       if(Input.GetMouseButtonDown(0))
         _weaponSwitcher.CurrentWeapon.Action();

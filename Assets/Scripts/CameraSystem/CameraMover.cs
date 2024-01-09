@@ -8,9 +8,6 @@ namespace CameraSystem
   public sealed class CameraMover : MonoBehaviour
   {
     [SerializeField] private CameraSettings _settings;
-    [SerializeField] private GameObject _inputPanel;
-    [SerializeField] private MobileCameraController _leftSide;
-    [SerializeField] private MobileCameraController _rightSide;
     [SerializeField] private float _maxAngle = 40f;
     [SerializeField] private Hand _handTool;
     //private IInputService _inputService;
@@ -41,6 +38,8 @@ namespace CameraSystem
     private void Update()
     {
       if (_handTool.Dragged) return;
+
+      if (Input.GetMouseButtonUp(0)) IsCameraMoved = false;
       
       if (Input.touchCount == 0) return;
       
@@ -55,6 +54,7 @@ namespace CameraSystem
 
     private void Move()
     {
+      IsCameraMoved = true;
       var direction = GetMoveDirection();
       var forwardMovement = transform.forward * -direction.z;
       var sideMovement = transform.right * direction.x;
@@ -63,6 +63,7 @@ namespace CameraSystem
 
     private void Rotate()
     {
+      IsCameraMoved = true;
       var direction = GetRotationDirection();
       _rotationX -= direction.z * _sensitivity * Time.deltaTime;
       _rotationX = Mathf.Clamp(_rotationX, -_maxAngle, _maxAngle);

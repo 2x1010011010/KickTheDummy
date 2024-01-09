@@ -29,8 +29,8 @@ namespace Tools.Weapon.Melee
       if (Dragged)
       {
         Debug.Log("Dragged");
-        _mouseDirection = Input.GetTouch(0).deltaPosition.normalized;
-        _draggedPart.AddForce(_mouseDirection * 5, ForceMode.Impulse);
+        _mouseDirection = Camera.main.transform.right - (Vector3)Input.GetTouch(0).deltaPosition;
+        _draggedPart.AddForce(-_mouseDirection.normalized * 5, ForceMode.Impulse);
         var broadcaster = _draggedPart.GetComponent<MuscleCollisionBroadcaster>();
         broadcaster?.Hit(5, _mouseDirection * 3, _draggedPart.position);
       }

@@ -1,3 +1,4 @@
+using CameraSystem;
 using RootMotion.Dynamics;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,6 +9,7 @@ namespace CharacterScripts
   {
     [SerializeField] private CharacterSpawnerSettings _settings;
     [SerializeField] private Transform _spawnerTransform;
+    [SerializeField] private CameraMover _mover;
     private GameObject _spawned;
     private Camera _camera;
     private bool _isSpawned = false;
@@ -40,7 +42,7 @@ namespace CharacterScripts
     public void Spawn()
     {
       var mousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
-      var cameraPosition = _camera.transform.position;
+      var cameraPosition = _mover.transform.position;
       _spawned = Instantiate(_settings.Prefab, _spawnerTransform);
       _isSpawned = true;
       
