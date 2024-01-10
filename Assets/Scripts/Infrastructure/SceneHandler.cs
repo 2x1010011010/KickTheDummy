@@ -1,11 +1,9 @@
-using System;
 using CameraSystem;
 using CharacterScripts;
 using Tools.ToolsSystem;
 using Tools.Weapon;
 using Tools.Weapon.Gun;
 using Tools.Weapon.Melee;
-using Tools.Weapon.Throwable;
 using UI;
 using UnityEngine;
 
