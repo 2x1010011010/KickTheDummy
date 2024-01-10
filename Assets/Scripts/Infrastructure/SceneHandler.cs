@@ -37,9 +37,6 @@ namespace Infrastructure
       
       if (Input.GetMouseButton(0) && (_weaponSwitcher.CurrentWeapon.GetType() == typeof(Rifle) || _weaponSwitcher.CurrentWeapon.GetType() == typeof(Hand)))
         _weaponSwitcher.CurrentWeapon.Action();
-      
-      if (Input.GetMouseButtonDown(0) && _weaponSwitcher.CurrentWeapon.GetType() == typeof(ThrowableWeapon))
-        _weaponSwitcher.CurrentWeapon.Action();
     }
 
     private void OnEnable()

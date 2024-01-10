@@ -17,4 +17,4 @@ MonoBehaviour:
   <Bleeding>k__BackingField: {fileID: 7707360265655367283, guid: 96fb99648b1834f4db1fabaa0f090053, type: 3}
   <ReloadDelay>k__BackingField: 3
   <ProjectileAmount>k__BackingField: 1
-  <Force>k__BackingField: 5000
+  <Force>k__BackingField: 800

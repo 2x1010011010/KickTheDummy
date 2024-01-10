@@ -2663,38 +2663,38 @@ MonoBehaviour:
     disableColliders: 0
     regainPinSpeed: 0.5
     collisionResistance: 1
-    knockOutDistance: 0.7
+    knockOutDistance: 10
     puppetMaterial: {fileID: 13400000, guid: a3fd0ffcf0d0a384ba3568687a96ab8e, type: 2}
     unpinnedMaterial: {fileID: 13400000, guid: d4563de398e2c4412a95f4317ddf4b1a, type: 2}
   groupOverrides:
   - name: Head
     groups: 02000000
     props:
-      unpinParents: 0.8
-      unpinChildren: 0.8
-      unpinGroup: 0
+      unpinParents: 0.9
+      unpinChildren: 0.9
+      unpinGroup: 0.9
       minMappingWeight: 0
       maxMappingWeight: 1
       minPinWeight: 0
       disableColliders: 0
       regainPinSpeed: 0.3
       collisionResistance: 1
-      knockOutDistance: 0.4
+      knockOutDistance: 10
       puppetMaterial: {fileID: 0}
       unpinnedMaterial: {fileID: 0}
   - name: Arm, Hand, Prop
     groups: 030000000400000008000000
     props:
-      unpinParents: 0.8
-      unpinChildren: 0.8
-      unpinGroup: 0
+      unpinParents: 0.9
+      unpinChildren: 0.9
+      unpinGroup: 0.9
       minMappingWeight: 0
       maxMappingWeight: 1
       minPinWeight: 0
       disableColliders: 0
       regainPinSpeed: 0.3
       collisionResistance: 1
-      knockOutDistance: 100
+      knockOutDistance: 10
       puppetMaterial: {fileID: 0}
       unpinnedMaterial: {fileID: 0}
   - name: Hips, Leg
@@ -2702,14 +2702,14 @@ MonoBehaviour:
     props:
       unpinParents: 0.9
       unpinChildren: 0.9
-      unpinGroup: 0
+      unpinGroup: 0.9
       minMappingWeight: 0
       maxMappingWeight: 1
       minPinWeight: 0
       disableColliders: 0
-      regainPinSpeed: 0.6
+      regainPinSpeed: 0.3
       collisionResistance: 1
-      knockOutDistance: 0.4
+      knockOutDistance: 10
       puppetMaterial: {fileID: 0}
       unpinnedMaterial: {fileID: 0}
   - name: Foot
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   - {fileID: 1666851149247439345}
   _maxHealth: 100
   _puppetMaster: {fileID: 6933117953982253550}
-  _disconnectVelocity: {x: 12, y: 12, z: 12}
+  _disconnectVelocity: {x: 25, y: 25, z: 25}
 --- !u!1 &8252468292512438970
 GameObject:
   m_ObjectHideFlags: 0

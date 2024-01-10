@@ -75,7 +75,7 @@ namespace CharacterScripts
             _body[i].Velocity.y >= _disconnectVelocity.y ||
             _body[i].Velocity.z >= _disconnectVelocity.z)
         {
-          _puppetMaster.DisconnectMuscleRecursive(i);
+          _puppetMaster.DisconnectMuscleRecursive(i, MuscleDisconnectMode.Sever, true);
           _body[i].OnDamageTaken -= TakeDamage;
         }
       }

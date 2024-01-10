@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _blowDelay: 0
   _destroyDelay: 0
-  _force: 5000
+  _force: 500
   _explosionRadius: 10
 --- !u!1001 &7658091800759993618
 PrefabInstance:
