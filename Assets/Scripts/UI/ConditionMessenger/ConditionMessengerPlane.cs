@@ -7,11 +7,9 @@ namespace UI.ConditionMessenger
   {
     [SerializeField] private RectTransform _messageBlock;
     [SerializeField] private float _lifetime;
-    [SerializeField] private int _rowsCount;
     [SerializeField] private int _blockAmount = 3;
     [SerializeField] private float timeout = 1.5f;
     [SerializeField] private float shift = 5;
-    [SerializeField] private float lifetime = 5;
     [SerializeField] private bool moveUp = true;
 
     private float curTimeout;
