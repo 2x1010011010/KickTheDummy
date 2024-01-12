@@ -1,5 +1,7 @@
 using CharacterScripts;
 using RootMotion.Dynamics;
+using UI.ConditionMessenger;
+using UI.Enums;
 using UnityEngine;
 
 namespace Tools.Weapon.Gun
@@ -23,6 +25,7 @@ namespace Tools.Weapon.Gun
         var bleeding = Instantiate(Settings.Bleeding, Hit.point, bloodRotation);
         bleeding.transform.SetParent(bodyPart.transform);
         bodyPart.TakeDamage();
+        ConditionMessengerFacade.SendMessage(Conditions.KO, bodyPart.Name);
       }
       if(blood != null)
         DestroyBlood(blood);

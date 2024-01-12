@@ -9,7 +9,8 @@ namespace CharacterScripts
     [SerializeField] protected Rigidbody _rigidbody;
 
     public Vector3 Velocity => _rigidbody.velocity;
-    public event UnityAction<float> OnDamageTaken; 
+    public event UnityAction<float> OnDamageTaken;
+    public string Name => Settings.name;
 
     public virtual void TakeDamage()
     {
