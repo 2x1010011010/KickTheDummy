@@ -7,10 +7,8 @@ namespace UI.ConditionMessenger
     private static ConditionMessage _message;
     private static ConditionMessengerPlane _outPlane;
 
-    public static void Initialize(ConditionMessengerPlane outPlane)
-    {
+    public static void Initialize(ConditionMessengerPlane outPlane) =>
       _outPlane = outPlane;
-    }
 
     public static void SendMessage(Conditions condition, string message = null)
     {
