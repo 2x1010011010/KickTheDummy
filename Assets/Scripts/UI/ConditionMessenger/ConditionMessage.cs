@@ -1,16 +1,19 @@
 using UI.Enums;
 
-namespace UI.ConditionMessager
+namespace UI.ConditionMessenger
 {
   public class ConditionMessage
   {
-    public string MessageText { get; private set; }
-    public Conditions Condition { get; private set; }
+    private string _messageText;
+    private Conditions _condition;
 
     public ConditionMessage(Conditions condition, string messageText = null)
     {
-      MessageText = messageText;
-      Condition = condition;
+      _messageText = messageText;
+      _condition = condition;
     }
+
+    public string GetMessage() =>
+      _condition + " " + _messageText;
   }
 }
