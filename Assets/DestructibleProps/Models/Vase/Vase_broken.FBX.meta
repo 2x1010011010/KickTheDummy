@@ -1,0 +1,116 @@
+fileFormatVersion: 2
+guid: 511cbb6c7f3b79d4194aad0f25efbbc0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Vase_pt01
+    100004: Vase_pt02
+    100006: Vase_pt03
+    100008: Vase_pt04
+    100010: Vase_pt05
+    100012: Vase_pt06
+    100014: Vase_pt07
+    100016: Vase_pt08
+    100018: Vase_pt09
+    400000: //RootNode
+    400002: Vase_pt01
+    400004: Vase_pt02
+    400006: Vase_pt03
+    400008: Vase_pt04
+    400010: Vase_pt05
+    400012: Vase_pt06
+    400014: Vase_pt07
+    400016: Vase_pt08
+    400018: Vase_pt09
+    2300000: Vase_pt01
+    2300002: Vase_pt02
+    2300004: Vase_pt03
+    2300006: Vase_pt04
+    2300008: Vase_pt05
+    2300010: Vase_pt06
+    2300012: Vase_pt07
+    2300014: Vase_pt08
+    2300016: Vase_pt09
+    3300000: Vase_pt01
+    3300002: Vase_pt02
+    3300004: Vase_pt03
+    3300006: Vase_pt04
+    3300008: Vase_pt05
+    3300010: Vase_pt06
+    3300012: Vase_pt07
+    3300014: Vase_pt08
+    3300016: Vase_pt09
+    4300000: Vase_pt02
+    4300002: Vase_pt03
+    4300004: Vase_pt04
+    4300006: Vase_pt08
+    4300008: Vase_pt06
+    4300010: Vase_pt07
+    4300012: Vase_pt05
+    4300014: Vase_pt01
+    4300016: Vase_pt09
+    6400000: Vase_pt01
+    6400002: Vase_pt02
+    6400004: Vase_pt03
+    6400006: Vase_pt04
+    6400008: Vase_pt05
+    6400010: Vase_pt06
+    6400012: Vase_pt07
+    6400014: Vase_pt08
+    6400016: Vase_pt09
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 

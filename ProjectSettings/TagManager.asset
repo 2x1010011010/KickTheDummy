@@ -8,13 +8,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Test
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Character
+  - PhysicalBody
+  - Ragdoll
+  - StaticGeometry
   - 
   - 
   - 

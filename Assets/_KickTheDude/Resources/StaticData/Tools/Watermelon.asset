@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051536b80bdd21345845d51de5ddd900, type: 3}
+  m_Name: Watermelon
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: f373da641ad3d9e4493a60505a53fc87
+  <ToolReference>k__BackingField:
+    m_AssetGUID: 5b650056bb3751d4c88670076d87af2e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  <ToolCategory>k__BackingField: 2
+  <ToolIcon>k__BackingField: {fileID: 21300000, guid: 4477d329a3dec264b968e6080a740d5a,
+    type: 3}
+  <SelectClip>k__BackingField: {fileID: 8300000, guid: 7c5ba3873cfdae746a4d1a3b7f2d3f49,
+    type: 3}
+  <BorderOffset>k__BackingField: 10
+  <RotateAngle>k__BackingField: 45

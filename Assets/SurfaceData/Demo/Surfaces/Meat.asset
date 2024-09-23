@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-245169967469146600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c6355c95756794d81d00f65609a9f1, type: 3}
+  m_Name: SurfaceImpacts
+  m_EditorClassIdentifier: 
+  m_lightClips:
+  - {fileID: 8300000, guid: 4bd9097f173b6e64eb8faa695a5d55b8, type: 3}
+  - {fileID: 8300000, guid: eee427dcf0b32cd43a1a0ae561d331af, type: 3}
+  - {fileID: 8300000, guid: c9748251a4954264e862e96e3875d32c, type: 3}
+  m_mediumClips: []
+  m_heavyClips:
+  - {fileID: 8300000, guid: 594ce1bebdd234e4092dc0f836829140, type: 3}
+  - {fileID: 8300000, guid: c9748251a4954264e862e96e3875d32c, type: 3}
+  - {fileID: 8300000, guid: 7c7f2431085dd1242bda0b7e6887fc6b, type: 3}
+  m_forceMultiplier: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c8e6a1840de544cb71a60064d77ffb, type: 3}
+  m_Name: Meat
+  m_EditorClassIdentifier: 
+  m_allowSameModules: 0
+  m_modules:
+  - {fileID: 1917358043540329204}
+  - {fileID: -245169967469146600}
+  m_icon: {fileID: 0}
+--- !u!114 &1917358043540329204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5a3544e70fd184292827372452709f, type: 3}
+  m_Name: SurfaceFootsteps
+  m_EditorClassIdentifier: 
+  m_walkClips:
+  - {fileID: 8300000, guid: 6e330367359baab4086369cda35b1e10, type: 3}
+  - {fileID: 8300000, guid: 40a862adf5b8b59429ac4cafdb013886, type: 3}
+  - {fileID: 8300000, guid: ad008da689f60d44aad7e36fc051ed01, type: 3}
+  - {fileID: 8300000, guid: a5705f1243253ec4e8d1044e249f8c22, type: 3}
+  m_runClips:
+  - {fileID: 8300000, guid: 81e77ea39dfbdab4b9e03b3ebda336d3, type: 3}
+  - {fileID: 8300000, guid: 67444089601c1d74aac1cb452d642c2a, type: 3}
+  m_runThreshold: 0.6

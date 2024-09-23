@@ -135,7 +135,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: 'This shows you how to set up a GameObject to be paintable from scratch
-        using C# code. See the <color=#0FF>P3dProceduralSetup</color> script in the
+        using C# code. See the <color=#0FF>CwProceduralSetup</color> script in the
         <color=#0FF>PaintIn3D/Examples/Scripts</color> folder for more details.
 
         Swipe
@@ -375,13 +375,15 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers:
-    - id: 0
+    - rid: 0
   references:
-    version: 1
-    00000000:
-      type: {class: P3dModifyAngleRandom, ns: PaintIn3D, asm: PaintIn3D}
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: CwModifyAngleRandom, ns: PaintCore, asm: PaintCore}
       data:
         preview: 1
         unique: 1
@@ -437,6 +439,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -547,6 +550,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -3.28, y: 3.5, z: 5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -593,6 +597,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

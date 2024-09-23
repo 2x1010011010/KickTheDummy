@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fa1d96fe3d6e64cb27b443e085dd23, type: 3}
+  m_Name: WoodenBox
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: 574bc5dac7bb61040885513eb9787d8a
+  <InteractableObjectReference>k__BackingField:
+    m_AssetGUID: 72455fc41d29b774c92c128ade77e18f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  <EntityPossibilities>k__BackingField: 
+  <ResourceName>k__BackingField: 
+  <UIIcon>k__BackingField: {fileID: 0}

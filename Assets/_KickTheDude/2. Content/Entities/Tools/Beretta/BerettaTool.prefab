@@ -1,0 +1,377 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &996544589986625129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2593879851783636736}
+  - component: {fileID: 6764790601361925854}
+  m_Layer: 0
+  m_Name: PistolBloodHitPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2593879851783636736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996544589986625129}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.6401419, y: 0.99178636, z: -1.0079658}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2058358980428859517}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6764790601361925854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996544589986625129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea08375da243a441b88d1e6b0713006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4390755645282433983, guid: 5e9a7e0569c9a1c46a497a055badc4c1, type: 3}
+  notification: 3
+  strategy: 0
+  preload: 3
+  capacity: 20
+  recycle: 1
+  persist: 0
+  stamp: 0
+  warnings: 1
+  spawnedClonesList: []
+  despawnedClones: []
+  delays: []
+  deactivatedChild: {fileID: 0}
+--- !u!1 &4913590982119525878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8144906940541584477}
+  - component: {fileID: 3985669681461127639}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8144906940541584477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4913590982119525878}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2058358980428859517}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &3985669681461127639
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4913590982119525878}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 0
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &5336656799934854020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058358980428859517}
+  - component: {fileID: 7901617327338208207}
+  m_Layer: 0
+  m_Name: BerettaTool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058358980428859517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336656799934854020}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2593879851783636736}
+  - {fileID: 8144906940541584477}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7901617327338208207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336656799934854020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3d8fcb0cdd1884eb52e938e88e242a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 40540981809c7494d852abf64b94c46c, type: 2}
+    - {fileID: 3985669681461127639}
+    - {fileID: 8300000, guid: 0eb8bac49658b4861aee07ad6cc538af, type: 3}
+    - {fileID: 8300000, guid: afd74c1bf66d6426d8d9e70ddefbd65c, type: 3}
+    - {fileID: 8300000, guid: fa64414dc13fe4bf885192fd2a20822e, type: 3}
+    - {fileID: 8300000, guid: b74874e80c988469a8644da446c5db94, type: 3}
+    - {fileID: 8300000, guid: e549087cf1db340d49a190777f9d3740, type: 3}
+    - {fileID: 8300000, guid: d6367f45866b54699b305476410496d6, type: 3}
+    - {fileID: 8300000, guid: 4c674fe352db342179460a4a7f96bbe0, type: 3}
+    - {fileID: 8300000, guid: 974f407538bb54854ab22ed84bd1a0cb, type: 3}
+    - {fileID: 11400000, guid: 76742a06b65c0c044ad56b6a3e37e39d, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Reactors
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[IInteractorAction`1[[IShootable,
+        Assembly-CSharp]], Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|RelaxAfterShot, Assembly-CSharp
+    - Name: _relaxParameters
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|PlaySoundAfterShot, Assembly-CSharp
+    - Name: _audioSource
+      Entry: 10
+      Data: 1
+    - Name: _useRandomSounds
+      Entry: 5
+      Data: true
+    - Name: _shotClip
+      Entry: 6
+      Data: 
+    - Name: _shotClips
+      Entry: 7
+      Data: 3|UnityEngine.AudioClip[], UnityEngine.AudioModule
+    - Name: 
+      Entry: 12
+      Data: 8
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|Game.WeaponSystem.ApplyForceAfterShot, Assembly-CSharp
+    - Name: _hitForce
+      Entry: 10
+      Data: 10
+    - Name: _applyForceMask
+      Entry: 7
+      Data: UnityEngine.LayerMask, UnityEngine.CoreModule
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 896
+  _raycastDistance: 10
+  _objectForce: 10
+  unpinRagdoll: 5
+  unpinRagdollForce: 300
+  _firerate: 150
+  _damage: 10
+  _dismember: 0
+  _audioSource: {fileID: 3985669681461127639}
+  _clips:
+  - {fileID: 8300000, guid: 0eb8bac49658b4861aee07ad6cc538af, type: 3}
+  - {fileID: 8300000, guid: afd74c1bf66d6426d8d9e70ddefbd65c, type: 3}
+  - {fileID: 8300000, guid: fa64414dc13fe4bf885192fd2a20822e, type: 3}
+  - {fileID: 8300000, guid: b74874e80c988469a8644da446c5db94, type: 3}
+  - {fileID: 8300000, guid: e549087cf1db340d49a190777f9d3740, type: 3}
+  - {fileID: 8300000, guid: d6367f45866b54699b305476410496d6, type: 3}
+  - {fileID: 8300000, guid: 4c674fe352db342179460a4a7f96bbe0, type: 3}
+  - {fileID: 8300000, guid: 974f407538bb54854ab22ed84bd1a0cb, type: 3}
+  _shotEndClip:
+  - {fileID: 8300000, guid: d4f55048d11c74a708fb324d5b724ad8, type: 3}
+  - {fileID: 8300000, guid: 47be7c98bf51a47e6b8e9c4f15abf3f1, type: 3}
+  - {fileID: 8300000, guid: 8b9cc81096f8842999ad7e0f40c1fbcd, type: 3}
+  _pitchRandom: {x: 0.9, y: 1.1}
+  _color: {r: 0.5019608, g: 0, b: 0, a: 1}
+  _amount: 6
+  _size: 0.03
+  _bloodTexture: {fileID: 2800000, guid: 3be52e7921efcb546973b245ed9c3c54, type: 3}
+  _bloodNormalTexture: {fileID: 2800000, guid: becd118a29261bc47b86d235b9f9b60a, type: 3}
+  _textureSize: 0.09
+  _bulletHoleTexture: {fileID: 2800000, guid: 135d2dc6898fa804cb4c8b516b3587fe, type: 3}
+  _bulletHoleTextureSize: 0.09

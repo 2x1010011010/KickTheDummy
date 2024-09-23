@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-245169967469146600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c6355c95756794d81d00f65609a9f1, type: 3}
+  m_Name: SurfaceImpacts
+  m_EditorClassIdentifier: 
+  m_lightClips:
+  - {fileID: 8300000, guid: 88be3b2e83cb481488857347b3f33e43, type: 3}
+  m_mediumClips: []
+  m_heavyClips:
+  - {fileID: 8300000, guid: 803a2252d7cc6b549960958dd6f2d9cd, type: 3}
+  m_forceMultiplier: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c8e6a1840de544cb71a60064d77ffb, type: 3}
+  m_Name: Metal
+  m_EditorClassIdentifier: 
+  m_allowSameModules: 0
+  m_modules:
+  - {fileID: 1917358043540329204}
+  - {fileID: -245169967469146600}
+  - {fileID: 7324005258330546568}
+  - {fileID: 8504686213828951268}
+  m_icon: {fileID: 0}
+--- !u!114 &1917358043540329204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5a3544e70fd184292827372452709f, type: 3}
+  m_Name: SurfaceFootsteps
+  m_EditorClassIdentifier: 
+  m_walkClips:
+  - {fileID: 8300000, guid: 441c31e0e018b0548b1c8ee80ee4dc53, type: 3}
+  - {fileID: 8300000, guid: 1cd17ebc4e941534cbbc8394a5218ce5, type: 3}
+  - {fileID: 8300000, guid: 7cd021268a9894a49afdff4c1a91757f, type: 3}
+  - {fileID: 8300000, guid: 912a4bda8ad3ca44bbced05f095bbcc6, type: 3}
+  - {fileID: 8300000, guid: b1f2bd80eed041b4aa64b445fa440aef, type: 3}
+  - {fileID: 8300000, guid: f6b84575dc3edd947af3b274703fbbeb, type: 3}
+  - {fileID: 8300000, guid: 8c4fc749728cdaf489ec49c492252f03, type: 3}
+  - {fileID: 8300000, guid: 462b337b618c0a842b58e9aee248b9e2, type: 3}
+  m_runClips:
+  - {fileID: 8300000, guid: ee0addcfc4dcf5a4383df0ebecd36f07, type: 3}
+  - {fileID: 8300000, guid: c1dfeaa30669126418ccd4d615a30d27, type: 3}
+  - {fileID: 8300000, guid: fbd83d0fda177f541b465873b5cc8839, type: 3}
+  - {fileID: 8300000, guid: d3bfab51c7ceab1469e42599899d4c93, type: 3}
+  - {fileID: 8300000, guid: 71d9c9f9350c9624a990fc2f5ed0c37a, type: 3}
+  - {fileID: 8300000, guid: 88a62ce73ed7fba479b5a233c7ddea99, type: 3}
+  - {fileID: 8300000, guid: e7e91a537689bf145bbf3b593ce23d52, type: 3}
+  m_runThreshold: 0.6
+--- !u!114 &7324005258330546568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c990d764e611b4d97142f5a8f5ffb0, type: 3}
+  m_Name: SurfaceSlide
+  m_EditorClassIdentifier: 
+  m_slide: {fileID: 8300000, guid: 07a115ea1617a64428a407dada492c2a, type: 3}
+  m_forceMultiplier: 0.5
+--- !u!114 &8504686213828951268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0c2d72da3389b48bde093123e28812, type: 3}
+  m_Name: SurfaceRolling
+  m_EditorClassIdentifier: 
+  m_clip: {fileID: 8300000, guid: 11e0530cfc299dc4b915405536ba6f54, type: 3}
+  m_forceMultiplier: 1

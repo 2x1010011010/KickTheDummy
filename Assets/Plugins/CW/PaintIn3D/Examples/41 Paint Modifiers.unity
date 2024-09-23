@@ -136,7 +136,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'This shows you how the paint settings can be randomly adjusted before
         the paint is applied. This is done by clicking the <color=#0FF>Add Modifier</color>
-        button inside the paint component (e.g. <color=#0FF>P3dPaintDecal</color>),
+        button inside the paint component (e.g. <color=#0FF>CwPaintDecal</color>),
         and selecting a value to modify (e.g. <color=#0FF>Angle</color>), and then
         the type of modification (e.g. <color=#0FF>Random</color>). Keep in mind
         these modifiers can be combined together to make even more interesting results.
@@ -282,17 +282,17 @@ PrefabInstance:
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.18
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.93
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.15
+      value: 5.68
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
@@ -347,6 +347,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 912571710}
   m_RootOrder: 2
@@ -393,13 +394,15 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers:
-    - id: 0
+    - rid: 0
   references:
-    version: 1
-    00000000:
-      type: {class: P3dModifyPositionRandom, ns: PaintIn3D, asm: PaintIn3D}
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: CwModifyPositionRandom, ns: PaintCore, asm: PaintCore}
       data:
         preview: 1
         unique: 1
@@ -520,6 +523,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 912571710}
   m_RootOrder: 1
@@ -566,13 +570,15 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers:
-    - id: 0
+    - rid: 0
   references:
-    version: 1
-    00000000:
-      type: {class: P3dModifyRadiusRandom, ns: PaintIn3D, asm: PaintIn3D}
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: CwModifyRadiusRandom, ns: PaintCore, asm: PaintCore}
       data:
         preview: 1
         unique: 1
@@ -691,6 +697,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1241801759}
   - {fileID: 1274655128}
@@ -756,6 +763,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1407300166}
   - {fileID: 484871995}
@@ -1293,13 +1301,15 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers:
-    - id: 0
+    - rid: 0
   references:
-    version: 1
-    00000000:
-      type: {class: P3dModifyAngleRandom, ns: PaintIn3D, asm: PaintIn3D}
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: CwModifyAngleRandom, ns: PaintCore, asm: PaintCore}
       data:
         preview: 1
         unique: 1
@@ -1355,6 +1365,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 912571710}
   m_RootOrder: 0
@@ -1415,6 +1426,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1453,18 +1465,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -1481,6 +1498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -1561,6 +1579,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1622,6 +1641,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 912571710}
   m_RootOrder: 3
@@ -1668,13 +1688,15 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers:
-    - id: 0
+    - rid: 0
   references:
-    version: 1
-    00000000:
-      type: {class: P3dModifyColorRandom, ns: PaintIn3D, asm: PaintIn3D}
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: CwModifyColorRandom, ns: PaintCore, asm: PaintCore}
       data:
         preview: 1
         unique: 1
@@ -1883,6 +1905,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 706558529}
   m_Father: {fileID: 0}
@@ -2129,6 +2152,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -3.28, y: 2.6, z: 5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

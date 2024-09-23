@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6725016332220897159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c6355c95756794d81d00f65609a9f1, type: 3}
+  m_Name: SurfaceImpacts
+  m_EditorClassIdentifier: 
+  m_lightClips:
+  - {fileID: 8300000, guid: 0fae3618293d29644b6b390b51be50b5, type: 3}
+  m_mediumClips: []
+  m_heavyClips: []
+  m_forceMultiplier: 1
+--- !u!114 &-2393623808205001514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0c2d72da3389b48bde093123e28812, type: 3}
+  m_Name: SurfaceRolling
+  m_EditorClassIdentifier: 
+  m_clip: {fileID: 8300000, guid: 11e0530cfc299dc4b915405536ba6f54, type: 3}
+  m_forceMultiplier: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c8e6a1840de544cb71a60064d77ffb, type: 3}
+  m_Name: Glass
+  m_EditorClassIdentifier: 
+  m_allowSameModules: 0
+  m_modules:
+  - {fileID: -6725016332220897159}
+  - {fileID: -2393623808205001514}
+  m_icon: {fileID: 0}

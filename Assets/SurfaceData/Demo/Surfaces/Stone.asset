@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4150052320352222221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c6355c95756794d81d00f65609a9f1, type: 3}
+  m_Name: SurfaceImpacts
+  m_EditorClassIdentifier: 
+  m_lightClips:
+  - {fileID: 8300000, guid: 72b0155f1cc5047489c9385bc1ffd0ef, type: 3}
+  - {fileID: 8300000, guid: d7e6a48ad41ba9f4c8d746303fb958d9, type: 3}
+  - {fileID: 8300000, guid: 453012d9f53ea5e4eb0e56fe50d1e614, type: 3}
+  m_mediumClips: []
+  m_heavyClips:
+  - {fileID: 8300000, guid: 3bd2f5f62f821794493db6ee0162e64d, type: 3}
+  - {fileID: 8300000, guid: b0d75eb3dc5bd9845a670cec0520e392, type: 3}
+  m_forceMultiplier: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c8e6a1840de544cb71a60064d77ffb, type: 3}
+  m_Name: Stone
+  m_EditorClassIdentifier: 
+  m_allowSameModules: 0
+  m_modules:
+  - {fileID: 1917358043540329204}
+  - {fileID: -4150052320352222221}
+  - {fileID: 4853614767269579451}
+  m_icon: {fileID: 0}
+--- !u!114 &1917358043540329204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5a3544e70fd184292827372452709f, type: 3}
+  m_Name: SurfaceFootsteps
+  m_EditorClassIdentifier: 
+  m_walkClips:
+  - {fileID: 8300000, guid: 7c069ba9eca3b884bab7b8f7d87d24d4, type: 3}
+  - {fileID: 8300000, guid: 62317d22f2a9c7b4caa0f27434cb3d49, type: 3}
+  - {fileID: 8300000, guid: ca0d6fc8a39e738459eaabb0efaa1b12, type: 3}
+  - {fileID: 8300000, guid: 053ac5f6cda0d2f47b08022ea50f3a84, type: 3}
+  - {fileID: 8300000, guid: 83fb1dfb027b542439d6ae0d46b29da9, type: 3}
+  - {fileID: 8300000, guid: 13c009be9cca34b4a98438f65f9731f5, type: 3}
+  - {fileID: 8300000, guid: 34fd2635621a99d4ab2641ead973951f, type: 3}
+  - {fileID: 8300000, guid: a4e15d2b0cda44149a33d5eb23cdcbb4, type: 3}
+  - {fileID: 8300000, guid: f0b8c1df63dd58e41b7746db874be6df, type: 3}
+  - {fileID: 8300000, guid: 4d383dc20c2f982438aada1b54e64f8a, type: 3}
+  - {fileID: 8300000, guid: 3778e985ddbb0cd4cb12eb3ed6087272, type: 3}
+  - {fileID: 8300000, guid: 301c3efde2df62c4e9455641573c55f8, type: 3}
+  m_runClips:
+  - {fileID: 8300000, guid: 55500bac4d21a314eb2890ceeb45d532, type: 3}
+  - {fileID: 8300000, guid: bfb0671351d371441a6d7cb085afe4e9, type: 3}
+  - {fileID: 8300000, guid: cf7eec7b5997f5d40a6529e76f95ba57, type: 3}
+  - {fileID: 8300000, guid: 7c8d876b71378354d97c2607c6b5406c, type: 3}
+  - {fileID: 8300000, guid: d400287dc40e6cb46800ac4ed674c011, type: 3}
+  - {fileID: 8300000, guid: dc74f8e3e489f174db6f97f6966b4e87, type: 3}
+  - {fileID: 8300000, guid: 6d05911d2850b414391cd897b8d13fd1, type: 3}
+  - {fileID: 8300000, guid: 7e2e33bf1f2489544bdcb07a5f90d6f0, type: 3}
+  - {fileID: 8300000, guid: 01bc4602d7ed4c848b014cb630f72d50, type: 3}
+  - {fileID: 8300000, guid: 6038904893eda864f9e35c725ba16dc0, type: 3}
+  - {fileID: 8300000, guid: d315221cd45e8ae44bc33ff30d8872b3, type: 3}
+  - {fileID: 8300000, guid: 44736144c894588439a664fd8b9561c0, type: 3}
+  - {fileID: 8300000, guid: 7bf6c59d09043cf43864cdd5b11b9796, type: 3}
+  m_runThreshold: 0.6
+--- !u!114 &4853614767269579451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c990d764e611b4d97142f5a8f5ffb0, type: 3}
+  m_Name: SurfaceSlide
+  m_EditorClassIdentifier: 
+  m_slide: {fileID: 8300000, guid: e7439fec85542ab4bb47615402a14aa2, type: 3}
+  m_forceMultiplier: 1

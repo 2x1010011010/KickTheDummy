@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Normal (Surface Shader)
+  m_Shader: {fileID: 4800000, guid: aa832e1be8135b24e812b806806ca444, type: 3}
+  m_ShaderKeywords: _DRAWMAIN_ON _DRAWNORMAL_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FluidTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 31d1cde732c0dc547a4b7a8abdaee5d2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: d73f80bbeb50906429f80db79052d6c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DrawMain: 1
+    - _DrawNormal: 1
+    - _FluidColorScatter: 0.4
+    - _FluidMetallic: 0
+    - _FluidMinColorScale: 0.1
+    - _FluidNoiseAmount: 1
+    - _FluidNoiseScale: 100
+    - _FluidNormal: 1
+    - _FluidNormalScale: 1
+    - _FluidScale: 1
+    - _FluidSmoothness: 0.822
+    - _Metallic: 0.206
+    - _NormalScale: 0.7
+    - _Smoothness: 0.382
+    m_Colors:
+    - _Color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+    - _FF_AtlasTransform: {r: 0, g: 0, b: 1, a: 1}
+    - _MainColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
+  m_BuildTextureStacks: []

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd45fa44975735c48bfb127d69cff3e1, type: 3}
+  m_Name: Meat
+  m_EditorClassIdentifier: 
+  <PhysicMaterial>k__BackingField: {fileID: 13400000, guid: 6fe5add6bdc18274ba1ba21ce60eef96,
+    type: 2}
+  <VisualEffect>k__BackingField: {fileID: 11400000, guid: bcece02dfa4ba354180bb2ae338de390,
+    type: 2}

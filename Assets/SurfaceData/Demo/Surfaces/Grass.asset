@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8774935388124869225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c6355c95756794d81d00f65609a9f1, type: 3}
+  m_Name: SurfaceImpacts
+  m_EditorClassIdentifier: 
+  m_lightClips:
+  - {fileID: 8300000, guid: a0dcdb6323e036c4dbbff0d69ab376b3, type: 3}
+  - {fileID: 8300000, guid: 092ffc330755f8d4bbe9e0c8639300c8, type: 3}
+  - {fileID: 8300000, guid: 875d65ddba14b2647a32279b90e2ff6d, type: 3}
+  - {fileID: 8300000, guid: 4f2f1aa1b14a0eb408d3f6e613f046e1, type: 3}
+  - {fileID: 8300000, guid: 3c70097a81fdb9949b8f6a4de1cba081, type: 3}
+  - {fileID: 8300000, guid: 78e553497be1e734398821c9ddebe58b, type: 3}
+  - {fileID: 8300000, guid: 0fa1dabc2c9f85e478def5068229973e, type: 3}
+  - {fileID: 8300000, guid: 6c4c50cc5c5187f469e9678c9b3b1638, type: 3}
+  - {fileID: 8300000, guid: e4831214f17317c4781c288136a8b16e, type: 3}
+  m_mediumClips: []
+  m_heavyClips:
+  - {fileID: 8300000, guid: 42cb57d3503fc5447a71555bdbacf689, type: 3}
+  - {fileID: 8300000, guid: 7bb2316ec5cc41e418f1e2f3e2f031fc, type: 3}
+  - {fileID: 8300000, guid: 7c2bdc0482d2e744395e89f694a31556, type: 3}
+  - {fileID: 8300000, guid: b340090170e061343a8a760e71dbb124, type: 3}
+  - {fileID: 8300000, guid: eb47e049011428a4e929f60143c33b8d, type: 3}
+  - {fileID: 8300000, guid: 2f8fd094bb262354fb00d5a9a471b85b, type: 3}
+  - {fileID: 8300000, guid: ad645bdefe67fc14ab9933fe4924290f, type: 3}
+  - {fileID: 8300000, guid: 70841cefdff3a3644930e412a201738d, type: 3}
+  - {fileID: 8300000, guid: 424518504f0539541bd57e8d537c7b65, type: 3}
+  m_forceMultiplier: 1
+--- !u!114 &-8086839022309454690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5a3544e70fd184292827372452709f, type: 3}
+  m_Name: SurfaceFootsteps
+  m_EditorClassIdentifier: 
+  m_walkClips:
+  - {fileID: 8300000, guid: a0dcdb6323e036c4dbbff0d69ab376b3, type: 3}
+  - {fileID: 8300000, guid: 092ffc330755f8d4bbe9e0c8639300c8, type: 3}
+  - {fileID: 8300000, guid: 875d65ddba14b2647a32279b90e2ff6d, type: 3}
+  - {fileID: 8300000, guid: 4f2f1aa1b14a0eb408d3f6e613f046e1, type: 3}
+  - {fileID: 8300000, guid: 3c70097a81fdb9949b8f6a4de1cba081, type: 3}
+  - {fileID: 8300000, guid: 78e553497be1e734398821c9ddebe58b, type: 3}
+  - {fileID: 8300000, guid: 0fa1dabc2c9f85e478def5068229973e, type: 3}
+  - {fileID: 8300000, guid: 6c4c50cc5c5187f469e9678c9b3b1638, type: 3}
+  - {fileID: 8300000, guid: e4831214f17317c4781c288136a8b16e, type: 3}
+  m_runClips:
+  - {fileID: 8300000, guid: 42cb57d3503fc5447a71555bdbacf689, type: 3}
+  - {fileID: 8300000, guid: 7bb2316ec5cc41e418f1e2f3e2f031fc, type: 3}
+  - {fileID: 8300000, guid: 7c2bdc0482d2e744395e89f694a31556, type: 3}
+  - {fileID: 8300000, guid: b340090170e061343a8a760e71dbb124, type: 3}
+  - {fileID: 8300000, guid: eb47e049011428a4e929f60143c33b8d, type: 3}
+  - {fileID: 8300000, guid: 2f8fd094bb262354fb00d5a9a471b85b, type: 3}
+  - {fileID: 8300000, guid: ad645bdefe67fc14ab9933fe4924290f, type: 3}
+  - {fileID: 8300000, guid: 70841cefdff3a3644930e412a201738d, type: 3}
+  - {fileID: 8300000, guid: 424518504f0539541bd57e8d537c7b65, type: 3}
+  m_runThreshold: 0.6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c8e6a1840de544cb71a60064d77ffb, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  m_allowSameModules: 0
+  m_modules:
+  - {fileID: -8086839022309454690}
+  - {fileID: -8774935388124869225}
+  m_icon: {fileID: 0}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17024045, g: 0.2108125, b: 0.27292764, a: 1}
+  m_IndirectSpecularColor: {r: 0.18230188, g: 0.22486997, b: 0.28911617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -155,6 +155,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947002578}
   m_RootOrder: 2
@@ -194,10 +195,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &155367016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +317,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947002578}
   m_RootOrder: 3
@@ -353,10 +357,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &175706456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +635,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1205190604}
   - {fileID: 1772760460}
@@ -1212,6 +1219,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1407300166}
   - {fileID: 1208821190}
@@ -1253,6 +1261,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947002578}
   m_RootOrder: 5
@@ -1292,10 +1301,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &992772245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,6 +1578,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 513254033}
   m_RootOrder: 0
@@ -1660,6 +1672,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947002578}
   m_RootOrder: 1
@@ -1699,10 +1712,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1208821192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,9 +1815,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: "This shows you how the <color=#0FF>Channel Counter</color> demo scene
         can be modified to accurately display how much of a mesh you have painted.
-        This is done by setting the Spaceship GameObject\u2019s <color=#0FF>P3dChannelCounter.Mesh</color>
+        This is done by setting the Spaceship GameObject\u2019s <color=#0FF>CwChannelCounter.Mesh</color>
         setting to the original non-seam-fixed mesh. The paint percentage can then
-        be displayed using the <color=#0FF>P3dChannelCounterText</color> and <color=#0FF>P3dChannelCounterFill</color>
+        be displayed using the <color=#0FF>CwChannelCounterText</color> and <color=#0FF>CwChannelCounterFill</color>
         components. To make the paint work with any color this spaceship paint uses
         a second layer on top, similar to the <color=#0FF>Paint On Top</color> demo
         scene.\nSwipe / Click + Drag = Paint"
@@ -1955,17 +1970,17 @@ PrefabInstance:
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.18
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.93
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.15
+      value: 5.68
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
@@ -2079,6 +2094,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 513254033}
   - {fileID: 1460444563}
@@ -2146,10 +2162,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1407300165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2199,6 +2217,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947002578}
   m_RootOrder: 0
@@ -2276,6 +2295,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1196903759}
   - {fileID: 559362634}
@@ -2327,6 +2347,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2366,18 +2387,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -2394,6 +2420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -2472,7 +2499,7 @@ MonoBehaviour:
   async: 1
   downsampleSteps: 3
   registeredPaintableTexture: {fileID: 1469970200}
-  cooldown: -245.7728
+  cooldown: -252.94374
   currentReader:
     dirty: 0
     requested: 0
@@ -2520,6 +2547,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2582,6 +2610,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 947002578}
   m_RootOrder: 4
@@ -2621,10 +2650,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1527115992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2739,6 +2770,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 513254033}
   m_RootOrder: 1
@@ -2903,6 +2935,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -3.28, y: 2.6, z: 5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

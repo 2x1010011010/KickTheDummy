@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fluid (Surface Shader)
+  m_Shader: {fileID: 4800000, guid: aa832e1be8135b24e812b806806ca444, type: 3}
+  m_ShaderKeywords: FF_UV _DRAWMAIN_ON _DRAWNORMAL_ON _FLUIDMODE_COLOR _FLUIDUVSET_UV0
+    _UV_SET0
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FluidTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 450df128cb334cc42b9b4fcf7afeaac4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: e0ced145ce11dcc469f90c03eb595130, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DrawMain: 1
+    - _DrawNormal: 1
+    - _FluidColorScatter: 2
+    - _FluidMetallic: 0
+    - _FluidMetallicB: 1
+    - _FluidMetallicG: 0
+    - _FluidMetallicR: 1
+    - _FluidMinColorScale: 0.1
+    - _FluidNoiseAmount: 1.7
+    - _FluidNoiseScale: 233.9
+    - _FluidNormal: 5.34
+    - _FluidNormalB: -1
+    - _FluidNormalG: 1
+    - _FluidNormalR: 1
+    - _FluidScale: 1.38
+    - _FluidSmoothness: 0.892
+    - _FluidSmoothnessB: 0
+    - _FluidSmoothnessG: 1
+    - _FluidSmoothnessR: 1
+    - _Glossiness: 0.221
+    - _Metallic: 0.067
+    - _NormalScale: 1.58
+    - _Smoothness: 0.231
+    - _UseSecondaryUV: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _FF_AtlasTransform: {r: 0, g: 0, b: 1, a: 1}
+    - _FluidColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FluidColorB: {r: 1, g: 0, b: 0.15516615, a: 1}
+    - _FluidColorG: {r: 0.008212576, g: 0, b: 0.9607843, a: 1}
+    - _FluidColorR: {r: 0.11188815, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []

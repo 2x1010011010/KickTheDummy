@@ -155,6 +155,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0.9238796, z: -0, w: -0.38268325}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1922362176}
   m_RootOrder: 0
@@ -279,7 +280,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'This shows you how to automatically fix seams in your mesh without
         using the <color=#0FF>Seam Fixer</color> tool. This is done by changing the
-        <color=#0FF>P3dPaintable</color> component''s <color=#0FF>Advanced / UseMesh</color>
+        <color=#0FF>CwPaintableMesh</color> component''s <color=#0FF>Advanced / UseMesh</color>
         setting to <color=#0FF>AutoSeamFix</color>. Keep in mind this mode doesn''t
         give you control over the seam fix settings (the defaults should be suitable
         for most meshes). Also keep in mind there will be a small performance hit
@@ -559,6 +560,7 @@ Transform:
   m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
   m_LocalPosition: {x: 0, y: 2.9, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -618,10 +620,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1407300165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,6 +675,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -712,6 +717,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.8949345, z: -0, w: -0.44619766}
   m_LocalPosition: {x: 2.3, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1711161498}
   m_Father: {fileID: 0}
@@ -751,18 +757,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 1
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 1
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -779,6 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -859,6 +871,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -920,6 +933,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.38268343}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1469836692}
   m_RootOrder: 0
@@ -1111,6 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -1126,18 +1141,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -1166,6 +1186,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1214,6 +1235,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.89493436, z: 0, w: 0.44619772}
   m_LocalPosition: {x: -2.3, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 545579308}
   m_Father: {fileID: 0}

@@ -1,4 +1,4 @@
-﻿Shader "Hidden/Paint in 3D/ShapeOutline"
+﻿Shader "Hidden/PaintCore/CwShapeOutline"
 {
 	Properties
 	{
@@ -27,8 +27,8 @@
 				float4 vertex : SV_POSITION;
 			};
 
-			sampler2D _P3dShapeTex;
-			float4    _P3dShapeChannel;
+			sampler2D _CwShapeTex;
+			float4    _CwShapeChannel;
 
 			void Vert (in appdata i, out v2f o)
 			{
@@ -38,7 +38,7 @@
 
 			fixed4 Frag (v2f i) : SV_Target
 			{
-				float shape = dot(tex2D(_P3dShapeTex, i.uv), _P3dShapeChannel);
+				float shape = dot(tex2D(_CwShapeTex, i.uv), _CwShapeChannel);
 				float side  = shape + abs(ddx(shape)) + abs(ddy(shape));
 
 				if (shape >= 0.5f || side < 0.5f)

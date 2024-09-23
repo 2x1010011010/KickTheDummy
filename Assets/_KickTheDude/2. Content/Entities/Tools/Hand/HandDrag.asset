@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeeb03a942a0f184b885477b719affab, type: 3}
+  m_Name: HandDrag
+  m_EditorClassIdentifier: 
+  _connectedBody: {fileID: 0}
+  _connectedArticulationBody: {fileID: 0}
+  _anchor: {x: 0, y: 0, z: 0}
+  _axis: {x: 0, y: 0, z: 0}
+  _autoconfigureConnectedAnchor: 1
+  _connectedAnchor: {x: 0, y: 0, z: 0}
+  _secondaryAxis: {x: 0, y: 0, z: 0}
+  _xMotion: 1
+  _yMotion: 1
+  _zMotion: 1
+  _angularXMotion: 2
+  _angularYMotion: 2
+  _angularZMotion: 2
+  _linearLimitSpring:
+    Spring: 0
+    Damper: 100
+  _linearLimit:
+    Limit: 100
+    Bounciness: 0
+    ContactDistance: 0.1
+  _angularXLimitSpring:
+    Spring: 0
+    Damper: 0
+  _lowAngularXLimit:
+    Limit: 0
+    Bounciness: 0
+    ContactDistance: 0
+  _highAngularXLimit:
+    Limit: 0
+    Bounciness: 0
+    ContactDistance: 0
+  _angularYZLimitSpring:
+    Spring: 0
+    Damper: 0
+  _angularYLimit:
+    Limit: 0
+    Bounciness: 0
+    ContactDistance: 0
+  _angularZLimit:
+    Limit: 0
+    Bounciness: 0
+    ContactDistance: 0
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetVelocity: {x: 0, y: 0, z: 0}
+  _xDrive:
+    PositionSpring: 15000
+    PositionDumper: 1000
+    MaximumForce: 5e+16
+  _yDrive:
+    PositionSpring: 15000
+    PositionDumper: 1000
+    MaximumForce: 5e+16
+  _zDrive:
+    PositionSpring: 15000
+    PositionDumper: 1000
+    MaximumForce: 5e+16
+  _targetRotation:
+    X: 0
+    Y: 0
+    Z: 0
+    W: 1
+  _targetAngularVelocity: {x: 0, y: 0, z: 0}
+  _rotationDriveMode: 0
+  _angularXDrive:
+    PositionSpring: 0
+    PositionDumper: 0
+    MaximumForce: 3.402823e+38
+  _angularYZDrive:
+    PositionSpring: 0
+    PositionDumper: 0
+    MaximumForce: 3.402823e+38
+  _slerpDrive:
+    PositionSpring: 0
+    PositionDumper: 0
+    MaximumForce: 3.402823e+38
+  _projectionMode: 0
+  _projectionDistance: 0.1
+  _projectionAngle: 180
+  _configuredInWorldSpace: 0
+  _swapBodies: 0
+  _breakForce: Infinity
+  _breakTorque: Infinity
+  _enableCollision: 0
+  _enablePreprocessing: 1
+  _massScale: 1
+  _connectedMassScale: 1

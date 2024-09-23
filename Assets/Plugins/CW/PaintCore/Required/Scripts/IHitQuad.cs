@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PaintIn3D
+namespace PaintCore
 {
 	/// <summary>This interface allows you to make components that can paint quads defined by a pair of two points.</summary>
 	public interface IHitQuad : IHit

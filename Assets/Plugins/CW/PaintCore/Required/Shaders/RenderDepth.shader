@@ -1,4 +1,4 @@
-﻿Shader "Hidden/Paint in 3D/RenderDepth"
+﻿Shader "Hidden/PaintCore/CwRenderDepth"
 {
 	Properties
 	{

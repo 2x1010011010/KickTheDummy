@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21aa1bd405810c41a7a42fd5d3f1444, type: 3}
+  m_Name: Color Decal
+  m_EditorClassIdentifier: 
+  Decal:
+    MaskChannel:
+      Texture: {fileID: 2800000, guid: 138639691c4b7d04a993abeefecf8217, type: 3}
+      Components: 7
+    Channels:
+    - TargetTextureChannel:
+        mode: 0
+        identifier: _MainTex
+        channel: {fileID: 11400000, guid: 049fe1b691844004b955aff0ae8706ef, type: 2}
+      ChannelType: 0
+      Source:
+        SourceType: 0
+        Texture: {fileID: 2800000, guid: 3d890af771f88064ab2aa52f4bfb4900, type: 3}
+        Color: {r: 0.54901963, g: 0.043137264, b: 0.053360797, a: 1}
+      Data: 1.2
+      WriteMask: 15

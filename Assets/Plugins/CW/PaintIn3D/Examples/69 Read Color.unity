@@ -206,6 +206,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1464926816}
   m_Father: {fileID: 997163895}
@@ -227,9 +228,9 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: 'This shows you how to read the paint pixel color under the mouse/finger.
-        This is done using the <color=#0FF>P3dReadColor</color> component, which
-        can be added alongside any <color=#0FF>P3dHit___</color> component that works
-        using raycasts like <color=#0FF>P3dHitScreen</color> and <color=#0FF>P3dHitBetween</color>.
+        This is done using the <color=#0FF>CwReadColor</color> component, which can
+        be added alongside any <color=#0FF>CwHit___</color> component that works
+        using raycasts like <color=#0FF>CwHitScreen</color> and <color=#0FF>CwHitBetween</color>.
         Keep in mind the hit component must be set to emit <color=#0FF>PointsOnUV</color>.
         The <color=#0FF>OnColor</color> event is then used to change the UI Image
         color to the read color.
@@ -374,17 +375,17 @@ PrefabInstance:
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.18
+      value: -3.93
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.93
+      value: 4.45
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.15
+      value: 6.86
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
@@ -498,6 +499,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 427640897}
   m_Father: {fileID: 0}
@@ -587,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -602,18 +605,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -628,6 +636,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -676,6 +685,7 @@ Transform:
   m_LocalRotation: {x: 0.6034116, y: -0.20210315, z: 0.16168362, w: 0.75425935}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -805,6 +815,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -864,6 +875,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 427640897}
   m_RootOrder: 0
@@ -994,6 +1006,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -3.93, y: 4.45, z: 6.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

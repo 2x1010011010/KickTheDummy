@@ -308,6 +308,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -349,6 +350,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -391,18 +393,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -419,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -636,6 +644,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0.0000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 87308490}
   m_RootOrder: 0
@@ -650,6 +659,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 87308488}
   - {fileID: 87308494}
@@ -666,6 +676,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0.0000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 87308490}
   m_RootOrder: 1
@@ -683,8 +694,8 @@ PrefabInstance:
       value: 'This shows you how to paint the <color=#0FF>Albedo</color>, <color=#0FF>Normal</color>,
         and <color=#0FF>PBR</color> (Metallic + AO + Smoothness) textures at the
         same time using the <color=#0FF>Group</color> feature. You can assign a texture
-        group using the <color=#0FF>P3dPaintableTexture.Group</color> setting, and
-        to paint these textures a matching <color=#0FF>P3dPaintSphere.Group</color>/<color=#0FF>P3dPaintDecal.Group</color>
+        group using the <color=#0FF>CwPaintableMeshTexture.Group</color> setting,
+        and to paint these textures a matching <color=#0FF>CwPaintSphere.Group</color>/<color=#0FF>CwPaintDecal.Group</color>
         setting can be used.
 
         Right Click + Drag = Orbit'
@@ -923,6 +934,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 772563703}
   m_RootOrder: 1
@@ -969,10 +981,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &208254568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,10 +1068,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &208254570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,6 +1291,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 772563703}
   m_RootOrder: 4
@@ -1321,10 +1338,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &376083931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1593,6 +1612,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 772563703}
   m_RootOrder: 3
@@ -1639,10 +1659,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &753989021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,6 +1776,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1858618582}
   - {fileID: 208254566}
@@ -1932,6 +1955,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1065303529}
   m_RootOrder: 0
@@ -2026,6 +2050,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 71806146}
   - {fileID: 1027667380}
@@ -2132,6 +2157,7 @@ Transform:
   m_LocalRotation: {x: 0.15992197, y: 0.66082865, z: -0.14710733, w: 0.718394}
   m_LocalPosition: {x: 0, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 816233407}
   m_Father: {fileID: 0}
@@ -2169,6 +2195,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 772563703}
   m_RootOrder: 2
@@ -2215,10 +2242,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1070808112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,10 +2329,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1070808114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2440,6 +2471,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 836308049}
   m_Father: {fileID: 0}
@@ -2495,6 +2527,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 772563703}
   m_RootOrder: 5
@@ -2541,10 +2574,12 @@ MonoBehaviour:
   tileTransform: {fileID: 1419652205}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1419652207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,10 +2661,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1419652209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2672,10 +2709,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1419652210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3095,6 +3134,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 772563703}
   m_RootOrder: 0
@@ -3134,10 +3174,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1858618584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,10 +3215,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1858618585
 MonoBehaviour:
   m_ObjectHideFlags: 0

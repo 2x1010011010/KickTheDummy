@@ -136,7 +136,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'This shows you how to make painted decals change direction based on
         the angle of your mouse/finger as you paint. This is done by changing the
-        <color=#0FF>P3dHitScreen</color> component''s <color=#0FF>RelativeTo</color>
+        <color=#0FF>CwHitScreen</color> component''s <color=#0FF>RelativeTo</color>
         setting to <color=#0FF>DrawAngle</color> when <color=#0FF>RotateTo</color>
         = <color=#0FF>Normal</color>. Keep in mind the draw angle isn''t known on
         the first frame your mouse/finger touches the screen, so the first paint
@@ -408,10 +408,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1407300165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +463,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -571,6 +574,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -4.18, y: 6.93, z: 7.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -654,6 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -669,18 +674,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -695,6 +705,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -757,6 +768,7 @@ Transform:
   m_LocalRotation: {x: 0.70372003, y: -0.06912437, z: 0.06912437, w: 0.70372003}
   m_LocalPosition: {x: 1.74, y: 2.5, z: -2.46}
   m_LocalScale: {x: 1, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

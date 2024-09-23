@@ -1,0 +1,651 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Duplicate Asset Isolation
+  m_EditorClassIdentifier: 
+  m_GroupName: Duplicate Asset Isolation
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 03d2f065bd63a0c4da5c58d0237fe906
+  m_SerializeEntries:
+  - m_GUID: fe393ace9b354375a9cb14cdbbc28be4
+    m_Address: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 162cd0c2b81a8402fbc700da4ca20eb6
+    m_Address: Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/UI/Arrows/Exit.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2837439531f1147438b69e1c428f401f
+    m_Address: Assets/GUIPack-Clean&Minimalist/Demo/Sprites/Icons/Icons/UI/Settings/Settings
+      x12.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca32d4623946ce744812380fd6e9978c
+    m_Address: Assets/Plugins/CW/PaintIn3D/Examples/Decals/Dot.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fb135d3c45ee7343ba34122f8adc35f
+    m_Address: Assets/Minimal UI Sounds/Spacey Click_Minimal UI Sounds.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c6294e30893195479b5731fcba91173
+    m_Address: Assets/Weapons icons/72 dpi/Assault rifles/AK-47_72dpi_.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 32050b63a081cd649a044322413fd3cb
+    m_Address: Assets/Weapons icons/72 dpi/Handguns/Beretta_92FS_72dpi_.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83bd9e3057fcd1241ad879bf1b2743c1
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Stuff/Source/1F_Buiding_v1_set_1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7daa6f61d24086145a95e4379ec51f2d
+    m_Address: Assets/FluidFlow/Example/Materials/Drawable/Normal (Shader Graph).mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8cb00a1eb6d79442979d14f3cbcad60
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Pipes/Materials/Pipes_Metal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f93897a264039894fabf59bc37d8fea3
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/CorridorLamp_flare.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 100186656ae0df64ea35e9a47ea6b1d5
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/Materials/CorridorLamp.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe6340b58e4dde441ae5c35ea7ff93b6
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/Muzzle/Distortion.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 607538b5e90da894eb4547778e140384
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Door/Door.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b928217dca4f6d49bfebd1f28e76810
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/Muzzle/Smoke.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92b07d475771d1f4b9a480a25678190c
+    m_Address: Assets/_KickTheDude/2. Content/Art/Materials/MineIndicator.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fcc31e581e613b84e99f1fa4b991ad7e
+    m_Address: Assets/LowPolySentryGun/Materials/SentryGunMobile.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 885fb82a44ec51245873baff6475ee34
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/MetalBulletDecal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8a7d40b496490a4cb40f182f913784a
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Props/WetFloorCaution/Model/WetFloorSign.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69640fab16b3989488a58d82744903e5
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/Muzzle/MuzzleFlash2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff688eedc16ccf84898bb6c02adb2cbb
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/Muzzle/Flame1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b25a339ea4220f644bdbd5db1631fea7
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/Muzzle/MuzzleFlash1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4360ad2ff6f56e243b0b9f6fcde9909f
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Props/RedBarrel/Model/Barrel_v3_red.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b1a79b091ca0504bb39ae1930b761d0
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Stuff/Source/1F_Buiding_v1_set_1.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7563da1bb903b848af92abf1888fa07
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Pipes/Meshs/Pipe_C.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c95447d1e093502439ba945691839802
+    m_Address: Assets/LowPolySentryGun/Models/SentryGun.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1920b35342de9a04d85b29a465418532
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Characters/Human/Body/MaleBody/HumanMale.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15d991c4374ec264c9955c17701631ab
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Models/Leaf.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a3be3f7fb0654f45ac3503a047a0e8f
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/CorridorLamp.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec3716d94697d1142bdb81c8fbc88011
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Pipes/Meshs/Pipe_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b261dca1856cee44a16ae7d866c69be
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Models/StarPrimitives.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75ece0dab22f9a144a1d2f582735de08
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Models/MuzzleFlashCone.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 989caa1be7c027048bbba4279b95686e
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Props/WetFloorCaution/Model/wet_floor_sign.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73137abb6e8047f40b07f23973afb100
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Pipes/Meshs/Pipe_E.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bf7537d27999d4448c4145cad1f47e7
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Props/RedBarrel/Model/Barrel_v3.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9385129ddf6ca2942a18486db08b6769
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Pipes/Meshs/Pipe_D.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66eca7cd689d78844943f0db5543c98f
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Pipes/Meshs/Pipe_F.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3ecd88f1a6cb433391713d032bbf841
+    m_Address: Assets/Real Guns Sound Pack 2/Stereo/Weapons/MiniGun/minigun_shot_burst_04.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b03d03104ac82346bc25f2d5fbdaf33
+    m_Address: Assets/SurfaceData/Demo/Physics Materials/Metal.physicMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1713825dea3c28344898a757e4f6c7fb
+    m_Address: Assets/SurfaceData/Demo/Physics Materials/Concrete.physicMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd1fe0ad0d8cde941a079f7622fbc4c2
+    m_Address: Assets/_KickTheDude/2. Content/Art/Other/Sandbox.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb4f2df0f08a90d44bd8b39d9b7a09ca
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Shaders/FPSDistortionParticles.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 506808118de8e5f42b765b9d68bc842d
+    m_Address: Assets/_KickTheDude/2. Content/Art/Shaders/EmmisivePulse.shadergraph
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b5358b18c98cd847ae4fc90c8b76312
+    m_Address: Assets/LowPolySentryGun/Textures/Mobile/SentryGun_MobileDiffuse.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77790bc3f765be74096f0b66c7970fdf
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Textures/Effects/Impact/MetalBulletDecal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 378dc20440f4d724796368a0d8b5af3d
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Shaders/FPS_UberDecal.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36977a04235fdf94b9d0b9e800c72636
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Textures/Effects/Muzzle/Flame1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 933532a4fcc9baf4fa0491de14d08ed7
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e8337d564bcb724cb3de42245f969d6
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/CorridorLamp_spec.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58c55d567037ee74db019a3535b9fcc2
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/CorridorLamp_N.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef1b5607ce4109a46b7d7a59abcb2490
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Props/WetFloorCaution/Model/wet_floor_sign_1001_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d0ddb927d75b62c45b63275d732d2aba
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/CorridorLamp.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4337a3d93ba8c3a4a8ab7305fc567124
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Characters/Human/Body/MaleBody/BaseCharacterDisolve.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebb4815a3c97fd645afbebb7cd58d1f3
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Props/RedBarrel/Model/Barrel_v3_red.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0406db5a14f94604a8c57ccfbc9f3b46
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Particles/ParticlesUnlit.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa832e1be8135b24e812b806806ca444
+    m_Address: Assets/FluidFlow/Shaders/FluidSurface.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4365886b980d70747adba9a1b75babad
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Textures/Effects/Muzzle/MuzzleFlash1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ab790cbb0bb4e04ea06d9084a2cc26d
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Pipes/Textures/Pipes_diffuse_Blue.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d2bb70cbf9db8d4da26e15b26e74248
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/SimpleLit.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6797202c26259c44fb42a3786cebe53e
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Stuff/Source/1F_Buiding_v1_set_1.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ab4a0cc412157748848d6d8845aa8c6
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/CorridorLamp_emission.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a33afecb8e62904383eabcdfc6da579
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/CorridorLamp/CorridorLamp.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c320e23de6c409948a01f29015860e01
+    m_Address: Assets/_KickTheDude/2. Content/Art/Models/Door/MIS_Doors_00_Base_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58eb399dc6162a041b5fe246273661bb
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Shaders/AlphaBlendedAnim.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 157268fdf5a02c545bcd4ebf6c7df3f1
+    m_Address: Assets/FluidFlow/Shaders/FluidShaderGraph.shadergraph
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48af1e7e9ad75854fb31851af8accf15
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Textures/Effects/Impact/Smoke.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e09aa0f3dcb3b14f952250eb45aec89
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Textures/Effects/Muzzle/Distortion2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36e335017ad71d54fbb10842863188ae
+    m_Address: Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/FallbackShader.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6e9a19c3678ded42a3bc431ebef7dbd
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Utils/FallbackError.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d32a6a1037bf3ff468cf07a54139309b
+    m_Address: Assets/FXVille_BloodPack/Materials/M_StyleBlood_Drop_01.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ed40ed0b07337b42aa2d81d94bea406
+    m_Address: Assets/FXVille_BloodPack/Materials/M_Blood_Drop_01.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37083ba1fbac2964fad56d13047e8379
+    m_Address: Assets/FXVille_BloodPack/Materials/M_Blood_Drop_02.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce118055c23f49946871a685127446e5
+    m_Address: Assets/FXVille_BloodPack/Materials/M_Blood_Burst_02.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5551e6080e2385c428bb0940a7445730
+    m_Address: Assets/FXVille_BloodPack/Materials/M_StyleBlood_Burst_02.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ffe60a1be7ea6845b59a52abcb50829
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Droplet_Noise_N.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3337b8a37d0a07441bc0291dee0c2142
+    m_Address: Assets/FXVille_BloodPack/Textures/T_UVWarp_Noise_N.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92fa7c46dcdfe0240a735ba5b809cb43
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Blood_Mist_Mask.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 676dc61850f55cb43b386278a31f41fb
+    m_Address: Assets/FXVille_BloodPack/Textures/T_UVWarp_Noise.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a426bfb9d7f32e141bc4520a369846bc
+    m_Address: Assets/FXVille_BloodPack/Textures/T_BloodBurst_Mask.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b0f874b7eab4584a8adfe210118664e
+    m_Address: Assets/FXVille_BloodPack/Textures/T_SwirlWarp.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f64bc4cb40b8f6448782810351fe988
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Droplet_Noise_H.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28eccfbe919a6b945bd87550768e9dcf
+    m_Address: Assets/FXVille_BloodPack/Shaders/FXVille Blood 2018.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cf82dce4f35e324294123967e2087e1
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Blood_Noise_H.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce7ba80f0cfc71d47963e5058a5fbcd0
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Blood_Noise_N.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d0d6c2f82b84c545b7ab2ec21d914e6
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Reflection02.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9df25b464ae89e41a204eeb0ceed0a9
+    m_Address: Assets/_KickTheDude/2. Content/Art/Audio/Clips/water-drop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 51d2d6de2b1af684a8688a1219f7b5fe
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0a920d0e41b8de409030e6bbc6c6590
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3c6448d9a435894fa5ad4e9eab4216c
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/4.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0bee3fb67b158a4b8bb19aac35062ad
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ded1d83f1f85dd54dbd66a150d46562e
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/7.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6005b5be17e3c5c4aaaf61df49071416
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood7_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20ea9455d84600c41a4e7cbc6c803e14
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/5.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c29e3002803f5d44938100a2ca1f8eb
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e968bc625ae02594eb8803e9b3c450a8
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7e4249e4b6880f45bc67bf239df7f88
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8d48bc500d2a964ea095a62557dd219
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/6.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b252c362b6c117b41bdd5d45f0c1b0f6
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 992365aa61e0a264e8fa2e43e42bd427
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/9.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e0b81a2971615e44b9578a606e9cc8d
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood9.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61ce20e5429b7dd4da86234274284499
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/8.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34f2f5ee9c07292448d0a06daf7a32af
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40f15883830cd254582f45ee7fe7970b
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/10.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd7916d4c927ad948b92116d13d6053a
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood10.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8605f307144cdbc4e92c8e580e77307b
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90cd70bc4d9e4934799967cf55517edd
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedMat/Blood15/11.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4138e8c704b12244894cbbbd72fc3987
+    m_Address: Assets/KriptoFX/BloodFX/Materials/RedTextures/Blood11.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6fe5add6bdc18274ba1ba21ce60eef96
+    m_Address: Assets/SurfaceData/Demo/Physics Materials/Meat.physicMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 591c05f408529c547a6031372d938c7d
+    m_Address: Assets/SurfaceData/Demo/Physics Materials/Cardboard.physicMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb7da507cb056ae46965c12a372fc4ac
+    m_Address: Assets/SurfaceData/Demo/Physics Materials/Wood.physicMaterial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd80bc4b24e548e49a2916539af2c8f6
+    m_Address: Assets/_KickTheDude/2. Content/Art/Audio/Clips/Explosions/mine-beep.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6d1cff140aa6c1469f040d090ca6316
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/MetalSmoke.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 45a90237eb1b8e74fa79345cd7e3d269
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Materials/Effects/MetalParticles.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25d080f4d7d74054fa233aadfcf87f88
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Textures/Effects/Impact/Particle.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3182757272d36d24c85dd4d09bfc8d41
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Shaders/Particles.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: becd118a29261bc47b86d235b9f9b60a
+    m_Address: Assets/_KickTheDude/2. Content/Art/Textures/Skin/BODY_DECAL_LOW_BODY_DECAL_Normal_1.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3be52e7921efcb546973b245ed9c3c54
+    m_Address: Assets/_KickTheDude/2. Content/Art/Textures/Skin/BODY_DECAL_LOW_BODY_DECAL_AlbedoTransparency_1.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 135d2dc6898fa804cb4c8b516b3587fe
+    m_Address: Assets/KriptoFX/MuzzleFlashes/Textures/Effects/Impact/BrickBulletDecal3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36b7164d6daab9e4d9fc03079915439a
+    m_Address: Assets/_KickTheDude/2. Content/Art/Audio/Clips/WHOOSH_Fast_Air_mono.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 493e976d28c817f4e88e4e64e08f010d
+    m_Address: Assets/Gamemaster Audio - Bullet Impact Sounds/Bullets/bullet_impact_body_flesh_02.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6bfd04147673e5b4ebbe53437d856a72
+    m_Address: Assets/FXVille_BloodPack/Materials/M_Blood_Spurt_03.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f445bb0af139b794da330adbb1a7fd69
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Blood_String_Mask.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84f6b1d627f7e5c43ba3921c0e2cd946
+    m_Address: Assets/FXVille_BloodPack/Textures/T_Blood_String_N.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5b84b4a03a66ea4b88aef3f82164b0a
+    m_Address: Assets/FXVille_BloodPack/Materials/M_Blood_Burst_01.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9dabcd036b6819498344cde190a3cc4
+    m_Address: Crater65
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b816108a8b8b94f4cadfb97924d1bbf9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f78414e23c951d94c9044057ec0813c8, type: 2}
+    - {fileID: 11400000, guid: f9b1153016a1f0741a6522294893cf6c, type: 2}

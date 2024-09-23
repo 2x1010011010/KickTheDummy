@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4bdc08b8f4727c4ea829d15b81923b2, type: 3}
+  m_Name: SurfaceDataPhysicsMapping
+  m_EditorClassIdentifier: 
+  m_materials:
+  - material: {fileID: 13400000, guid: 55c6958d5f8e6404d8cb9bf0bc671cb1, type: 2}
+    surface: {fileID: 11400000, guid: 5244b38b2c83b3a478df11191af80d03, type: 2}
+  - material: {fileID: 13400000, guid: 1713825dea3c28344898a757e4f6c7fb, type: 2}
+    surface: {fileID: 11400000, guid: 31c9bff009d6bd547abac9d5c75103b5, type: 2}
+  - material: {fileID: 13400000, guid: 8b03d03104ac82346bc25f2d5fbdaf33, type: 2}
+    surface: {fileID: 11400000, guid: 3c241c867ee9c624a9648a02f12dde99, type: 2}
+  - material: {fileID: 13400000, guid: cfb86cd066818f44094e20ebc4fc9fdc, type: 2}
+    surface: {fileID: 11400000, guid: 72ea47a562041324091f97c8a9da6bea, type: 2}
+  - material: {fileID: 13400000, guid: 591c05f408529c547a6031372d938c7d, type: 2}
+    surface: {fileID: 11400000, guid: a7be2b54b46dbb5429f4c1160b3b2e90, type: 2}
+  - material: {fileID: 13400000, guid: 097c26f94b6ac1442862ed2ee0f26b4b, type: 2}
+    surface: {fileID: 11400000, guid: e280f589c6f1ba9479b728e5b65d9f29, type: 2}
+  - material: {fileID: 13400000, guid: cb7da507cb056ae46965c12a372fc4ac, type: 2}
+    surface: {fileID: 11400000, guid: d937ab1fef81f754b80845694c9bc830, type: 2}
+  - material: {fileID: 13400000, guid: cb7da507cb056ae46965c12a372fc4ac, type: 2}
+    surface: {fileID: 11400000, guid: d937ab1fef81f754b80845694c9bc830, type: 2}
+  - material: {fileID: 13400000, guid: 6fe5add6bdc18274ba1ba21ce60eef96, type: 2}
+    surface: {fileID: 11400000, guid: 434111c49099f7045877e1db006e5939, type: 2}
+  - material: {fileID: 13400000, guid: a1e9df4c05582834ebefea216e02c133, type: 2}
+    surface: {fileID: 11400000, guid: 11a86c25a301e3748bdece605f2fef77, type: 2}

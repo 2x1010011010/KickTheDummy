@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: d74f456906aa0f2408a82a396467ca83
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: StatueGirl_broken_pt002
+    100004: StatueGirl_broken_pt02
+    100006: StatueGirl_broken_pt03
+    100008: StatueGirl_broken_pt04
+    100010: StatueGirl_broken_pt05
+    100012: StatueGirl_broken_pt06
+    100014: StatueGirl_broken_pt07
+    100016: StatueGirl_broken_pt08
+    100018: StatueGirl_broken_pt09
+    100020: StatueGirl_broken_pt10
+    100022: StatueGirl_broken_pt11
+    100024: StatueGirl_broken_pt12
+    100026: StatueGirl_broken_pt13
+    400000: //RootNode
+    400002: StatueGirl_broken_pt002
+    400004: StatueGirl_broken_pt02
+    400006: StatueGirl_broken_pt03
+    400008: StatueGirl_broken_pt04
+    400010: StatueGirl_broken_pt05
+    400012: StatueGirl_broken_pt06
+    400014: StatueGirl_broken_pt07
+    400016: StatueGirl_broken_pt08
+    400018: StatueGirl_broken_pt09
+    400020: StatueGirl_broken_pt10
+    400022: StatueGirl_broken_pt11
+    400024: StatueGirl_broken_pt12
+    400026: StatueGirl_broken_pt13
+    2300000: StatueGirl_broken_pt002
+    2300002: StatueGirl_broken_pt02
+    2300004: StatueGirl_broken_pt03
+    2300006: StatueGirl_broken_pt04
+    2300008: StatueGirl_broken_pt05
+    2300010: StatueGirl_broken_pt06
+    2300012: StatueGirl_broken_pt07
+    2300014: StatueGirl_broken_pt08
+    2300016: StatueGirl_broken_pt09
+    2300018: StatueGirl_broken_pt10
+    2300020: StatueGirl_broken_pt11
+    2300022: StatueGirl_broken_pt12
+    2300024: StatueGirl_broken_pt13
+    3300000: StatueGirl_broken_pt002
+    3300002: StatueGirl_broken_pt02
+    3300004: StatueGirl_broken_pt03
+    3300006: StatueGirl_broken_pt04
+    3300008: StatueGirl_broken_pt05
+    3300010: StatueGirl_broken_pt06
+    3300012: StatueGirl_broken_pt07
+    3300014: StatueGirl_broken_pt08
+    3300016: StatueGirl_broken_pt09
+    3300018: StatueGirl_broken_pt10
+    3300020: StatueGirl_broken_pt11
+    3300022: StatueGirl_broken_pt12
+    3300024: StatueGirl_broken_pt13
+    4300000: StatueGirl_broken_pt06
+    4300002: StatueGirl_broken_pt002
+    4300004: StatueGirl_broken_pt02
+    4300006: StatueGirl_broken_pt10
+    4300008: StatueGirl_broken_pt11
+    4300010: StatueGirl_broken_pt13
+    4300012: StatueGirl_broken_pt12
+    4300014: StatueGirl_broken_pt04
+    4300016: StatueGirl_broken_pt03
+    4300018: StatueGirl_broken_pt05
+    4300020: StatueGirl_broken_pt08
+    4300022: StatueGirl_broken_pt09
+    4300024: StatueGirl_broken_pt07
+    6400000: StatueGirl_broken_pt002
+    6400002: StatueGirl_broken_pt02
+    6400004: StatueGirl_broken_pt03
+    6400006: StatueGirl_broken_pt04
+    6400008: StatueGirl_broken_pt05
+    6400010: StatueGirl_broken_pt06
+    6400012: StatueGirl_broken_pt07
+    6400014: StatueGirl_broken_pt08
+    6400016: StatueGirl_broken_pt09
+    6400018: StatueGirl_broken_pt10
+    6400020: StatueGirl_broken_pt11
+    6400022: StatueGirl_broken_pt12
+    6400024: StatueGirl_broken_pt13
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 

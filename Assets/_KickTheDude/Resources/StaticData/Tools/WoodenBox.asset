@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051536b80bdd21345845d51de5ddd900, type: 3}
+  m_Name: WoodenBox
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: 7d1c4dad910afc843a7c00f1a822c5dc
+  <ToolReference>k__BackingField:
+    m_AssetGUID: 3e54e2fcf4c26e441a351c953a996a42
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  <ToolCategory>k__BackingField: 2
+  <ToolIcon>k__BackingField: {fileID: 21300000, guid: 1f3201d9bda5f574bb0c98f019fc00a6,
+    type: 3}
+  <SelectClip>k__BackingField: {fileID: 0}
+  <BorderOffset>k__BackingField: 5
+  <RotateAngle>k__BackingField: 0

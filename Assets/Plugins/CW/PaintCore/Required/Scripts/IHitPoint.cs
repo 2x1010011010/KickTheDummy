@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PaintIn3D
+namespace PaintCore
 {
 	/// <summary>This interface allows you to make components that can paint 3D points with a specified orientation.</summary>
 	public interface IHitPoint : IHit

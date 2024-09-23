@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PaintIn3D
+namespace PaintCore
 {
 	/// <summary>This interface allows you to define classes that can clone paint points (e.g. mirror).</summary>
 	public interface IClone

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f879b0d849858b7438fcb07cbb42901b, type: 3}
+  m_Name: RPMaterialStash
+  m_EditorClassIdentifier: 
+  RPMaterials:
+  - Default: {fileID: 2100000, guid: 829083e1251d43747b89b16c072b3835, type: 2}
+    URP: {fileID: 2100000, guid: a49195695930b604787e95a6e23d17e5, type: 2}
+    HDRP: {fileID: 2100000, guid: 4a3cbe2d99290ba489439dd18a90675e, type: 2}
+  - Default: {fileID: 2100000, guid: 085245dd91f2aae46b71eeee9b73d072, type: 2}
+    URP: {fileID: 2100000, guid: 96893d71f4b9d814e9b882b18ea464c9, type: 2}
+    HDRP: {fileID: 2100000, guid: 96893d71f4b9d814e9b882b18ea464c9, type: 2}
+  - Default: {fileID: 2100000, guid: aab853513ca3dec4e99a1bf8a7b4be28, type: 2}
+    URP: {fileID: 2100000, guid: 2b1813ef339eb734c9445a068e809263, type: 2}
+    HDRP: {fileID: 2100000, guid: 2b1813ef339eb734c9445a068e809263, type: 2}
+  - Default: {fileID: 2100000, guid: 29e8fb25d74283c49a369a8b8fe1ace1, type: 2}
+    URP: {fileID: 2100000, guid: 23199c595a3225442a9ece4aa852eb78, type: 2}
+    HDRP: {fileID: 2100000, guid: 23199c595a3225442a9ece4aa852eb78, type: 2}
+  - Default: {fileID: 2100000, guid: a184992afd2f0ee49a0dcc9aba0b6e39, type: 2}
+    URP: {fileID: 2100000, guid: 7daa6f61d24086145a95e4379ec51f2d, type: 2}
+    HDRP: {fileID: 2100000, guid: 7daa6f61d24086145a95e4379ec51f2d, type: 2}
+  - Default: {fileID: 2100000, guid: 63dabb1aa9c036e4db017dfb74698bdf, type: 2}
+    URP: {fileID: 2100000, guid: 3c5b5980fe7e1d64ea4c8efa7b27e29c, type: 2}
+    HDRP: {fileID: 2100000, guid: 020573f25257d5a40a94a45f09f125a1, type: 2}

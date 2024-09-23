@@ -136,11 +136,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'This shows you how basic painting can be used to reveal a complex design.
         This is done using the <color=#0FF>ReplaceOriginal</color> blending mode
-        on your paint tool, which will revert a <color=#0FF>P3dPaintableTexture</color>
+        on your paint tool, which will revert a <color=#0FF>CwPaintableMeshTexture</color>
         to its current <color=#0FF>Texture</color> and <color=#0FF>Color</color>
-        settings. The texture that will be revealed is first hidden using the <color=#0FF>P3dPaintableTexture.Color</color>
-        setting with 0 alpha. The <color=#0FF>P3dPaintable.OnActivated</color> event
-        is then used to reset this back to full alpha using the <color=#0FF>P3dPaintable.SetColor</color>
+        settings. The texture that will be revealed is first hidden using the <color=#0FF>CwPaintableMeshTexture.Color</color>
+        setting with 0 alpha. The <color=#0FF>CwPaintableMesh.OnActivated</color>
+        event is then used to reset this back to full alpha using the <color=#0FF>CwPaintableMesh.SetColor</color>
         event, with a hex color of <color=#0FF>#FFFF</color>.
 
         Swipe / Click
@@ -314,37 +314,37 @@ PrefabInstance:
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.18
+      value: -2.231944
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.93
+      value: 3.1949925
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.15
+      value: 3.8987741
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.25472862
+      value: 0.25044003
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.04583292
+      value: 0.057910725
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.95065993
+      value: 0.9415539
       objectReference: {fileID: 0}
     - target: {fileID: 9223282086298496735, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.17105076
+      value: -0.21772105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f43c82fa79085354ba883fd6d09728bc, type: 3}
@@ -395,6 +395,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -444,6 +445,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -505,6 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -520,13 +523,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
@@ -546,6 +548,12 @@ MonoBehaviour:
           m_StringArgument: '#FFFF'
           m_BoolArgument: 0
         m_CallState: 2
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
+    m_PersistentCalls:
+      m_Calls: []
   activated: 0
 --- !u!1 &1030334455
 GameObject:
@@ -600,6 +608,7 @@ Transform:
   m_LocalRotation: {x: 0.057910725, y: 0.9415539, z: -0.21772105, w: 0.25044003}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1781361741}
   m_Father: {fileID: 0}
@@ -684,6 +693,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1030334457}
   m_RootOrder: 0
@@ -717,6 +727,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -765,6 +776,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 1, z: 0.01}
   m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -838,6 +850,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -884,13 +897,15 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 3
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers:
-    - id: 0
+    - rid: 0
   references:
-    version: 1
-    00000000:
-      type: {class: P3dModifyAngleRandom, ns: PaintIn3D, asm: PaintIn3D}
+    version: 2
+    RefIds:
+    - rid: 0
+      type: {class: CwModifyAngleRandom, ns: PaintCore, asm: PaintCore}
       data:
         preview: 1
         unique: 1

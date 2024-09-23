@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.160675, g: 0.2006965, b: 0.27984592, a: 1}
+  m_IndirectSpecularColor: {r: 0.17338738, g: 0.21673954, b: 0.29880902, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -289,8 +289,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: 'This shows you how normal maps can be painted. This is done by opening
-        the advanced settings for the <color=#0FF>P3dPaintableTexture</color> component,
-        and changing the <color=#0FF>Conversion</color> setting to <color=#0FF>Normal</color>,
+        the advanced settings for the <color=#0FF>CwPaintableMeshTexture</color>
+        component, and changing the <color=#0FF>Conversion</color> setting to <color=#0FF>Normal</color>,
         as well as changing the <color=#0FF>Slot</color> to <color=#0FF>_BumpMap</color>.
         You can then paint using the <color=#0FF>Normal Blend</color> blending mode.
         Keep in mind the normal maps use all four <color=#0FF>RGBA</color> channels
@@ -532,6 +532,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 800666019}
   m_RootOrder: 2
@@ -578,10 +579,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &674294875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,6 +698,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1407300166}
   - {fileID: 1348905242}
@@ -734,6 +738,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 800666019}
   m_RootOrder: 3
@@ -780,10 +785,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &818179684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1052,6 +1059,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1500489943}
   - {fileID: 1039723430}
@@ -1122,6 +1130,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 800666019}
   m_RootOrder: 1
@@ -1168,10 +1177,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1348905244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,10 +1333,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1407300165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1375,6 +1388,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 800666019}
   m_RootOrder: 0
@@ -1666,6 +1680,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1341435396}
   m_Father: {fileID: 0}
@@ -1909,6 +1924,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -4.18, y: 6.93, z: 7.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1992,6 +2008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -2007,18 +2024,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -2033,6 +2055,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2095,6 +2118,7 @@ Transform:
   m_LocalRotation: {x: 0.70372003, y: -0.06912437, z: 0.06912437, w: 0.70372003}
   m_LocalPosition: {x: 1.74, y: 2.5, z: -2.46}
   m_LocalScale: {x: 1, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

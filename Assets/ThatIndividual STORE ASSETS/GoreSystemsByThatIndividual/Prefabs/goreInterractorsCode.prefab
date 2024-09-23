@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5705967999315637158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5467952337656080400}
+  - component: {fileID: 7770019860839451554}
+  - component: {fileID: 8912086664914372644}
+  - component: {fileID: 8318525795239424368}
+  m_Layer: 0
+  m_Name: bloodBlendingWithFloorObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5467952337656080400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705967999315637158}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8821709050782748512}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &7770019860839451554
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705967999315637158}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!135 &8912086664914372644
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705967999315637158}
+  m_Material: {fileID: 13400000, guid: 828d1f4a099eb9148a64264969dbbd9c, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8318525795239424368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705967999315637158}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d21f70a6f18dc948bc6d0951bb6299f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  projector: {fileID: 2100000, guid: c0bab35732bc32042bc22d11c3dc4895, type: 2}
+  ProjectorTextures:
+  - {fileID: 2800000, guid: d6d73d2442c694d49a74890d6f429f94, type: 3}
+  - {fileID: 2800000, guid: cd6911b3ce2d4b84db0b27fc19f1daf3, type: 3}
+  - {fileID: 2800000, guid: a59182dfb468198419d127beff619305, type: 3}
+  - {fileID: 2800000, guid: f494f463a2d92234a94fe61cc4eb6405, type: 3}
+  - {fileID: 2800000, guid: f57cbc678731fde4b96c2586129e0056, type: 3}
+  - {fileID: 2800000, guid: 447769b134b0eb344a5749358dbc5fe7, type: 3}
+  - {fileID: 2800000, guid: bb7bebdd65d868245948da4f9cd6da7f, type: 3}
+  - {fileID: 2800000, guid: 318aa299b3b20b743a33e52c2b47d45c, type: 3}
+  - {fileID: 2800000, guid: b43db75b4cdfe1e4a8497feb17dfd97c, type: 3}
+  - {fileID: 2800000, guid: e59f0f2b82422b94ca85eda649fa6ba9, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  size: 0
+  paintGrounds: 1
+  killAfterUse: 1
+  bloodSplatter: {fileID: 4021799689280233102, guid: 1205b658d767b4840a7b47f16d4bb2aa, type: 3}
+--- !u!1 &7676889925855099208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093431061702131038}
+  - component: {fileID: 9116126325980241544}
+  - component: {fileID: 686797153265769060}
+  - component: {fileID: 1200976175598030592}
+  - component: {fileID: 3760167362230338490}
+  m_Layer: 0
+  m_Name: bloodStreakingObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093431061702131038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676889925855099208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8821709050782748512}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &9116126325980241544
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676889925855099208}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!135 &686797153265769060
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676889925855099208}
+  m_Material: {fileID: 13400000, guid: 828d1f4a099eb9148a64264969dbbd9c, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.01
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1200976175598030592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676889925855099208}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e971bef4e595fad409912f93f009df23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3760167362230338490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7676889925855099208}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d21f70a6f18dc948bc6d0951bb6299f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  projector: {fileID: 2100000, guid: c0bab35732bc32042bc22d11c3dc4895, type: 2}
+  ProjectorTextures: []
+  color: {r: 1, g: 1, b: 1, a: 1}
+  size: 0.01
+  paintGrounds: 0
+  killAfterUse: 0
+  bloodSplatter: {fileID: 0}
+--- !u!1 &8821709050782748513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8821709050782748512}
+  - component: {fileID: 1462601074668496617}
+  - component: {fileID: 2135550456568092744}
+  m_Layer: 0
+  m_Name: goreInterractorsCode
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8821709050782748512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821709050782748513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1093431061702131038}
+  - {fileID: 5467952337656080400}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1462601074668496617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821709050782748513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5478f53609f63e04fb2dc8b3ee950d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingCode: {fileID: 0}
+  groundBloodSpillObject: {fileID: 5705967999315637158}
+  useGroundBloodSpills: 1
+  particleSize: 1
+  hitParticlesBody: []
+  hitParticlesHead: []
+  bloodPools: []
+--- !u!114 &2135550456568092744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821709050782748513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214ed092fe4451d489f432f43d054207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryBudgetMB: 512
+  texelsPerMeter: 4096
+  dilationShader: {fileID: 4800000, guid: 8aaee7e20a14a3d469f951d141168de0, type: 3}
+  dilate: 1

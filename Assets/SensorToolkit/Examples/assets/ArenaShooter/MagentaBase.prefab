@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &149058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421728}
+  - component: {fileID: 11434134}
+  - component: {fileID: 11493618}
+  - component: {fileID: 11459458}
+  m_Layer: 0
+  m_Name: MagentaBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149058}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: -14.98, y: 0.1, z: 25.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11434134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc8537d25f24bcaafe4a88711d9d0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Team: 1
+  ToSpawn: {fileID: 170374, guid: 4b6a7f25fbf147f787cb3c5861f47677, type: 3}
+  Number: 3
+  SpawnInterval: 5
+  StartSpawnAmount: 2
+  SizeX: 9
+  SizeY: 0.1
+  SizeZ: 9
+  ClearRadius: 1
+  ObstructingLayers:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &11493618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f00a8324cac4f1e84ad1644ec747516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+  signalFilter:
+    IgnoreList: []
+    EnableTagFilter: 0
+    AllowedTags: []
+  DetectionMode: 1
+  Shape: 0
+  Sphere:
+    Radius: 1
+  Box:
+    HalfExtents: {x: 0.5, y: 0.5, z: 0.5}
+  Capsule:
+    Radius: 0.5
+    Height: 1
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  IgnoreTriggerColliders: 0
+  pulseRoutine:
+    Mode:
+      value: 1
+    Interval:
+      value: 1
+--- !u!114 &11459458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3767c2ec146b4ca8986992b00f6ae593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickupSensor: {fileID: 11493618}
+  ScoreEffect: {fileID: 0}

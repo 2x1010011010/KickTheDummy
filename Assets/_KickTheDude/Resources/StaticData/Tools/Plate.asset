@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051536b80bdd21345845d51de5ddd900, type: 3}
+  m_Name: Plate
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: e0b989bdf211ea542aa99ee843a3952b
+  <ToolReference>k__BackingField:
+    m_AssetGUID: ef1c4620c736e4744bc99696784940e2
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  <ToolCategory>k__BackingField: 2
+  <ToolIcon>k__BackingField: {fileID: 21300000, guid: a2e18107f777273458a31b4bc36855bc,
+    type: 3}
+  <SelectClip>k__BackingField: {fileID: 8300000, guid: 8a50aa8d6c27f8c46a713b1ce7d73c63,
+    type: 3}
+  <BorderOffset>k__BackingField: 7
+  <RotateAngle>k__BackingField: 45

@@ -130,7 +130,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 3
+  serializedVersion: 4
   m_GIWorkflowMode: 0
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 1
@@ -143,7 +143,7 @@ LightingSettings:
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
-  m_TextureCompression: 1
+  m_LightmapCompression: 3
   m_AO: 0
   m_AOMaxDistance: 1
   m_CompAOExponent: 1
@@ -184,6 +184,7 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+  m_PVRTiledBaking: 0
 --- !u!1001 &1141047491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -195,15 +196,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: 'This shows you how the <color=#0FF>Spaceship</color> GameObject can
-        be made paintable. This is done by adding the <color=#0FF>P3dPaintable</color>,
-        <color=#0FF>P3dMaterialCloner</color>, and <color=#0FF>P3dPaintableTexture</color>
-        components. You can then paint the spaceship using the mouse/finger with
-        the <color=#0FF>Paint</color> GameObject, which has the <color=#0FF>P3dHitScreen</color>
-        and <color=#0FF>P3dPaintSphere</color> components. Keep in mind that <color=#0FF>P3dHitScreen</color>
-        uses raycasts, so your mesh must have a collider to work.
+        be made paintable. This is done by adding the <color=#0FF>CwPaintableMesh</color>
+        and <color=#0FF>CwPaintableMeshTexture</color> components. You can then paint
+        the spaceship using the mouse/finger with the <color=#0FF>Paint</color> GameObject,
+        which has the <color=#0FF>CwHitScreen</color> and <color=#0FF>CwPaintSphere</color>
+        components. Keep in mind that <color=#0FF>CwHitScreen</color> uses raycasts,
+        so your mesh must have a collider to work.
 
-        Swipe
-        / Click + Drag = Paint'
+        Swipe / Click + Drag
+        = Paint'
       objectReference: {fileID: 0}
     - target: {fileID: 224200602946344026, guid: f43c82fa79085354ba883fd6d09728bc,
         type: 3}
@@ -487,10 +488,12 @@ MonoBehaviour:
   tileTransform: {fileID: 0}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1407300165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +543,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -581,6 +585,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -598,7 +603,6 @@ GameObject:
   - component: {fileID: 1472130932}
   - component: {fileID: 1469970201}
   - component: {fileID: 1469970198}
-  - component: {fileID: 1469970199}
   - component: {fileID: 1469970200}
   m_Layer: 0
   m_Name: Spaceship
@@ -619,13 +623,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
@@ -633,23 +636,13 @@ MonoBehaviour:
   onActivated:
     m_PersistentCalls:
       m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
+    m_PersistentCalls:
+      m_Calls: []
   activated: 0
---- !u!114 &1469970199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469870516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9986da839a92d2d42975bac1e96cd24c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
-  activated: 0
-  current: {fileID: 0}
-  original: {fileID: 0}
 --- !u!114 &1469970200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,6 +720,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -836,6 +830,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -3.28, y: 2.5, z: 5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

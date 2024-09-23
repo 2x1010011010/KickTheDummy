@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051536b80bdd21345845d51de5ddd900, type: 3}
+  m_Name: F1
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: 32f2fe434e1127e47880650aba929643
+  <ToolReference>k__BackingField:
+    m_AssetGUID: 2c4acf2f0d75d95468f3e9b30dac9bf6
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  <ToolCategory>k__BackingField: 2
+  <ToolIcon>k__BackingField: {fileID: 21300000, guid: 65b7c0c5abf93d14bba30c401d06c543,
+    type: 3}
+  <SelectClip>k__BackingField: {fileID: 8300000, guid: b6f5c9e773b76f243a5fd5ef3db17b5c,
+    type: 3}
+  <BorderOffset>k__BackingField: 16
+  <RotateAngle>k__BackingField: -45

@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 44d6252e8eae08440867f47716375315
+  m_SerializeEntries:
+  - m_GUID: 8898da03f03c1d8418d8a55f4457ec5a
+    m_Address: UIMainMenuWindow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ebf5aa480e532c4bb5eb5ea442e2145
+    m_Address: UILoadingWindow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70d011e309fe08548b1d4cd65ed846bf
+    m_Address: UISandboxHUDWindow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bebc33e9f7ae57e47af31fdb72985991
+    m_Address: UISandboxToolButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0eb8bac49658b4861aee07ad6cc538af
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_01.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afd74c1bf66d6426d8d9e70ddefbd65c
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_02.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa64414dc13fe4bf885192fd2a20822e
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_03.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b74874e80c988469a8644da446c5db94
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_04.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e549087cf1db340d49a190777f9d3740
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_05.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6367f45866b54699b305476410496d6
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_06.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c674fe352db342179460a4a7f96bbe0
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_07.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 974f407538bb54854ab22ed84bd1a0cb
+    m_Address: Assets/Real Guns Sound Pack 2/Mono/Weapons/HandGun/handgun_A_shTL_single_08.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5a814bffa69e074eb89c9fb243a8149
+    m_Address: MainMenu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd5069e785cf822489ca9272550515f8
+    m_Address: Box
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b8455f03e907504e96adccd2c23ff33
+    m_Address: Bottle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c4d04b51f46ae64e8e05fe5b80a1fd0
+    m_Address: Balloon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c08ae59931ce3b4ba40d3238ee3b39b
+    m_Address: Human
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6dcee5fa233486f40b73464c65483d81
+    m_Address: WetFloorSign
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72455fc41d29b774c92c128ade77e18f
+    m_Address: WoodenBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0844f950e0ae3a641923437c44c60bad
+    m_Address: GasBottle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83dbeeacffe993742be31bd5d978e003
+    m_Address: JerryCan
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c7dcb16413cecc41b3839b78b74f016
+    m_Address: Mine
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea5b83ca1a43a194eba1cf7d18f0deb7
+    m_Address: Pallet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f322faa0bfdb8124e9ccfc3a8f1ab1b2
+    m_Address: Radio
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea50b33d716353442adfcf19b6797d41
+    m_Address: RedBarrel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f1c176fccbe1c042960206f8940a356
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Props/SentryGun/SentryGun.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f641a405ad6650841a9ec9dcd647448a
+    m_Address: Watermelon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c7af28bd2f80544c946017298fd0263
+    m_Address: F1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77efd574a3b24d441b579548d1af4bf5
+    m_Address: BerettaTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f125096dcb71e1c4f8093a58d9fddb24
+    m_Address: Spas12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c4acf2f0d75d95468f3e9b30dac9bf6
+    m_Address: F1Tool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5545cbf7b7fa34149a61cd7cdb6e7ab0
+    m_Address: HandTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e54e2fcf4c26e441a351c953a996a42
+    m_Address: WoodenBoxTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28bfce8305982634f8ede41b02ddd384
+    m_Address: JerryTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b69e83505c86a894eaf4cefb2cfb974f
+    m_Address: RadioTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 352011e739d9e5b4c94cabbd292bf149
+    m_Address: BallonTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1feaec3a82397bd46a384c196167b7c9
+    m_Address: RedBarrelTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4012f9a2cdf307e4b8f25ee53cef224b
+    m_Address: BottleTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cad16dcd9d4a57418d07b3207e9686e
+    m_Address: MineTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb4406737a97ecb46a28f209acae5ae3
+    m_Address: CharacterTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 395c7c36749e42641a5911f8857b5ba8
+    m_Address: M249Tool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 441910f4cd9994b45a3650ab34d59407
+    m_Address: UZITool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd630a926e570b94e928960e45105ce3
+    m_Address: WetFloorSignTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd6ed36d971a8374e95e849fdaad30c0
+    m_Address: PalletTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76d38693cb5d0bf48a4463e5de5f86b5
+    m_Address: MetalImpact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1032bd7400979ab4dbca2840b233319f
+    m_Address: BigBloodEffect
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05b9ddc33df9d9e4d950f011b617dd14
+    m_Address: ConcreteImpact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a92865f1786b6124097f9281213385c0
+    m_Address: WoodImpact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e9a7e0569c9a1c46a497a055badc4c1
+    m_Address: HitBloodEffect
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4c505f8e798fa442b273793298d9bf8
+    m_Address: OIlFlowEffect
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f91b68b13b7c5f54c92bdb157c11ddd2
+    m_Address: F1Explosion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b650056bb3751d4c88670076d87af2e
+    m_Address: WatermelonTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0204af252f844cc49ab48a1c4b30c8dd
+    m_Address: Plate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef1c4620c736e4744bc99696784940e2
+    m_Address: PlateTool
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2fd9f62c29023b428280a980b611f77
+    m_Address: Assets/_KickTheDude/2. Content/Entities/Tools/SentryGun/SentryGunTool.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b816108a8b8b94f4cadfb97924d1bbf9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a3b903e55fef846498ad5269cdcd7a8d, type: 2}
+    - {fileID: 11400000, guid: 3435dd1a88523b1498f380d6ab8dfe63, type: 2}

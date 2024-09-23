@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: MineFSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_name":"Initial","_position":{"x":149.7027,"y":250.2149},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"actions":[{"audioClip":{"_name":"BeepCLip","_targetVariableID":"48c2831f-88d4-4aef-b545-08efc69dd090"},"$type":"NodeCanvas.Tasks.Actions.PlayAudioAtPosition"},{"waitTime":{"_value":0.5},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"overrideAgent":{"_type":"Game.InteractiveSystem.InteractableObject","_name":"InteractableObject","_targetVariableID":"7f380497-acf7-4883-9ec4-9e3f4c9dc2ba"},"$type":"ExplodeAction"},{"overrideAgent":{"_type":"Game.InteractiveSystem.InteractableObject","_name":"InteractableObject","_targetVariableID":"7f380497-acf7-4883-9ec4-9e3f4c9dc2ba"},"$type":"DestroyInteractableObject"}]},"_name":"Exploding","_position":{"x":349.9261,"y":419.5586},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"overrideAgent":{"_type":"Micosmo.SensorToolkit.Sensor","_name":"Sensor","_targetVariableID":"dc17a3c0-e4c4-4baf-8d9c-d3db5db0a3b5"},"$type":"ObjectDetected"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.29
+    _category: 
+    _comments: 
+    _translation: {x: 363, y: 65}
+    _zoomFactor: 0.99898803
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}

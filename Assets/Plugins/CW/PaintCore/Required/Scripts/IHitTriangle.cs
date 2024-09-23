@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PaintIn3D
+namespace PaintCore
 {
 	/// <summary>This interface allows you to make components that can paint triangles defined by three points.</summary>
 	public interface IHitTriangle : IHit

@@ -1,0 +1,839 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9752b0c8e144801967e6897679604b, type: 3}
+  m_Name: vHierarchy Data
+  m_EditorClassIdentifier: 
+  sceneDatas_byGuid:
+    keys:
+    - 99c9720ab356a0642a771bea13969a05
+    - f5a814bffa69e074eb89c9fb243a8149
+    - b2e49aa6f29a03f468fba4f706d6535b
+    - cd5069e785cf822489ca9272550515f8
+    - 6dcee5fa233486f40b73464c65483d81
+    - 72455fc41d29b774c92c128ade77e18f
+    - ea5b83ca1a43a194eba1cf7d18f0deb7
+    - 83dbeeacffe993742be31bd5d978e003
+    - ea50b33d716353442adfcf19b6797d41
+    - 6c08ae59931ce3b4ba40d3238ee3b39b
+    - 0844f950e0ae3a641923437c44c60bad
+    - 70d011e309fe08548b1d4cd65ed846bf
+    - ba929f0551e64ef4ab7663aad7fa808b
+    - 4c4d04b51f46ae64e8e05fe5b80a1fd0
+    - f322faa0bfdb8124e9ccfc3a8f1ab1b2
+    - 9b8455f03e907504e96adccd2c23ff33
+    - 8f1c176fccbe1c042960206f8940a356
+    - 77efd574a3b24d441b579548d1af4bf5
+    - 441910f4cd9994b45a3650ab34d59407
+    - 6c7af28bd2f80544c946017298fd0263
+    - 8c7dcb16413cecc41b3839b78b74f016
+    values:
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1073570670-0
+        - globalObjectIdString: GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1884926240-0
+        - globalObjectIdString: GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1505845739-0
+        - globalObjectIdString: GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1780622989-0
+        - globalObjectIdString: GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1473454442-0
+        - globalObjectIdString: GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-838817980-0
+        - globalObjectIdString: GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-183042003-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: PreMatCylinder
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: EventSystem Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-f5a814bffa69e074eb89c9fb243a8149-657549445-0
+        - globalObjectIdString: GlobalObjectId_V1-2-f5a814bffa69e074eb89c9fb243a8149-668559712-0
+        - globalObjectIdString: GlobalObjectId_V1-2-f5a814bffa69e074eb89c9fb243a8149-1098725260-0
+        - globalObjectIdString: GlobalObjectId_V1-2-f5a814bffa69e074eb89c9fb243a8149-1776144272-0
+        - globalObjectIdString: GlobalObjectId_V1-2-f5a814bffa69e074eb89c9fb243a8149-117824089-0
+        - globalObjectIdString: GlobalObjectId_V1-2-f5a814bffa69e074eb89c9fb243a8149-1870967211-0
+        - globalObjectIdString: GlobalObjectId_V1-2-f5a814bffa69e074eb89c9fb243a8149-1532573832-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: DirectionalLight Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: PreMatCylinder
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-0-b2e49aa6f29a03f468fba4f706d6535b-0-0
+        - globalObjectIdString: GlobalObjectId_V1-1-b2e49aa6f29a03f468fba4f706d6535b-2412029851936303886-0
+        - globalObjectIdString: GlobalObjectId_V1-1-b2e49aa6f29a03f468fba4f706d6535b-1031599175775996717-0
+        - globalObjectIdString: GlobalObjectId_V1-1-b2e49aa6f29a03f468fba4f706d6535b-4099806555711735855-0
+        - globalObjectIdString: GlobalObjectId_V1-1-b2e49aa6f29a03f468fba4f706d6535b-3772343863578213316-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1806584285-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-442446400-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1636202431-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-657466668-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1176497741-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-490302502-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-688344291-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-330761771-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-570881087-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-191541342-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1512484716-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-139737081-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1479852111-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1524500818-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1130123770-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-2053272567-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-750974965-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-2025374202-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1079327171-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1591746462-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-348958768-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-840481836-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1650138804-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-591215468-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1246004286-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-423332389-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1237568629-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-2078805953-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-2128831527-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-498712879-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-499683419-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-962416917-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1928221678-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1804199698-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1935916127-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-733706930-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1036293962-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1482883645-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-906809831-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1153451334-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-32401931-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-330838939-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1255016073-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-899802890-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-345191391-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-824430255-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-354229377-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-59654332-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1737140093-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-384868031-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-760023160-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1337436767-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1347868818-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1006203751-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1810773590-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-946767169-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-493520323-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1069062269-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-530121680-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-2006320659-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1972623800-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-502541908-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-477347748-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-2022467975-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1812265624-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1661157800-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-580740277-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1950469038-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-495422320-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-668288880-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-659952552-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1405492510-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1388857807-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-100016-111572002
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-100010-111572002
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-723275202-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-369211775-0
+        - globalObjectIdString: GlobalObjectId_V1-2-cd5069e785cf822489ca9272550515f8-1071441430-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: DirectionalLight Icon
+        - colorIndex: 0
+          iconNameOrGuid: ReflectionProbe Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: PreMatCylinder
+        - colorIndex: 0
+          iconNameOrGuid: Light Icon
+        - colorIndex: 0
+          iconNameOrGuid: Light Icon
+        - colorIndex: 0
+          iconNameOrGuid: Light Icon
+        - colorIndex: 0
+          iconNameOrGuid: Light Icon
+        - colorIndex: 0
+          iconNameOrGuid: DirectionalLight Icon
+        - colorIndex: 0
+          iconNameOrGuid: DirectionalLight Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: AvatarMask On Icon
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioEchoFilter Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: DirectionalLight Icon
+        - colorIndex: 0
+          iconNameOrGuid: DirectionalLight Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioReverbZone Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-1404410229858766704-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-8458459087610018851-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-994790934562121780-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-6582105870246482430-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-1542815222136638707-0
+        - globalObjectIdString: GlobalObjectId_V1-0-6dcee5fa233486f40b73464c65483d81-0-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-3207370531104973312-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-883753915578288207-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-4797922849808162030-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-6998289682877250703-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6dcee5fa233486f40b73464c65483d81-373220416522320294-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-72455fc41d29b774c92c128ade77e18f-416909330047288866-0
+        - globalObjectIdString: GlobalObjectId_V1-1-72455fc41d29b774c92c128ade77e18f-2788535331210051823-0
+        - globalObjectIdString: GlobalObjectId_V1-1-72455fc41d29b774c92c128ade77e18f-349645154357548719-0
+        - globalObjectIdString: GlobalObjectId_V1-1-72455fc41d29b774c92c128ade77e18f-2632608143713708782-0
+        - globalObjectIdString: GlobalObjectId_V1-0-72455fc41d29b774c92c128ade77e18f-0-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-ea5b83ca1a43a194eba1cf7d18f0deb7-6343958354935183126-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea5b83ca1a43a194eba1cf7d18f0deb7-7115692091533209544-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea5b83ca1a43a194eba1cf7d18f0deb7-4266391049731023006-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea5b83ca1a43a194eba1cf7d18f0deb7-1637551132417720054-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-83dbeeacffe993742be31bd5d978e003-7172214966322740656-0
+        - globalObjectIdString: GlobalObjectId_V1-1-83dbeeacffe993742be31bd5d978e003-2825421826953606039-0
+        - globalObjectIdString: GlobalObjectId_V1-1-83dbeeacffe993742be31bd5d978e003-9038136393139545020-0
+        - globalObjectIdString: GlobalObjectId_V1-1-83dbeeacffe993742be31bd5d978e003-7121983276522721515-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-ea50b33d716353442adfcf19b6797d41-4037643527179500802-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea50b33d716353442adfcf19b6797d41-6021976095455373273-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea50b33d716353442adfcf19b6797d41-8933312327550279661-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea50b33d716353442adfcf19b6797d41-7622224193740702911-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea50b33d716353442adfcf19b6797d41-7506629384864783476-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea50b33d716353442adfcf19b6797d41-3123751809881735233-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ea50b33d716353442adfcf19b6797d41-4462115213381018349-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-1809130912172269950-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-3049844734540946000-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-3433715899836872857-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-7985235898717768202-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-627285689142758722-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-1672573348338563448-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-6476261607274223605-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-6978503654975640947-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-3759874180814822501-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-1011027375194786768-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-3913753738718939363-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-1690749299619096594-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-4175288332062397825-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-9076920928508839819-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-8017103094840529807-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-1678562581817095783-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-7889608624144729230-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-4543520272716408863-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-7134979638279488485-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-9066078103647906471-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-3807345966147794931-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-2340161591747064475-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-6337538279215434099-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-4648293437693123274-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-6162829436152348630-0
+        - globalObjectIdString: GlobalObjectId_V1-0-6c08ae59931ce3b4ba40d3238ee3b39b-0-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c08ae59931ce3b4ba40d3238ee3b39b-2582567858820958823-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: AvatarMask On Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Rigidbody Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-0844f950e0ae3a641923437c44c60bad-5091520240725755466-0
+        - globalObjectIdString: GlobalObjectId_V1-1-0844f950e0ae3a641923437c44c60bad-1042331401950980835-0
+        - globalObjectIdString: GlobalObjectId_V1-1-0844f950e0ae3a641923437c44c60bad-8240125824245852090-0
+        - globalObjectIdString: GlobalObjectId_V1-1-0844f950e0ae3a641923437c44c60bad-2760255472726109624-0
+        - globalObjectIdString: GlobalObjectId_V1-1-0844f950e0ae3a641923437c44c60bad-447186939234393274-0
+        - globalObjectIdString: GlobalObjectId_V1-1-0844f950e0ae3a641923437c44c60bad-2153909156421403407-0
+        - globalObjectIdString: GlobalObjectId_V1-1-0844f950e0ae3a641923437c44c60bad-55742406639337289-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-4573599877036058826-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-4014826995274831665-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-6387632422006790469-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-3732455344880084030-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-6302447907531328851-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-246527117393538703-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-9060777507516619047-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-8526241751983023708-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-6967852115685431387-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-4959786771578127088-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-1960470907299718003-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-368963643647188053-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-2529842112527881892-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-2615017936654667344-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-7114586066245664383-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-7568935445744916939-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-2996076280031100852-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-3183476525413179755-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-5924814240937737178-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-3111806693474634678-0
+        - globalObjectIdString: GlobalObjectId_V1-1-70d011e309fe08548b1d4cd65ed846bf-5373085272596269138-0
+        - globalObjectIdString: GlobalObjectId_V1-0-70d011e309fe08548b1d4cd65ed846bf-0-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-6095832201051972984-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-4548088592926363652-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-2641557137222155315-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-1104784065340333635-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-7853131435705607014-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-5063000220969550363-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-4469198793034033664-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-4655477668114980732-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-7752829156065559073-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-5266841413624493834-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-918819316064789624-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-2244364759695321081-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-9042538278173849748-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-2300280908568865604-0
+        - globalObjectIdString: GlobalObjectId_V1-0-ba929f0551e64ef4ab7663aad7fa808b-0-0
+        - globalObjectIdString: GlobalObjectId_V1-1-ba929f0551e64ef4ab7663aad7fa808b-220713443389393102-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: PreMatCylinder
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: PreMatCylinder
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+        - colorIndex: 0
+          iconNameOrGuid: Settings Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-4c4d04b51f46ae64e8e05fe5b80a1fd0-794259482245723911-0
+        - globalObjectIdString: GlobalObjectId_V1-1-4c4d04b51f46ae64e8e05fe5b80a1fd0-8244215860543752015-0
+        - globalObjectIdString: GlobalObjectId_V1-1-4c4d04b51f46ae64e8e05fe5b80a1fd0-5232894861631137279-0
+        - globalObjectIdString: GlobalObjectId_V1-1-4c4d04b51f46ae64e8e05fe5b80a1fd0-3199774111320028971-0
+        - globalObjectIdString: GlobalObjectId_V1-1-4c4d04b51f46ae64e8e05fe5b80a1fd0-4203941629695281855-0
+        - globalObjectIdString: GlobalObjectId_V1-1-4c4d04b51f46ae64e8e05fe5b80a1fd0-1534644509667060207-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: Material Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-f322faa0bfdb8124e9ccfc3a8f1ab1b2-8285909822406198862-0
+        - globalObjectIdString: GlobalObjectId_V1-1-f322faa0bfdb8124e9ccfc3a8f1ab1b2-5011496706772814330-0
+        - globalObjectIdString: GlobalObjectId_V1-1-f322faa0bfdb8124e9ccfc3a8f1ab1b2-3979555835236612789-0
+        - globalObjectIdString: GlobalObjectId_V1-1-f322faa0bfdb8124e9ccfc3a8f1ab1b2-3812752362619738364-0
+        - globalObjectIdString: GlobalObjectId_V1-1-f322faa0bfdb8124e9ccfc3a8f1ab1b2-3276312171139266503-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-9b8455f03e907504e96adccd2c23ff33-8573990676920664824-0
+        - globalObjectIdString: GlobalObjectId_V1-1-9b8455f03e907504e96adccd2c23ff33-2327692006820221119-0
+        - globalObjectIdString: GlobalObjectId_V1-1-9b8455f03e907504e96adccd2c23ff33-1355227609853767157-0
+        - globalObjectIdString: GlobalObjectId_V1-1-9b8455f03e907504e96adccd2c23ff33-100000-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: MeshCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-4688125814230790471-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-3307326786759785736-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-3650907644205500872-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-6586825580748534502-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-7999828463577831537-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-4243087575698994943-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-849085415167304029-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-258832607238307483-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-3084576543893539402-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-8511408111078328515-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-3780169527802882934-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8f1c176fccbe1c042960206f8940a356-956389266792297305-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: b314e9b362e4db04cb041ab46bed47a6
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: 1cd6faa9c8cabe1499b275f05437245b
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-0-77efd574a3b24d441b579548d1af4bf5-0-0
+        - globalObjectIdString: GlobalObjectId_V1-1-77efd574a3b24d441b579548d1af4bf5-4913590982119525878-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-0-441910f4cd9994b45a3650ab34d59407-0-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-6c7af28bd2f80544c946017298fd0263-8214383568348318099-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c7af28bd2f80544c946017298fd0263-2876497114167866637-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c7af28bd2f80544c946017298fd0263-2536013679946039804-0
+        - globalObjectIdString: GlobalObjectId_V1-0-6c7af28bd2f80544c946017298fd0263-0-0
+        - globalObjectIdString: GlobalObjectId_V1-1-6c7af28bd2f80544c946017298fd0263-8130354995259193343-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-3963991965309824433-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-6707279583345047106-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-5827258241121683597-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-5615039994159888049-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-4883303211992661577-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-6538163421793394091-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-4859277123465545014-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-8517939255521529651-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-445345089762534563-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-5029991037555328573-0
+        - globalObjectIdString: GlobalObjectId_V1-1-8c7dcb16413cecc41b3839b78b74f016-8836555958088604234-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: AudioEchoFilter Icon
+        - colorIndex: 0
+          iconNameOrGuid: StandaloneInputModule Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: Folder Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: ReflectionProbe Icon
+        - colorIndex: 0
+          iconNameOrGuid: ReflectionProbe Icon
+        - colorIndex: 0
+          iconNameOrGuid: ReflectionProbe Icon

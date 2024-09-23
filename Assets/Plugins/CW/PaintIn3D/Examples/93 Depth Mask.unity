@@ -429,6 +429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -444,18 +445,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 2
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 2
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -549,9 +555,9 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: 'This shows you how to mask paint behind foreground objects. This is
-        done with the <color=#0FF>P3dRenderDepth</color> component, which can render
+        done with the <color=#0FF>CwRenderDepth</color> component, which can render
         the scene depth from the perspective of a camera. You can then drag and drop
-        this component into the <color=#0FF>P3dPaint___</color> component''s <color=#0FF>Advanced
+        this component into the <color=#0FF>CwPaint___</color> component''s <color=#0FF>Advanced
         / DepthMask</color> setting.
 
         Swipe / Click + Drag = Paint'

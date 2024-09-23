@@ -159,7 +159,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   group:
     index: 0
-  targetModel: {fileID: 1469970198}
+  targetModel: {fileID: 0}
   targetTexture: {fileID: 0}
   blendMode:
     Index: 0
@@ -177,10 +177,12 @@ MonoBehaviour:
   tileTransform: {fileID: 1407300166}
   tileOpacity: 1
   tileTransition: 4
+  depthMask: {fileID: 0}
   modifiers:
     modifiers: []
   references:
-    version: 1
+    version: 2
+    RefIds: []
 --- !u!114 &1407300165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +216,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -228,6 +231,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -266,18 +270,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintable: {fileID: 0}
-  includeScale: 1
-  useMesh: 0
   hash:
     v: 0
-  activation: 0
   baseScale: {x: 0, y: 0, z: 0}
+  includeScale: 1
+  useMesh: 0
+  activation: 0
   otherRenderers: []
   onActivating:
     m_PersistentCalls:
       m_Calls: []
   onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivating:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeactivated:
     m_PersistentCalls:
       m_Calls: []
   activated: 0
@@ -294,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  shaderKeyword: 
   activated: 0
   current: {fileID: 0}
   original: {fileID: 0}
@@ -374,6 +384,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -483,6 +494,7 @@ Transform:
   m_LocalRotation: {x: 0.045832917, y: 0.95065993, z: -0.17105074, w: 0.25472862}
   m_LocalPosition: {x: -3.28, y: 2.6, z: 5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -498,15 +510,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: This shows you how to initialize a paintable texture with texture tiling.
-        This is done using the <color=#0FF>P3dHitNearby</color> component with the
+        This is done using the <color=#0FF>CwHitNearby</color> component with the
         <color=#0FF>PaintIn</color> setting set to <color=#0FF>Start</color>. The
-        <color=#0FF>P3dPaintSphere</color> component is then used to apply the paint.
+        <color=#0FF>CwPaintSphere</color> component is then used to apply the paint.
         This component's <color=#0FF>Advanced/TileTransform</color> can be set to
         any GameObject/Transform that has scaling, and you can set the <color=#0FF>Advanced/TileTexture</color>
         to your desired texture. When you enter play mode, these components will
-        activate and apply the paint to your scene. Make sure the <color=#0FF>P3dPaintSphere.Radius</color>
+        activate and apply the paint to your scene. Make sure the <color=#0FF>CwPaintSphere.Radius</color>
         setting is large enough to encompass your object. To isolate painting to
-        just one paintable texture you can drag and drop your object into the <color=#0FF>P3dPaintSphere</color>
+        just one paintable texture you can drag and drop your object into the <color=#0FF>CwPaintSphere</color>
         component's <color=#0FF>Advanced/TargetModel</color> setting.
       objectReference: {fileID: 0}
     - target: {fileID: 224200602946344026, guid: f43c82fa79085354ba883fd6d09728bc,

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1514757454330703925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c6355c95756794d81d00f65609a9f1, type: 3}
+  m_Name: SurfaceImpacts
+  m_EditorClassIdentifier: 
+  m_lightClips:
+  - {fileID: 8300000, guid: 9cd7d64393c20764db004a8647a0cd79, type: 3}
+  - {fileID: 8300000, guid: 9b66a0d6b952ee1408552e278d710684, type: 3}
+  m_mediumClips: []
+  m_heavyClips:
+  - {fileID: 8300000, guid: f48500f42ad906b4fbb3bd1a392f4692, type: 3}
+  - {fileID: 8300000, guid: 1ef19054c2bfcf240a898e8fe5cb97f5, type: 3}
+  - {fileID: 8300000, guid: 48d8d054e2f88ea429d7cd63ff69bb22, type: 3}
+  m_forceMultiplier: 1
+--- !u!114 &-1458473775032695345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c990d764e611b4d97142f5a8f5ffb0, type: 3}
+  m_Name: SurfaceSlide
+  m_EditorClassIdentifier: 
+  m_slide: {fileID: 8300000, guid: 9d9f48d3ff380204ba12c2e8e5608d2d, type: 3}
+  m_forceMultiplier: 3
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c8e6a1840de544cb71a60064d77ffb, type: 3}
+  m_Name: Wood
+  m_EditorClassIdentifier: 
+  m_allowSameModules: 0
+  m_modules:
+  - {fileID: 1917358043540329204}
+  - {fileID: -1514757454330703925}
+  - {fileID: -1458473775032695345}
+  m_icon: {fileID: 0}
+--- !u!114 &1917358043540329204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5a3544e70fd184292827372452709f, type: 3}
+  m_Name: SurfaceFootsteps
+  m_EditorClassIdentifier: 
+  m_walkClips:
+  - {fileID: 8300000, guid: ff7f8237861d5774a995152d487f6e83, type: 3}
+  - {fileID: 8300000, guid: 1561e4eceb956664fbe93480edf54bef, type: 3}
+  - {fileID: 8300000, guid: ee822eefbe2c967499833e91a15e6d4c, type: 3}
+  - {fileID: 8300000, guid: 30cecd0a30b3b234681b2f800ad4a115, type: 3}
+  - {fileID: 8300000, guid: c8dab219ddce0ae44bfbc2adecb2cd04, type: 3}
+  m_runClips:
+  - {fileID: 8300000, guid: 73b47a96d204d41499b4c751c01f1ec9, type: 3}
+  - {fileID: 8300000, guid: eae13bc3e53453147b287ce461193993, type: 3}
+  - {fileID: 8300000, guid: 09adce32748bddc429a990ffbe755122, type: 3}
+  - {fileID: 8300000, guid: 2b5aec46ed522ea4eb295c2b20c25342, type: 3}
+  - {fileID: 8300000, guid: f969c69dfdf6ec6499dea446866960bc, type: 3}
+  m_runThreshold: 0.6

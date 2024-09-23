@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c8e6a1840de544cb71a60064d77ffb, type: 3}
+  m_Name: CardboardWithoutSlide
+  m_EditorClassIdentifier: 
+  m_allowSameModules: 0
+  m_modules:
+  - {fileID: 24230095636744047}
+  - {fileID: 1556006961743574369}
+  m_icon: {fileID: 0}
+--- !u!114 &24230095636744047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5a3544e70fd184292827372452709f, type: 3}
+  m_Name: SurfaceFootsteps
+  m_EditorClassIdentifier: 
+  m_walkClips:
+  - {fileID: 8300000, guid: 00f271e6718a496488b70df03cc0a931, type: 3}
+  - {fileID: 8300000, guid: 7af6f46e1d9d1d348a0f7eb8d28012d2, type: 3}
+  - {fileID: 8300000, guid: bcca75ae6d53f3548b4985cd70770d59, type: 3}
+  - {fileID: 8300000, guid: cc21f4835dc3e994792f29edee875e64, type: 3}
+  - {fileID: 8300000, guid: a49e29d4d690c1f4bbe4d7d9e9f3650c, type: 3}
+  - {fileID: 8300000, guid: 3b34f22e87d375d449f860a3fde122e9, type: 3}
+  m_runClips:
+  - {fileID: 8300000, guid: 325dea30ff06b7d49985ab8a965ecd78, type: 3}
+  - {fileID: 8300000, guid: 03a12563e4f3a9747b66287a375a4659, type: 3}
+  - {fileID: 8300000, guid: c01621029c681a545aef37a7c33e0dfe, type: 3}
+  - {fileID: 8300000, guid: dd2f3cb36decf4b4fb0e706f4de52090, type: 3}
+  m_runThreshold: 0.6
+--- !u!114 &1556006961743574369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c6355c95756794d81d00f65609a9f1, type: 3}
+  m_Name: SurfaceImpacts
+  m_EditorClassIdentifier: 
+  m_lightClips:
+  - {fileID: 8300000, guid: 00f271e6718a496488b70df03cc0a931, type: 3}
+  - {fileID: 8300000, guid: 7af6f46e1d9d1d348a0f7eb8d28012d2, type: 3}
+  - {fileID: 8300000, guid: bcca75ae6d53f3548b4985cd70770d59, type: 3}
+  - {fileID: 8300000, guid: cc21f4835dc3e994792f29edee875e64, type: 3}
+  - {fileID: 8300000, guid: a49e29d4d690c1f4bbe4d7d9e9f3650c, type: 3}
+  - {fileID: 8300000, guid: 3b34f22e87d375d449f860a3fde122e9, type: 3}
+  m_mediumClips: []
+  m_heavyClips:
+  - {fileID: 8300000, guid: 325dea30ff06b7d49985ab8a965ecd78, type: 3}
+  - {fileID: 8300000, guid: 03a12563e4f3a9747b66287a375a4659, type: 3}
+  - {fileID: 8300000, guid: c01621029c681a545aef37a7c33e0dfe, type: 3}
+  - {fileID: 8300000, guid: dd2f3cb36decf4b4fb0e706f4de52090, type: 3}
+  m_forceMultiplier: 10
